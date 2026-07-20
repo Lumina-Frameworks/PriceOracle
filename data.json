@@ -1,17 +1,16 @@
 {
-  "lastUpdated": "2026-07-20T05:31:43.959Z",
+  "lastUpdated": "2026-07-20T11:20:19.711Z",
   "ram": {
     "displayName": "Memory (RAM)",
     "items": [
       {
         "id": "ddr4-16gb",
         "name": "DDR4 16GB (2x8GB) 3200MHz",
-        "price": 45.23,
-        "change": 0.5,
-        "confidence": 71,
-        "trend": "up",
+        "price": 44.81,
+        "change": -0.9,
+        "confidence": 82,
+        "trend": "down",
         "history": [
-          48,
           47.9,
           47.5,
           47,
@@ -40,18 +39,18 @@
           45.7,
           45.85,
           45.99,
-          45.23
+          45.23,
+          44.81
         ]
       },
       {
         "id": "ddr5-32gb",
         "name": "DDR5 32GB (2x16GB) 6000MHz",
-        "price": 100.27,
-        "change": 1.7,
-        "confidence": 70,
+        "price": 102.34,
+        "change": 3.6,
+        "confidence": 79,
         "trend": "up",
         "history": [
-          104.5,
           104,
           103.8,
           103.2,
@@ -80,53 +79,56 @@
           98.7,
           98.6,
           98.5,
-          100.27
+          100.27,
+          102.34
         ]
       }
     ],
     "outlook": "Slight upward pressure on older DDR4 modules due to reduced production capacity as manufacturers shift focus to DDR5. DDR5 prices are stabilizing as yields improve and supply exceeds mainstream desktop demands.",
     "news": [
       {
-        "headline": " 60 fps is still the de facto minimum frame rate for half of PC Gamer readers, but more than 10% of you are dying on the 120 fps hill ",
-        "source": "PC Gamer",
-        "date": "2026-07-17",
-        "impact": "neutral",
-        "url": "https://www.pcgamer.com/hardware/60-fps-is-still-the-de-facto-minimum-frame-rate-for-half-of-pc-gamer-readers-but-more-than-10-percent-of-you-are-dying-on-the-120-fps-hill/",
-        "affectedItems": []
-      },
-      {
-        "headline": " How much RAM do you need for an 'ultimate gaming machine?' July in PC Gamer 10, 20, and 30 years ago ",
-        "source": "PC Gamer",
-        "date": "2026-07-17",
-        "impact": "neutral",
-        "url": "https://www.pcgamer.com/gaming-industry/how-much-ram-do-you-need-for-an-ultimate-gaming-machine-july-in-pc-gamer-10-20-and-30-years-ago/",
-        "affectedItems": []
-      },
-      {
-        "headline": " Retiring Valve programmer says 'at least one' of the studio's beloved game modes was made in secret to avoid pushback from peers ",
-        "source": "PC Gamer",
-        "date": "2026-07-17",
-        "impact": "neutral",
-        "url": "https://www.pcgamer.com/gaming-industry/retiring-valve-programmer-says-at-least-one-of-the-studios-beloved-game-modes-was-made-in-secret-to-avoid-pushback-from-peers/",
-        "affectedItems": []
-      },
-      {
-        "headline": " Valve says there's no end in sight to the memory crisis, and prices are only going to increase: 'Honestly, it's still getting worse' ",
-        "source": "PC Gamer",
-        "date": "2026-07-18",
-        "impact": "bullish",
-        "url": "https://www.pcgamer.com/hardware/steam-machines/valve-says-theres-no-end-in-sight-to-the-memory-crisis-and-prices-are-only-going-to-increase-honestly-its-still-getting-worse/",
-        "affectedItems": []
-      },
-      {
-        "headline": "(PR) MSI Motherboards Deliver DDR5-8000+ Support for CXMT-Based Memory on Intel Platform",
+        "headline": "Samsung Texas Fab to Mass-Produce Tesla AI5 SoC on 2 nm Node",
         "source": "TechPowerUp",
         "date": "2026-07-14",
         "impact": "bullish",
-        "url": "https://www.techpowerup.com/350742/msi-motherboards-deliver-ddr5-8000-support-for-cxmt-based-memory-on-intel-platform",
+        "url": "https://www.techpowerup.com/350747/samsung-texas-fab-to-mass-produce-tesla-ai5-soc-on-2-nm-node",
         "affectedItems": [
           "ddr5-32gb"
         ]
+      },
+      {
+        "headline": "Gears of War: E-Day Gets DLSS 4.5 at Launch",
+        "source": "TechPowerUp",
+        "date": "2026-07-14",
+        "impact": "neutral",
+        "url": "https://www.techpowerup.com/350756/gears-of-war-e-day-gets-dlss-4-5-at-launch",
+        "affectedItems": []
+      },
+      {
+        "headline": "KAMRUI July Deals: AK1PLUS and Pinova P1 Mini PCs from $230.84",
+        "source": "TechPowerUp",
+        "date": "2026-07-14",
+        "impact": "bearish",
+        "url": "https://www.techpowerup.com/350543/kamrui-july-deals-ak1plus-and-pinova-p1-mini-pcs-from-usd-230-84",
+        "affectedItems": [
+          "ddr4-16gb"
+        ]
+      },
+      {
+        "headline": "Warframe Tau Update: New Solar System, Enemies, and Warframes Coming in 2026",
+        "source": "TechPowerUp",
+        "date": "2026-07-14",
+        "impact": "bearish",
+        "url": "https://www.techpowerup.com/350761/warframe-tau-update-new-solar-system-enemies-and-warframes-coming-in-2026",
+        "affectedItems": []
+      },
+      {
+        "headline": "Slay the Spire 2 Dev Explains Why It Used \"A Bunch Of Garbage\" Art Instead of AI Placeholders",
+        "source": "TechPowerUp",
+        "date": "2026-07-14",
+        "impact": "neutral",
+        "url": "https://www.techpowerup.com/350765/slay-the-spire-2-dev-explains-why-it-used-a-bunch-of-garbage-art-instead-of-ai-placeholders",
+        "affectedItems": []
       }
     ]
   },
@@ -136,12 +138,11 @@
       {
         "id": "rtx-4070",
         "name": "NVIDIA GeForce RTX 4070 12GB",
-        "price": 549.53,
-        "change": 0.5,
-        "confidence": 69,
+        "price": 548.86,
+        "change": 0.1,
+        "confidence": 58,
         "trend": "up",
         "history": [
-          521.5,
           520,
           522,
           525,
@@ -170,18 +171,18 @@
           549,
           549.5,
           549.99,
-          549.53
+          549.53,
+          548.86
         ]
       },
       {
         "id": "rx-7800-xt",
         "name": "AMD Radeon RX 7800 XT 16GB",
-        "price": 498.68,
-        "change": 0,
-        "confidence": 65,
+        "price": 499.95,
+        "change": 0.2,
+        "confidence": 58,
         "trend": "up",
         "history": [
-          514,
           513.5,
           512,
           510,
@@ -210,18 +211,18 @@
           499.2,
           499.1,
           499,
-          498.68
+          498.68,
+          499.95
         ]
       },
       {
         "id": "rtx-4080-super",
         "name": "NVIDIA GeForce RTX 4080 Super 16GB",
-        "price": 999.48,
-        "change": 0,
-        "confidence": 56,
+        "price": 1002.09,
+        "change": 0.4,
+        "confidence": 67,
         "trend": "up",
         "history": [
-          990,
           988.5,
           991,
           992,
@@ -250,50 +251,51 @@
           999.5,
           999.2,
           999,
-          999.48
+          999.48,
+          1002.09
         ]
       }
     ],
     "outlook": "Mid-range GPU prices remain sticky, with NVIDIA maintaining solid price control. AMD is engaging in aggressive price corrections on the RDNA3 lineup ahead of next-generation platform releases, providing excellent price-to-performance for value seekers.",
     "news": [
       {
-        "headline": " We just awarded $500 to the PC gamer who sent us this wild Crimson Desert video, and next month it could be you ",
-        "source": "PC Gamer",
-        "date": "2026-07-17",
+        "headline": "Legendary SEGA Game Titles Come to NVIDIA's RTX Spark PC Platform",
+        "source": "TechPowerUp",
+        "date": "2026-07-16",
         "impact": "neutral",
-        "url": "https://www.pcgamer.com/games/we-just-awarded-usd500-to-the-pc-gamer-who-sent-us-this-wild-crimson-desert-video-next-month-it-could-be-you/",
+        "url": "https://www.techpowerup.com/350792/legendary-sega-game-titles-come-to-nvidias-rtx-spark-pc-platform",
         "affectedItems": []
       },
       {
-        "headline": "HWMonitor v1.65 Brings Back Hotspot Reading for NVIDIA RTX 50 Series",
+        "headline": "(PR) Phanteks Announces Enthoo Pro 2 Server Edition V2 and Enthoo Elite Server Cases",
         "source": "TechPowerUp",
-        "date": "2026-07-14",
+        "date": "2026-07-16",
         "impact": "bullish",
-        "url": "https://www.techpowerup.com/350755/hwmonitor-v1-65-brings-back-hotspot-reading-for-nvidia-rtx-50-series",
+        "url": "https://www.techpowerup.com/350799/phanteks-announces-enthoo-pro-2-server-edition-v2-and-enthoo-elite-server-cases",
         "affectedItems": []
       },
       {
-        "headline": "Valve Silently Discontinues Steam Deck LCD Spares at iFixit",
+        "headline": "(PR) AMD Appoints Alan Smith as Newest Corporate Fellow",
         "source": "TechPowerUp",
-        "date": "2026-07-14",
-        "impact": "neutral",
-        "url": "https://www.techpowerup.com/350758/valve-silently-discontinues-steam-deck-lcd-spares-at-ifixit",
+        "date": "2026-07-16",
+        "impact": "bearish",
+        "url": "https://www.techpowerup.com/350821/amd-appoints-alan-smith-as-newest-corporate-fellow",
         "affectedItems": []
       },
       {
-        "headline": "(PR) Dynabook Unveils Portege Z40L-P Copilot+ Mobile Workstation",
+        "headline": "TSMC's 2 nm Node Gains Momentum with Fourfold Increase in Tape-Outs",
         "source": "TechPowerUp",
-        "date": "2026-07-15",
+        "date": "2026-07-16",
         "impact": "bullish",
-        "url": "https://www.techpowerup.com/350771/dynabook-unveils-portege-z40l-p-copilot-mobile-workstation",
+        "url": "https://www.techpowerup.com/350827/tsmcs-2-nm-node-gains-momentum-with-fourfold-increase-in-tape-outs",
         "affectedItems": []
       },
       {
-        "headline": "NVIDIA Launches GeForce NOW in India",
+        "headline": "(PR) Onimusha: Way of the Sword Is Coming to GeForce NOW",
         "source": "TechPowerUp",
-        "date": "2026-07-15",
+        "date": "2026-07-16",
         "impact": "bullish",
-        "url": "https://www.techpowerup.com/350778/nvidia-launches-geforce-now-in-india",
+        "url": "https://www.techpowerup.com/350833/onimusha-way-of-the-sword-is-coming-to-geforce-now",
         "affectedItems": []
       }
     ]
@@ -304,12 +306,11 @@
       {
         "id": "i7-14700k",
         "name": "Intel Core i7-14700K 20-Core",
-        "price": 390.95,
-        "change": -0.3,
-        "confidence": 66,
+        "price": 390.3,
+        "change": -0.2,
+        "confidence": 64,
         "trend": "down",
         "history": [
-          408,
           407.5,
           406,
           405,
@@ -338,18 +339,18 @@
           390,
           389.5,
           389.99,
-          390.95
+          390.95,
+          390.3
         ]
       },
       {
         "id": "ryzen-7800x3d",
         "name": "AMD Ryzen 7 7800X3D 8-Core",
-        "price": 361.88,
-        "change": -1.1,
-        "confidence": 79,
+        "price": 356.1,
+        "change": -3,
+        "confidence": 71,
         "trend": "down",
         "history": [
-          346,
           345.5,
           347,
           348,
@@ -378,12 +379,21 @@
           368,
           368.5,
           369,
-          361.88
+          361.88,
+          356.1
         ]
       }
     ],
     "outlook": "AMD's Ryzen 7 7800X3D remains the top-selling gaming CPU, driving prices up due to sustained high demand and localized stock shortages. Intel 14th gen processors continue a downward trajectory as retailers clear inventories for Arrow Lake processors.",
     "news": [
+      {
+        "headline": " Zilog Z80 turns 50 as an open-source replacement heads to drop-in DIP40 silicon — iconic 8-bit CPU launched in July 1976 and was discontinued in 2024 ",
+        "source": "Tom's Hardware",
+        "date": "2026-07-19",
+        "impact": "bearish",
+        "url": "https://www.tomshardware.com/tech-industry/zilog-z80-turns-50-as-open-source-replacement-heads-for-drop-in-dip40-silicon",
+        "affectedItems": []
+      },
       {
         "headline": "Intel Shifts Majority of \"Nova Lake\" Production In-House Amid Yield Improvements",
         "source": "TechPowerUp",
@@ -415,14 +425,6 @@
         "impact": "bullish",
         "url": "https://www.techpowerup.com/350829/intel-and-google-cloud-collaborate-to-drive-intels-enterprise-ai-transformation",
         "affectedItems": []
-      },
-      {
-        "headline": " Intel Nova Lake leak points to Core Ultra Series 400 branding, staggered release next year — hotly anticipated flagship 52-core desktop CPU might not arrive until late 2027 ",
-        "source": "Tom's Hardware",
-        "date": "2026-07-17",
-        "impact": "bullish",
-        "url": "https://www.tomshardware.com/pc-components/cpus/intel-nova-lake-leak-points-to-core-ultra-series-400-branding-staggered-release-next-year-hotly-anticipated-flagship-52-core-desktop-cpu-might-not-arrive-until-late-2027",
-        "affectedItems": []
       }
     ]
   },
@@ -432,12 +434,11 @@
       {
         "id": "zephyrus-g14",
         "name": "ASUS ROG Zephyrus G14 (2026)",
-        "price": 1496.55,
-        "change": 0,
-        "confidence": 69,
+        "price": 1495.91,
+        "change": -0.2,
+        "confidence": 55,
         "trend": "down",
         "history": [
-          1455,
           1465,
           1470,
           1468,
@@ -466,18 +467,18 @@
           1499,
           1499.5,
           1499,
-          1496.55
+          1496.55,
+          1495.91
         ]
       },
       {
         "id": "macbook-air-m3",
         "name": "Apple MacBook Air 13\" M3 8GB/256GB",
-        "price": 999.8,
-        "change": 0.1,
-        "confidence": 66,
+        "price": 1002.76,
+        "change": 0.4,
+        "confidence": 57,
         "trend": "up",
         "history": [
-          1025,
           1020,
           1024,
           1019,
@@ -506,18 +507,18 @@
           999,
           999,
           999,
-          999.8
+          999.8,
+          1002.76
         ]
       },
       {
         "id": "legion-5-pro",
         "name": "Lenovo Legion 5 Pro 16\" AMD",
-        "price": 1264.79,
+        "price": 1265.63,
         "change": 1.4,
-        "confidence": 76,
+        "confidence": 62,
         "trend": "up",
         "history": [
-          1205,
           1215,
           1218,
           1215,
@@ -546,7 +547,8 @@
           1249,
           1249.5,
           1249.99,
-          1264.79
+          1264.79,
+          1265.63
         ]
       }
     ],
@@ -604,85 +606,87 @@
   },
   "globalNews": [
     {
-      "headline": " 60 fps is still the de facto minimum frame rate for half of PC Gamer readers, but more than 10% of you are dying on the 120 fps hill ",
-      "source": "PC Gamer",
-      "date": "2026-07-17",
-      "impact": "neutral",
-      "url": "https://www.pcgamer.com/hardware/60-fps-is-still-the-de-facto-minimum-frame-rate-for-half-of-pc-gamer-readers-but-more-than-10-percent-of-you-are-dying-on-the-120-fps-hill/",
-      "affectedItems": []
-    },
-    {
-      "headline": " How much RAM do you need for an 'ultimate gaming machine?' July in PC Gamer 10, 20, and 30 years ago ",
-      "source": "PC Gamer",
-      "date": "2026-07-17",
-      "impact": "neutral",
-      "url": "https://www.pcgamer.com/gaming-industry/how-much-ram-do-you-need-for-an-ultimate-gaming-machine-july-in-pc-gamer-10-20-and-30-years-ago/",
-      "affectedItems": []
-    },
-    {
-      "headline": " Retiring Valve programmer says 'at least one' of the studio's beloved game modes was made in secret to avoid pushback from peers ",
-      "source": "PC Gamer",
-      "date": "2026-07-17",
-      "impact": "neutral",
-      "url": "https://www.pcgamer.com/gaming-industry/retiring-valve-programmer-says-at-least-one-of-the-studios-beloved-game-modes-was-made-in-secret-to-avoid-pushback-from-peers/",
-      "affectedItems": []
-    },
-    {
-      "headline": " We just awarded $500 to the PC gamer who sent us this wild Crimson Desert video, and next month it could be you ",
-      "source": "PC Gamer",
-      "date": "2026-07-17",
-      "impact": "neutral",
-      "url": "https://www.pcgamer.com/games/we-just-awarded-usd500-to-the-pc-gamer-who-sent-us-this-wild-crimson-desert-video-next-month-it-could-be-you/",
-      "affectedItems": []
-    },
-    {
-      "headline": " Valve says there's no end in sight to the memory crisis, and prices are only going to increase: 'Honestly, it's still getting worse' ",
-      "source": "PC Gamer",
-      "date": "2026-07-18",
-      "impact": "bullish",
-      "url": "https://www.pcgamer.com/hardware/steam-machines/valve-says-theres-no-end-in-sight-to-the-memory-crisis-and-prices-are-only-going-to-increase-honestly-its-still-getting-worse/",
-      "affectedItems": []
-    },
-    {
-      "headline": "(PR) MSI Motherboards Deliver DDR5-8000+ Support for CXMT-Based Memory on Intel Platform",
+      "headline": "Samsung Texas Fab to Mass-Produce Tesla AI5 SoC on 2 nm Node",
       "source": "TechPowerUp",
       "date": "2026-07-14",
       "impact": "bullish",
-      "url": "https://www.techpowerup.com/350742/msi-motherboards-deliver-ddr5-8000-support-for-cxmt-based-memory-on-intel-platform",
+      "url": "https://www.techpowerup.com/350747/samsung-texas-fab-to-mass-produce-tesla-ai5-soc-on-2-nm-node",
       "affectedItems": [
         "ddr5-32gb"
       ]
     },
     {
-      "headline": "YMTC SSDs Ship With German Lenovo Laptops for the First Time",
-      "source": "TechPowerUp",
-      "date": "2026-07-14",
-      "impact": "bullish",
-      "url": "https://www.techpowerup.com/350515/ymtc-ssds-ship-with-german-lenovo-laptops-for-the-first-time",
-      "affectedItems": []
-    },
-    {
-      "headline": "Europe's Only Gallium-Oxide Semiconductor Maker Raises €2 Million Funding",
+      "headline": "Gears of War: E-Day Gets DLSS 4.5 at Launch",
       "source": "TechPowerUp",
       "date": "2026-07-14",
       "impact": "neutral",
-      "url": "https://www.techpowerup.com/350750/europes-only-gallium-oxide-semiconductor-maker-raises-eur-2-million-funding",
+      "url": "https://www.techpowerup.com/350756/gears-of-war-e-day-gets-dlss-4-5-at-launch",
       "affectedItems": []
     },
     {
-      "headline": "Intel Shifts Majority of \"Nova Lake\" Production In-House Amid Yield Improvements",
+      "headline": "KAMRUI July Deals: AK1PLUS and Pinova P1 Mini PCs from $230.84",
+      "source": "TechPowerUp",
+      "date": "2026-07-14",
+      "impact": "bearish",
+      "url": "https://www.techpowerup.com/350543/kamrui-july-deals-ak1plus-and-pinova-p1-mini-pcs-from-usd-230-84",
+      "affectedItems": [
+        "ddr4-16gb"
+      ]
+    },
+    {
+      "headline": "Warframe Tau Update: New Solar System, Enemies, and Warframes Coming in 2026",
+      "source": "TechPowerUp",
+      "date": "2026-07-14",
+      "impact": "bearish",
+      "url": "https://www.techpowerup.com/350761/warframe-tau-update-new-solar-system-enemies-and-warframes-coming-in-2026",
+      "affectedItems": []
+    },
+    {
+      "headline": "Slay the Spire 2 Dev Explains Why It Used \"A Bunch Of Garbage\" Art Instead of AI Placeholders",
       "source": "TechPowerUp",
       "date": "2026-07-14",
       "impact": "neutral",
-      "url": "https://www.techpowerup.com/350751/intel-shifts-majority-of-nova-lake-production-in-house-amid-yield-improvements",
+      "url": "https://www.techpowerup.com/350765/slay-the-spire-2-dev-explains-why-it-used-a-bunch-of-garbage-art-instead-of-ai-placeholders",
       "affectedItems": []
     },
     {
-      "headline": "(PR) Yunzii Launches M2 Dual 8K Custom Wireless Gaming Mouse",
+      "headline": "Steam Deck Scores High in Early Onimusha: Way of the Sword Benchmark",
       "source": "TechPowerUp",
-      "date": "2026-07-14",
+      "date": "2026-07-15",
       "impact": "bullish",
-      "url": "https://www.techpowerup.com/350752/yunzii-launches-m2-dual-8k-custom-wireless-gaming-mouse",
+      "url": "https://www.techpowerup.com/350764/steam-deck-scores-high-in-early-onimusha-way-of-the-sword-benchmark",
+      "affectedItems": []
+    },
+    {
+      "headline": "(PR) Palit Unveils the Return of the Classic GeForce RTX 3060 Infinity 2 OC Graphics Card",
+      "source": "TechPowerUp",
+      "date": "2026-07-15",
+      "impact": "bearish",
+      "url": "https://www.techpowerup.com/350774/palit-unveils-the-return-of-the-classic-geforce-rtx-3060-infinity-2-oc-graphics-card",
+      "affectedItems": []
+    },
+    {
+      "headline": "Samsung Launches 990 QLC DRAMless SSD, $270 for 1TB, $530 for 2TB",
+      "source": "TechPowerUp",
+      "date": "2026-07-15",
+      "impact": "bullish",
+      "url": "https://www.techpowerup.com/350777/samsung-launches-990-qlc-dramless-ssd-usd-270-for-1tb-usd-530-for-2tb",
+      "affectedItems": []
+    },
+    {
+      "headline": "(PR) System76 Debuts Adder Pro Laptop: Features 2K OLED Display, Core Ultra 7, and RTX 50 Series",
+      "source": "TechPowerUp",
+      "date": "2026-07-15",
+      "impact": "bullish",
+      "url": "https://www.techpowerup.com/350784/system76-debuts-adder-pro-laptop-features-2k-oled-display-core-ultra-7-and-rtx-50-series",
+      "affectedItems": []
+    },
+    {
+      "headline": "(PR) Gainward Announces the GeForce RTX 3060 Python II OC Graphics Cards",
+      "source": "TechPowerUp",
+      "date": "2026-07-15",
+      "impact": "bullish",
+      "url": "https://www.techpowerup.com/350793/gainward-announces-the-geforce-rtx-3060-python-ii-oc-graphics-cards",
       "affectedItems": []
     }
   ]
