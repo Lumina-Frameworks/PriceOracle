@@ -1,0 +1,31 @@
+name: Update Hardware Data
+
+on:
+  schedule:
+    - cron: '0 9 * * *'  # Every day at 9am UTC (5pm MYT)
+  workflow_dispatch:  # Manual trigger
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Run scraper
+        run: node scraper.js
+      
+      - name: Commit changes
+        run: |
+          git config user.name "Arefa AI"
+          git config user.email "arefa@luminaframeworks.com"
+          git add data.json
+          git commit -m "📊 Update hardware data $(date +'%Y-%m-%d')" || echo "No changes"
+          git push
