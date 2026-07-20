@@ -1,0 +1,25 @@
+{
+  "name": "price-oracle",
+  "version": "1.0.0",
+  "description": "PriceOracle - AI-powered hardware price prediction website for RAM, GPU, and CPU",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "scrape": "node scraper.js"
+  },
+  "keywords": [
+    "hardware",
+    "price-prediction",
+    "fintech"
+  ],
+  "author": "Arefa",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "rss-parser": "^3.13.0"
+  }
+}

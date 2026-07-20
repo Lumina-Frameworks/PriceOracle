@@ -1,0 +1,689 @@
+{
+  "lastUpdated": "2026-07-20T05:31:43.959Z",
+  "ram": {
+    "displayName": "Memory (RAM)",
+    "items": [
+      {
+        "id": "ddr4-16gb",
+        "name": "DDR4 16GB (2x8GB) 3200MHz",
+        "price": 45.23,
+        "change": 0.5,
+        "confidence": 71,
+        "trend": "up",
+        "history": [
+          48,
+          47.9,
+          47.5,
+          47,
+          47.2,
+          46.8,
+          46.5,
+          46.2,
+          46,
+          45.8,
+          45.5,
+          45.2,
+          45,
+          45.3,
+          45.1,
+          44.9,
+          44.8,
+          44.5,
+          44.2,
+          44,
+          44.3,
+          44.6,
+          44.8,
+          45,
+          45.2,
+          45.5,
+          45.7,
+          45.85,
+          45.99,
+          45.23
+        ]
+      },
+      {
+        "id": "ddr5-32gb",
+        "name": "DDR5 32GB (2x16GB) 6000MHz",
+        "price": 100.27,
+        "change": 1.7,
+        "confidence": 70,
+        "trend": "up",
+        "history": [
+          104.5,
+          104,
+          103.8,
+          103.2,
+          102.9,
+          102.5,
+          102,
+          101.8,
+          101.5,
+          101.2,
+          101,
+          100.8,
+          100.5,
+          100.2,
+          99.9,
+          99.8,
+          99.5,
+          99.2,
+          99,
+          99.2,
+          99,
+          98.8,
+          98.7,
+          98.6,
+          98.8,
+          98.9,
+          98.7,
+          98.6,
+          98.5,
+          100.27
+        ]
+      }
+    ],
+    "outlook": "Slight upward pressure on older DDR4 modules due to reduced production capacity as manufacturers shift focus to DDR5. DDR5 prices are stabilizing as yields improve and supply exceeds mainstream desktop demands.",
+    "news": [
+      {
+        "headline": " 60 fps is still the de facto minimum frame rate for half of PC Gamer readers, but more than 10% of you are dying on the 120 fps hill ",
+        "source": "PC Gamer",
+        "date": "2026-07-17",
+        "impact": "neutral",
+        "url": "https://www.pcgamer.com/hardware/60-fps-is-still-the-de-facto-minimum-frame-rate-for-half-of-pc-gamer-readers-but-more-than-10-percent-of-you-are-dying-on-the-120-fps-hill/",
+        "affectedItems": []
+      },
+      {
+        "headline": " How much RAM do you need for an 'ultimate gaming machine?' July in PC Gamer 10, 20, and 30 years ago ",
+        "source": "PC Gamer",
+        "date": "2026-07-17",
+        "impact": "neutral",
+        "url": "https://www.pcgamer.com/gaming-industry/how-much-ram-do-you-need-for-an-ultimate-gaming-machine-july-in-pc-gamer-10-20-and-30-years-ago/",
+        "affectedItems": []
+      },
+      {
+        "headline": " Retiring Valve programmer says 'at least one' of the studio's beloved game modes was made in secret to avoid pushback from peers ",
+        "source": "PC Gamer",
+        "date": "2026-07-17",
+        "impact": "neutral",
+        "url": "https://www.pcgamer.com/gaming-industry/retiring-valve-programmer-says-at-least-one-of-the-studios-beloved-game-modes-was-made-in-secret-to-avoid-pushback-from-peers/",
+        "affectedItems": []
+      },
+      {
+        "headline": " Valve says there's no end in sight to the memory crisis, and prices are only going to increase: 'Honestly, it's still getting worse' ",
+        "source": "PC Gamer",
+        "date": "2026-07-18",
+        "impact": "bullish",
+        "url": "https://www.pcgamer.com/hardware/steam-machines/valve-says-theres-no-end-in-sight-to-the-memory-crisis-and-prices-are-only-going-to-increase-honestly-its-still-getting-worse/",
+        "affectedItems": []
+      },
+      {
+        "headline": "(PR) MSI Motherboards Deliver DDR5-8000+ Support for CXMT-Based Memory on Intel Platform",
+        "source": "TechPowerUp",
+        "date": "2026-07-14",
+        "impact": "bullish",
+        "url": "https://www.techpowerup.com/350742/msi-motherboards-deliver-ddr5-8000-support-for-cxmt-based-memory-on-intel-platform",
+        "affectedItems": [
+          "ddr5-32gb"
+        ]
+      }
+    ]
+  },
+  "gpu": {
+    "displayName": "Graphics Cards (GPU)",
+    "items": [
+      {
+        "id": "rtx-4070",
+        "name": "NVIDIA GeForce RTX 4070 12GB",
+        "price": 549.53,
+        "change": 0.5,
+        "confidence": 69,
+        "trend": "up",
+        "history": [
+          521.5,
+          520,
+          522,
+          525,
+          524.5,
+          527,
+          528,
+          526.5,
+          530,
+          532,
+          531,
+          535,
+          536.5,
+          535,
+          538,
+          540,
+          539,
+          542,
+          544.5,
+          543,
+          545,
+          546,
+          545.5,
+          547,
+          548.5,
+          547.9,
+          549,
+          549.5,
+          549.99,
+          549.53
+        ]
+      },
+      {
+        "id": "rx-7800-xt",
+        "name": "AMD Radeon RX 7800 XT 16GB",
+        "price": 498.68,
+        "change": 0,
+        "confidence": 65,
+        "trend": "up",
+        "history": [
+          514,
+          513.5,
+          512,
+          510,
+          511,
+          509,
+          508.5,
+          508,
+          506,
+          505,
+          505.5,
+          504,
+          503,
+          503.5,
+          502,
+          501,
+          501.5,
+          500,
+          499.5,
+          499,
+          500,
+          499.5,
+          499,
+          498.5,
+          499,
+          499.5,
+          499.2,
+          499.1,
+          499,
+          498.68
+        ]
+      },
+      {
+        "id": "rtx-4080-super",
+        "name": "NVIDIA GeForce RTX 4080 Super 16GB",
+        "price": 999.48,
+        "change": 0,
+        "confidence": 56,
+        "trend": "up",
+        "history": [
+          990,
+          988.5,
+          991,
+          992,
+          991.5,
+          993,
+          994,
+          993.5,
+          995,
+          996,
+          995.5,
+          997,
+          998,
+          997.5,
+          999,
+          998,
+          999,
+          1000,
+          999.5,
+          999,
+          998.5,
+          997,
+          998,
+          999,
+          998.5,
+          999,
+          999.5,
+          999.2,
+          999,
+          999.48
+        ]
+      }
+    ],
+    "outlook": "Mid-range GPU prices remain sticky, with NVIDIA maintaining solid price control. AMD is engaging in aggressive price corrections on the RDNA3 lineup ahead of next-generation platform releases, providing excellent price-to-performance for value seekers.",
+    "news": [
+      {
+        "headline": " We just awarded $500 to the PC gamer who sent us this wild Crimson Desert video, and next month it could be you ",
+        "source": "PC Gamer",
+        "date": "2026-07-17",
+        "impact": "neutral",
+        "url": "https://www.pcgamer.com/games/we-just-awarded-usd500-to-the-pc-gamer-who-sent-us-this-wild-crimson-desert-video-next-month-it-could-be-you/",
+        "affectedItems": []
+      },
+      {
+        "headline": "HWMonitor v1.65 Brings Back Hotspot Reading for NVIDIA RTX 50 Series",
+        "source": "TechPowerUp",
+        "date": "2026-07-14",
+        "impact": "bullish",
+        "url": "https://www.techpowerup.com/350755/hwmonitor-v1-65-brings-back-hotspot-reading-for-nvidia-rtx-50-series",
+        "affectedItems": []
+      },
+      {
+        "headline": "Valve Silently Discontinues Steam Deck LCD Spares at iFixit",
+        "source": "TechPowerUp",
+        "date": "2026-07-14",
+        "impact": "neutral",
+        "url": "https://www.techpowerup.com/350758/valve-silently-discontinues-steam-deck-lcd-spares-at-ifixit",
+        "affectedItems": []
+      },
+      {
+        "headline": "(PR) Dynabook Unveils Portege Z40L-P Copilot+ Mobile Workstation",
+        "source": "TechPowerUp",
+        "date": "2026-07-15",
+        "impact": "bullish",
+        "url": "https://www.techpowerup.com/350771/dynabook-unveils-portege-z40l-p-copilot-mobile-workstation",
+        "affectedItems": []
+      },
+      {
+        "headline": "NVIDIA Launches GeForce NOW in India",
+        "source": "TechPowerUp",
+        "date": "2026-07-15",
+        "impact": "bullish",
+        "url": "https://www.techpowerup.com/350778/nvidia-launches-geforce-now-in-india",
+        "affectedItems": []
+      }
+    ]
+  },
+  "cpu": {
+    "displayName": "Processors (CPU)",
+    "items": [
+      {
+        "id": "i7-14700k",
+        "name": "Intel Core i7-14700K 20-Core",
+        "price": 390.95,
+        "change": -0.3,
+        "confidence": 66,
+        "trend": "down",
+        "history": [
+          408,
+          407.5,
+          406,
+          405,
+          405.5,
+          404,
+          403,
+          403.5,
+          402,
+          401,
+          401.5,
+          400,
+          399.5,
+          399,
+          398,
+          397,
+          397.5,
+          396,
+          395,
+          394.5,
+          394,
+          393.5,
+          393,
+          392,
+          391,
+          390.5,
+          390,
+          389.5,
+          389.99,
+          390.95
+        ]
+      },
+      {
+        "id": "ryzen-7800x3d",
+        "name": "AMD Ryzen 7 7800X3D 8-Core",
+        "price": 361.88,
+        "change": -1.1,
+        "confidence": 79,
+        "trend": "down",
+        "history": [
+          346,
+          345.5,
+          347,
+          348,
+          349.5,
+          350,
+          352,
+          351.5,
+          353,
+          355,
+          354.5,
+          356,
+          357,
+          356.5,
+          358,
+          360,
+          359.5,
+          361,
+          362.5,
+          362,
+          364,
+          365,
+          364.5,
+          366,
+          367,
+          366.5,
+          368,
+          368.5,
+          369,
+          361.88
+        ]
+      }
+    ],
+    "outlook": "AMD's Ryzen 7 7800X3D remains the top-selling gaming CPU, driving prices up due to sustained high demand and localized stock shortages. Intel 14th gen processors continue a downward trajectory as retailers clear inventories for Arrow Lake processors.",
+    "news": [
+      {
+        "headline": "Intel Shifts Majority of \"Nova Lake\" Production In-House Amid Yield Improvements",
+        "source": "TechPowerUp",
+        "date": "2026-07-14",
+        "impact": "neutral",
+        "url": "https://www.techpowerup.com/350751/intel-shifts-majority-of-nova-lake-production-in-house-amid-yield-improvements",
+        "affectedItems": []
+      },
+      {
+        "headline": "(PR) ASML High NA EUV Technology Enters High-Volume Manufacturing With Intel 18A",
+        "source": "TechPowerUp",
+        "date": "2026-07-15",
+        "impact": "bullish",
+        "url": "https://www.techpowerup.com/350772/asml-high-na-euv-technology-enters-high-volume-manufacturing-with-intel-18a",
+        "affectedItems": []
+      },
+      {
+        "headline": "(PR) Alphacool Unveils New CPU+VRM Monoblocks for MSI, GIGABYTE, and ASUS",
+        "source": "TechPowerUp",
+        "date": "2026-07-16",
+        "impact": "bullish",
+        "url": "https://www.techpowerup.com/350809/alphacool-unveils-new-cpu-vrm-monoblocks-for-msi-gigabyte-and-asus",
+        "affectedItems": []
+      },
+      {
+        "headline": "(PR) Intel and Google Cloud Collaborate to Drive Intel's Enterprise AI Transformation",
+        "source": "TechPowerUp",
+        "date": "2026-07-16",
+        "impact": "bullish",
+        "url": "https://www.techpowerup.com/350829/intel-and-google-cloud-collaborate-to-drive-intels-enterprise-ai-transformation",
+        "affectedItems": []
+      },
+      {
+        "headline": " Intel Nova Lake leak points to Core Ultra Series 400 branding, staggered release next year — hotly anticipated flagship 52-core desktop CPU might not arrive until late 2027 ",
+        "source": "Tom's Hardware",
+        "date": "2026-07-17",
+        "impact": "bullish",
+        "url": "https://www.tomshardware.com/pc-components/cpus/intel-nova-lake-leak-points-to-core-ultra-series-400-branding-staggered-release-next-year-hotly-anticipated-flagship-52-core-desktop-cpu-might-not-arrive-until-late-2027",
+        "affectedItems": []
+      }
+    ]
+  },
+  "laptop": {
+    "displayName": "Laptops",
+    "items": [
+      {
+        "id": "zephyrus-g14",
+        "name": "ASUS ROG Zephyrus G14 (2026)",
+        "price": 1496.55,
+        "change": 0,
+        "confidence": 69,
+        "trend": "down",
+        "history": [
+          1455,
+          1465,
+          1470,
+          1468,
+          1472,
+          1475,
+          1470,
+          1474,
+          1478,
+          1480,
+          1476,
+          1482,
+          1485,
+          1483,
+          1488,
+          1490,
+          1489,
+          1492,
+          1495,
+          1493,
+          1495,
+          1496,
+          1495.5,
+          1497,
+          1498.5,
+          1497.9,
+          1499,
+          1499.5,
+          1499,
+          1496.55
+        ]
+      },
+      {
+        "id": "macbook-air-m3",
+        "name": "Apple MacBook Air 13\" M3 8GB/256GB",
+        "price": 999.8,
+        "change": 0.1,
+        "confidence": 66,
+        "trend": "up",
+        "history": [
+          1025,
+          1020,
+          1024,
+          1019,
+          1018,
+          1015,
+          1012,
+          1015,
+          1010,
+          1008,
+          1009,
+          1005,
+          1003,
+          1005,
+          1002,
+          999,
+          1000,
+          998,
+          999,
+          999,
+          997,
+          998,
+          999,
+          999,
+          999,
+          999,
+          999,
+          999,
+          999,
+          999.8
+        ]
+      },
+      {
+        "id": "legion-5-pro",
+        "name": "Lenovo Legion 5 Pro 16\" AMD",
+        "price": 1264.79,
+        "change": 1.4,
+        "confidence": 76,
+        "trend": "up",
+        "history": [
+          1205,
+          1215,
+          1218,
+          1215,
+          1220,
+          1222,
+          1218,
+          1224,
+          1228,
+          1230,
+          1226,
+          1232,
+          1235,
+          1233,
+          1238,
+          1240,
+          1239,
+          1242,
+          1245,
+          1243,
+          1245,
+          1246,
+          1245.5,
+          1247,
+          1248.5,
+          1247.9,
+          1249,
+          1249.5,
+          1249.99,
+          1264.79
+        ]
+      }
+    ],
+    "outlook": "Laptop prices are experiencing polarized trends. Premium gaming laptops see price increases driven by high-power GPU configurations. Ultra-thin consumer notebooks face price cuts as retailers clear stock for upcoming Intel Lunar Lake and AMD Zen 5 mobile architectures.",
+    "news": [
+      {
+        "headline": "Lenovo to Power Esports World Cup 2026 as a Founding Partner",
+        "source": "TechPowerUp",
+        "date": "2026-07-15",
+        "impact": "bullish",
+        "url": "https://www.techpowerup.com/350786/lenovo-to-power-esports-world-cup-2026-as-a-founding-partner",
+        "affectedItems": [
+          "legion-5-pro"
+        ]
+      },
+      {
+        "headline": "(PR) Lenovo Launches Legion R9000P Featuring World's First Inkjet-printed OLED Display from TCL CSOT",
+        "source": "TechPowerUp",
+        "date": "2026-07-16",
+        "impact": "bullish",
+        "url": "https://www.techpowerup.com/350822/lenovo-launches-legion-r9000p-featuring-worlds-first-inkjet-printed-oled-display-from-tcl-csot",
+        "affectedItems": [
+          "legion-5-pro"
+        ]
+      },
+      {
+        "headline": " Lenovo announces world's first laptop with inkjet-printed OLED — the Legion R9000P is equipped with a 240 Hz IJP panel from TCL CSOT ",
+        "source": "Tom's Hardware",
+        "date": "2026-07-16",
+        "impact": "neutral",
+        "url": "https://www.tomshardware.com/monitors/lenovo-announces-worlds-first-laptop-with-inkjet-printed-oled-the-legion-r9000p-is-equipped-with-a-240-hz-ijp-panel-from-tcl-csot",
+        "affectedItems": [
+          "legion-5-pro"
+        ]
+      },
+      {
+        "headline": " Best Back to School tech deals on laptops and essential tech — save on new semester essentials now ",
+        "source": "Tom's Hardware",
+        "date": "2026-07-17",
+        "impact": "neutral",
+        "url": "https://www.tomshardware.com/gift-guides-seasonal-sales/best-back-to-school-tech-deals-on-laptops-and-essential-tech-save-on-new-semester-essentials-now",
+        "affectedItems": []
+      },
+      {
+        "headline": "ASUS Zephyrus G14 Tops Gaming Laptop Sales Chart for Q2",
+        "source": "PC Gamer",
+        "date": "2026-07-16",
+        "impact": "bullish",
+        "url": "https://www.pcgamer.com/",
+        "affectedItems": [
+          "zephyrus-g14"
+        ]
+      }
+    ]
+  },
+  "globalNews": [
+    {
+      "headline": " 60 fps is still the de facto minimum frame rate for half of PC Gamer readers, but more than 10% of you are dying on the 120 fps hill ",
+      "source": "PC Gamer",
+      "date": "2026-07-17",
+      "impact": "neutral",
+      "url": "https://www.pcgamer.com/hardware/60-fps-is-still-the-de-facto-minimum-frame-rate-for-half-of-pc-gamer-readers-but-more-than-10-percent-of-you-are-dying-on-the-120-fps-hill/",
+      "affectedItems": []
+    },
+    {
+      "headline": " How much RAM do you need for an 'ultimate gaming machine?' July in PC Gamer 10, 20, and 30 years ago ",
+      "source": "PC Gamer",
+      "date": "2026-07-17",
+      "impact": "neutral",
+      "url": "https://www.pcgamer.com/gaming-industry/how-much-ram-do-you-need-for-an-ultimate-gaming-machine-july-in-pc-gamer-10-20-and-30-years-ago/",
+      "affectedItems": []
+    },
+    {
+      "headline": " Retiring Valve programmer says 'at least one' of the studio's beloved game modes was made in secret to avoid pushback from peers ",
+      "source": "PC Gamer",
+      "date": "2026-07-17",
+      "impact": "neutral",
+      "url": "https://www.pcgamer.com/gaming-industry/retiring-valve-programmer-says-at-least-one-of-the-studios-beloved-game-modes-was-made-in-secret-to-avoid-pushback-from-peers/",
+      "affectedItems": []
+    },
+    {
+      "headline": " We just awarded $500 to the PC gamer who sent us this wild Crimson Desert video, and next month it could be you ",
+      "source": "PC Gamer",
+      "date": "2026-07-17",
+      "impact": "neutral",
+      "url": "https://www.pcgamer.com/games/we-just-awarded-usd500-to-the-pc-gamer-who-sent-us-this-wild-crimson-desert-video-next-month-it-could-be-you/",
+      "affectedItems": []
+    },
+    {
+      "headline": " Valve says there's no end in sight to the memory crisis, and prices are only going to increase: 'Honestly, it's still getting worse' ",
+      "source": "PC Gamer",
+      "date": "2026-07-18",
+      "impact": "bullish",
+      "url": "https://www.pcgamer.com/hardware/steam-machines/valve-says-theres-no-end-in-sight-to-the-memory-crisis-and-prices-are-only-going-to-increase-honestly-its-still-getting-worse/",
+      "affectedItems": []
+    },
+    {
+      "headline": "(PR) MSI Motherboards Deliver DDR5-8000+ Support for CXMT-Based Memory on Intel Platform",
+      "source": "TechPowerUp",
+      "date": "2026-07-14",
+      "impact": "bullish",
+      "url": "https://www.techpowerup.com/350742/msi-motherboards-deliver-ddr5-8000-support-for-cxmt-based-memory-on-intel-platform",
+      "affectedItems": [
+        "ddr5-32gb"
+      ]
+    },
+    {
+      "headline": "YMTC SSDs Ship With German Lenovo Laptops for the First Time",
+      "source": "TechPowerUp",
+      "date": "2026-07-14",
+      "impact": "bullish",
+      "url": "https://www.techpowerup.com/350515/ymtc-ssds-ship-with-german-lenovo-laptops-for-the-first-time",
+      "affectedItems": []
+    },
+    {
+      "headline": "Europe's Only Gallium-Oxide Semiconductor Maker Raises €2 Million Funding",
+      "source": "TechPowerUp",
+      "date": "2026-07-14",
+      "impact": "neutral",
+      "url": "https://www.techpowerup.com/350750/europes-only-gallium-oxide-semiconductor-maker-raises-eur-2-million-funding",
+      "affectedItems": []
+    },
+    {
+      "headline": "Intel Shifts Majority of \"Nova Lake\" Production In-House Amid Yield Improvements",
+      "source": "TechPowerUp",
+      "date": "2026-07-14",
+      "impact": "neutral",
+      "url": "https://www.techpowerup.com/350751/intel-shifts-majority-of-nova-lake-production-in-house-amid-yield-improvements",
+      "affectedItems": []
+    },
+    {
+      "headline": "(PR) Yunzii Launches M2 Dual 8K Custom Wireless Gaming Mouse",
+      "source": "TechPowerUp",
+      "date": "2026-07-14",
+      "impact": "bullish",
+      "url": "https://www.techpowerup.com/350752/yunzii-launches-m2-dual-8k-custom-wireless-gaming-mouse",
+      "affectedItems": []
+    }
+  ]
+}

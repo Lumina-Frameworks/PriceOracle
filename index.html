@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PriceOracle - AI-powered hardware price prediction website for RAM, GPU, and CPU. Track prices, analyze trends, and browse recent tech news.">
+    <meta name="keywords" content="hardware, price predictor, GPU prices, CPU prices, RAM prices, PriceOracle, hardware watch">
+    <title>PriceOracle - Hardware Price Predictor & Market Analytics</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Overlay -->
+    <div id="loader" class="loader-overlay">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                    <polyline points="2 17 12 22 22 17"></polyline>
+                    <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+                <span>PriceOracle</span>
+            </div>
+            <div class="loader-bar-container">
+                <div class="loader-bar"></div>
+            </div>
+            <p class="loader-text">Initializing predictive models...</p>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="#/dashboard" class="logo">
+                <svg class="logo-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m12 3-1.912 5.886a1 1 0 0 1-.95.69H2.946l4.993 3.628a1 1 0 0 1 .363 1.117L6.4 20.217l4.993-3.628a1 1 0 0 1 1.17 0l4.993 3.628-1.902-5.886a1 1 0 0 1 .363-1.117l4.993-3.628h-6.192a1 1 0 0 1-.95-.69L12 3Z"/>
+                </svg>
+                <span class="logo-text">Price<span class="accent-text">Oracle</span></span>
+            </a>
+            
+            <nav class="nav-menu">
+                <a href="#/dashboard" class="nav-link" id="nav-dashboard">Dashboard</a>
+                <a href="#/analytics" class="nav-link" id="nav-analytics">Analytics</a>
+                <a href="#/news" class="nav-link" id="nav-news">Market News</a>
+                <a href="#/about" class="nav-link" id="nav-about">About</a>
+            </nav>
+
+            <div class="header-actions">
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark/light theme">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2v2"></path>
+                        <path d="M12 20v2"></path>
+                        <path d="m4.93 4.93 1.41 1.41"></path>
+                        <path d="m17.66 17.66 1.41 1.41"></path>
+                        <path d="M2 12h2"></path>
+                        <path d="M20 12h2"></path>
+                        <path d="m6.34 17.66-1.41 1.41"></path>
+                        <path d="m19.07 4.93-1.41 1.41"></path>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Global Hero section displayed at top of site -->
+    <section class="hero-section">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="container hero-container">
+            <div class="hero-badge">
+                <span class="pulse-indicator"></span>
+                <span>AI Forecasting Engine Active</span>
+            </div>
+            <h1 class="hero-title">Algorithmic Price Forecasting Core</h1>
+            <p class="hero-subtitle">Neural forecasting models & predictive market intelligence for PC hardware & laptops</p>
+            
+            <!-- Floating Interactive Component Canvas -->
+            <div class="hero-particle-widget">
+                <canvas id="particle-canvas" width="450" height="450"></canvas>
+                <div class="widget-label-wrap">
+                    <span id="widget-active-label" class="widget-label">CPU ACTIVE FORECAST</span>
+                    <span class="widget-hint">Click diagram to morph and analyze components</span>
+                </div>
+            </div>
+            
+            <div class="hero-meta-grid">
+                <div class="meta-card">
+                    <div class="meta-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <div class="meta-info">
+                        <span class="meta-label">Last Database Sync</span>
+                        <span id="live-clock" class="meta-value">Syncing time...</span>
+                    </div>
+                </div>
+                
+                <div class="meta-card">
+                    <div class="meta-icon accent-glow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.4 5.4 0 0 0-7.65 0C1.46 6.7 1.33 10.28 4 13l8 8 8-8c2.67-2.72 2.54-6.3.42-8.42z"></path>
+                        </svg>
+                    </div>
+                    <div class="meta-info">
+                        <span class="meta-label">Accuracy & Tracked Items</span>
+                        <span id="global-stats" class="meta-value">10 items tracked | 89.4% accuracy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Multi-page Views -->
+    <!-- 1. DASHBOARD PAGE -->
+    <div id="page-dashboard" class="page-view">
+        <main class="dashboard-section">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <h2 class="section-title">Market Dashboard</h2>
+                        <p class="section-desc">Current prices, projected 7-day changes, and prediction model confidence metrics</p>
+                    </div>
+                </div>
+                
+                <!-- 4-Column Grid representing RAM, GPU, CPU, Laptop -->
+                <div id="dashboard-grid" class="dashboard-grid">
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                </div>
+
+                <!-- Category Index Overview -->
+                <div class="category-index-section">
+                    <div class="section-header">
+                        <div>
+                            <h3 class="index-section-title">Category Price Indexes</h3>
+                            <p class="section-desc">Aggregate 30-day index calculations representing baseline valuations</p>
+                        </div>
+                    </div>
+                    <div class="index-charts-grid">
+                        <div id="ram-index-card" class="index-chart-card">
+                            <div class="index-card-header">
+                                <div class="index-info-wrap">
+                                    <span class="index-label">RAM Price Index</span>
+                                    <h4 id="ram-index-val" class="index-value">--</h4>
+                                </div>
+                                <span id="ram-index-change" class="index-change">--</span>
+                            </div>
+                            <div id="ram-index-chart" class="index-chart-wrapper">
+                                <div class="chart-skeleton"></div>
+                            </div>
+                        </div>
+                        <div id="gpu-index-card" class="index-chart-card">
+                            <div class="index-card-header">
+                                <div class="index-info-wrap">
+                                    <span class="index-label">GPU Price Index</span>
+                                    <h4 id="gpu-index-val" class="index-value">--</h4>
+                                </div>
+                                <span id="gpu-index-change" class="index-change">--</span>
+                            </div>
+                            <div id="gpu-index-chart" class="index-chart-wrapper">
+                                <div class="chart-skeleton"></div>
+                            </div>
+                        </div>
+                        <div id="cpu-index-card" class="index-chart-card">
+                            <div class="index-card-header">
+                                <div class="index-info-wrap">
+                                    <span class="index-label">CPU Price Index</span>
+                                    <h4 id="cpu-index-val" class="index-value">--</h4>
+                                </div>
+                                <span id="cpu-index-change" class="index-change">--</span>
+                            </div>
+                            <div id="cpu-index-chart" class="index-chart-wrapper">
+                                <div class="chart-skeleton"></div>
+                            </div>
+                        </div>
+                        <div id="laptop-index-card" class="index-chart-card">
+                            <div class="index-card-header">
+                                <div class="index-info-wrap">
+                                    <span class="index-label">Laptop Price Index</span>
+                                    <h4 id="laptop-index-val" class="index-value">--</h4>
+                                </div>
+                                <span id="laptop-index-change" class="index-change">--</span>
+                            </div>
+                            <div id="laptop-index-chart" class="index-chart-wrapper">
+                                <div class="chart-skeleton"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- 2. ANALYTICS PAGE -->
+    <div id="page-analytics" class="page-view">
+        <section class="analysis-section">
+            <div class="glow-orb orb-3"></div>
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <h2 class="section-title">Predictive Analytics</h2>
+                        <p class="section-desc">Historical 30-day trends, model commentary, and dedicated category news feed</p>
+                    </div>
+                </div>
+
+                <!-- Tab Selectors for Categories -->
+                <div class="analysis-controls">
+                    <div class="tab-selectors" id="category-tabs">
+                        <button class="tab-btn active" data-category="ram">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                                <line x1="6" y1="6" x2="6" y2="6.01"></line>
+                                <line x1="12" y1="6" x2="12" y2="6.01"></line>
+                                <line x1="18" y1="6" x2="18" y2="6.01"></line>
+                                <line x1="6" y1="18" x2="6" y2="18.01"></line>
+                                <line x1="12" y1="18" x2="12" y2="18.01"></line>
+                                <line x1="18" y1="18" x2="18" y2="18.01"></line>
+                            </svg>
+                            RAM
+                        </button>
+                        <button class="tab-btn" data-category="gpu">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                            GPU
+                        </button>
+                        <button class="tab-btn" data-category="cpu">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                                <rect x="9" y="9" width="6" height="6"></rect>
+                                <line x1="9" y1="1" x2="9" y2="4"></line>
+                                <line x1="15" y1="1" x2="15" y2="4"></line>
+                                <line x1="9" y1="20" x2="9" y2="23"></line>
+                                <line x1="15" y1="20" x2="15" y2="23"></line>
+                                <line x1="20" y1="9" x2="23" y2="9"></line>
+                                <line x1="20" y1="15" x2="23" y2="15"></line>
+                                <line x1="1" y1="9" x2="4" y2="9"></line>
+                                <line x1="1" y1="15" x2="4" y2="15"></line>
+                            </svg>
+                            CPU
+                        </button>
+                        <button class="tab-btn" data-category="laptop">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="12" rx="2"></rect>
+                                <path d="M2 20h20"></path>
+                                <path d="M5 16h14"></path>
+                            </svg>
+                            LAPTOP
+                        </button>
+                    </div>
+
+                    <!-- Select Dropdown for specific Hardware Model -->
+                    <div class="model-select-wrapper">
+                        <label for="item-select" class="sr-only">Select Hardware Model</label>
+                        <select id="item-select" class="custom-select">
+                            <!-- Dynamic items depending on tab -->
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Detail Grid Layout -->
+                <div class="analysis-grid">
+                    <!-- Large Price Chart Card -->
+                    <div class="analysis-card chart-container">
+                        <div class="chart-header">
+                            <div class="chart-title-wrap">
+                                <h3 id="chart-item-title" class="chart-title">Hardware Item</h3>
+                                <span id="chart-item-trend" class="trend-badge">Loading...</span>
+                                <span id="chart-item-confidence" class="confidence-badge">Loading...</span>
+                            </div>
+                            <div class="chart-timeframe">30-Day Trend History</div>
+                        </div>
+                        <!-- Custom SVG Line Chart container -->
+                        <div id="price-chart-wrapper" class="chart-wrapper">
+                            <div class="chart-skeleton"></div>
+                        </div>
+                    </div>
+
+                    <!-- Insights and News Panel -->
+                    <div class="analysis-side-panel">
+                        <!-- Outlook Card -->
+                        <div class="analysis-card outlook-card">
+                            <h3 class="panel-title">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="title-icon">
+                                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                                </svg>
+                                Market Outlook
+                            </h3>
+                            <p id="category-outlook" class="outlook-text">Hydrating model data forecasts...</p>
+                        </div>
+
+                        <!-- Category News Headlines -->
+                        <div class="analysis-card category-news-card">
+                            <h3 class="panel-title">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="title-icon">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                Component Specific Intelligence
+                            </h3>
+                            <div id="category-news-list" class="mini-news-list">
+                                <!-- Injected news articles affecting selected item -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 3. MARKET NEWS PAGE -->
+    <div id="page-news" class="page-view">
+        <section class="news-section">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <h2 class="section-title">Market Intelligence Feed</h2>
+                        <p class="section-desc">Latest hardware price headlines scraped daily from Tom's Hardware, TechPowerUp, and PC Gamer</p>
+                    </div>
+                </div>
+
+                <div id="news-feed-container" class="news-feed-container">
+                    <div class="skeleton-news-row"></div>
+                    <div class="skeleton-news-row"></div>
+                    <div class="skeleton-news-row"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 4. ABOUT PAGE -->
+    <div id="page-about" class="page-view">
+        <section class="about-section">
+            <div class="glow-orb orb-4"></div>
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content">
+                        <h2 class="about-title">Predictive Intelligence Infrastructure</h2>
+                        <p class="about-paragraph">
+                            PriceOracle is a state-of-the-art predictive analytics suite focusing on consumer computing hardware components and laptop markets. 
+                            We aggregate price indexes and news sentiment maps daily to model market dynamics.
+                        </p>
+                        <p class="about-paragraph">
+                            Our scraping system aggregates news feeds from major technology resources every 24 hours. The keywords found inside these headlines trigger sentiment classifications that simulate retail price fluctuations—offering a highly structured visual dashboard of hardware price action.
+                        </p>
+                    </div>
+                    
+                    <div class="about-details">
+                        <div class="about-card">
+                            <div class="about-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                                    <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                                    <line x1="6" y1="6" x2="6" y2="6.01"></line>
+                                    <line x1="18" y1="6" x2="18" y2="6.01"></line>
+                                    <line x1="6" y1="18" x2="6" y2="18.01"></line>
+                                    <line x1="18" y1="18" x2="18" y2="18.01"></line>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Dynamic Scraper Integration</h4>
+                                <p>Aggregates raw daily points from Tom's Hardware, TechPowerUp, and PC Gamer news feeds.</p>
+                            </div>
+                        </div>
+
+                        <div class="about-card">
+                            <div class="about-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Financial disclaimer</h4>
+                                <p>All data and predictions shown on PriceOracle are generated by experimental algorithms for informational and research purposes only. They do not constitute financial, purchasing, or investment advice.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer & Watermark -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-bottom">
+                <p class="watermark-text">Created by Arefa under Lumina Frameworks</p>
+                <p class="footer-copyright">&copy; 2026 PriceOracle. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Core Script -->
+    <script type="module" src="app.js"></script>
+</body>
+</html>
