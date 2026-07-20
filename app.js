@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Route Mappings for SPA
     const routes = {
+        "/home": "page-home",
         "/dashboard": "page-dashboard",
         "/analytics": "page-analytics",
         "/news": "page-news",
@@ -43,9 +44,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 2. SPA Hash Router (No-scrolling multi-page experience)
     const handleRouting = () => {
-        const hash = window.location.hash || "#/dashboard";
+        const hash = window.location.hash || "#/home";
         const path = hash.replace("#", "");
-        const targetPageId = routes[path] || "page-dashboard";
+        const targetPageId = routes[path] || "page-home";
 
         // Hide all views, display target page view
         document.querySelectorAll(".page-view").forEach(page => {
@@ -60,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelectorAll(".nav-link").forEach(link => {
             link.classList.remove("active");
             const hrefAttr = link.getAttribute("href");
-            if (hrefAttr === hash || (hash === "#/dashboard" && hrefAttr === "#/dashboard")) {
+            if (hrefAttr === hash || (hash === "#/home" && hrefAttr === "#/home")) {
                 link.classList.add("active");
             }
         });
@@ -432,6 +433,76 @@ document.addEventListener("DOMContentLoaded", () => {
         if (chartItemConfidence) {
             chartItemConfidence.textContent = `${currentItem.confidence}% CONFIDENCE`;
         }
+
+        // --- NEW EXPERT FEATURES ---
+        // 1. Calculate and populate 30D price extremes metrics panel
+        const history = currentItem.history;
+        const minPrice = Math.min(...history);
+        const maxPrice = Math.max(...history);
+        const avgPrice = history.reduce((sum, val) => sum + val, 0) / history.length;
+        
+        const statsStrip = document.getElementById("chart-stats-strip");
+        if (statsStrip) {
+            statsStrip.innerHTML = `
+                <div class="stat-strip-item">
+                    <span class="stat-strip-label">30D Low Price</span>
+                    <span class="stat-strip-value">$${minPrice.toFixed(2)}</span>
+                </div>
+                <div class="stat-strip-item">
+                    <span class="stat-strip-label">30D High Price</span>
+                    <span class="stat-strip-value">$${maxPrice.toFixed(2)}</span>
+                </div>
+                <div class="stat-strip-item">
+                    <span class="stat-strip-label">30D Average</span>
+                    <span class="stat-strip-value">$${avgPrice.toFixed(2)}</span>
+                </div>
+            `;
+        }
+
+        // 2. Calculate and populate Buy/Sell/Hold market recommendation engine
+        let recType = "hold";
+        let recLabel = "Hold";
+        let recDesc = "";
+        
+        const change = currentItem.change;
+        const conf = currentItem.confidence;
+        
+        if (isUp) {
+            if (change > 2.0 && conf > 75) {
+                recType = "strong-buy";
+                recLabel = "Strong Buy";
+                recDesc = `High confidence forecasting (${conf}% accuracy rating) coupled with strong upward pressure (+${change}%) indicates an optimal acquisition window before imminent retailer price spikes.`;
+            } else {
+                recType = "buy";
+                recLabel = "Buy";
+                recDesc = `Forecast models project positive price movement (+${change}%) over the next 7 days. Recommended entry point for immediate system upgrades.`;
+            }
+        } else {
+            if (change < -2.0 && conf > 75) {
+                recType = "strong-sell";
+                recLabel = "Strong Sell";
+                recDesc = `High probability of price correction (-${Math.abs(change)}%) ahead. Postpone acquisition or liquidate existing assets to minimize capital depreciation.`;
+            } else {
+                recType = "sell";
+                recLabel = "Sell / Delay";
+                recDesc = `Pricing structures are projected to settle downward (-${Math.abs(change)}%). We advise postponing purchases for 7 days to capitalize on cheaper retailer inventories.`;
+            }
+        }
+        
+        if (conf < 60) {
+            recType = "hold";
+            recLabel = "Hold";
+            recDesc = `Confidence indicators are moderate (${conf}%). Price fluctuations are anticipated to remain range-bound. Monitor market intelligence boards for upcoming volatility triggers.`;
+        }
+        
+        const recContent = document.getElementById("recommendation-content");
+        if (recContent) {
+            recContent.innerHTML = `
+                <span class="rec-badge ${recType}">${recLabel}</span>
+                <p class="rec-description">${recDesc}</p>
+            `;
+        }
+        // ---------------------------
         
         renderHistoryChart(currentItem);
     }
@@ -959,6 +1030,15 @@ document.addEventListener("DOMContentLoaded", () => {
                 this.tx = x;
                 this.ty = y;
                 this.size = Math.random() * 1.5 + 1.2;
+                
+                // Color interpolation channels (starts at CPU Cyan: 0, 210, 255)
+                this.r = 0;
+                this.g = 210;
+                this.b = 255;
+                this.tr = 0;
+                this.tg = 210;
+                this.tb = 255;
+                
                 this.color = "rgba(0, 210, 255, 0.82)";
                 this.friction = 0.85;
                 this.ease = 0.08;
@@ -990,6 +1070,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 
                 this.x += this.vx;
                 this.y += this.vy;
+                
+                // Smoothly blend color channels
+                this.r += (this.tr - this.r) * 0.06;
+                this.g += (this.tg - this.g) * 0.06;
+                this.b += (this.tb - this.b) * 0.06;
+                this.color = `rgba(${Math.round(this.r)}, ${Math.round(this.g)}, ${Math.round(this.b)}, 0.82)`;
             }
             draw(ctx) {
                 ctx.beginPath();
@@ -1012,16 +1098,34 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const backgroundElements = Array.from({ length: 20 }, () => new MarketBackgroundElement(450, 450));
 
-        // Set targets
+        // Set targets with active color palette definitions
+        const shapeColors = {
+            "cpu": { r: 0, g: 210, b: 255 },     // Cyan
+            "gpu": { r: 0, g: 255, b: 136 },     // Neon Green
+            "ram": { r: 255, g: 0, b: 128 },     // Hot Pink
+            "storage": { r: 255, g: 140, b: 0 }, // Orange
+            "laptop": { r: 120, g: 80, b: 255 }  // Indigo
+        };
+
         function setTargets(type) {
             const coords = shapeCoordinates[type];
+            const color = shapeColors[type];
             particles.forEach((p, idx) => {
                 const pt = coords[idx % coords.length];
                 p.tx = pt.x;
                 p.ty = pt.y;
+                p.tr = color.r;
+                p.tg = color.g;
+                p.tb = color.b;
             });
             if (activeLabel) {
                 activeLabel.textContent = shapeLabels[type];
+                // Smoothly map label text colors and glow styles to current category
+                activeLabel.style.color = `rgb(${color.r}, ${color.g}, ${color.b})`;
+                activeLabel.style.borderColor = `rgba(${color.r}, ${color.g}, ${color.b}, 0.25)`;
+                activeLabel.style.background = `rgba(${color.r}, ${color.g}, ${color.b}, 0.08)`;
+                activeLabel.style.textShadow = `0 0 8px rgba(${color.r}, ${color.g}, ${color.b}, 0.3)`;
+                activeLabel.style.boxShadow = `0 0 10px rgba(${color.r}, ${color.g}, ${color.b}, 0.05)`;
             }
         }
         
@@ -1072,23 +1176,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
         let time = 0;
         function animate() {
-            ctx.clearRect(0, 0, 450, 450);
-            
-            // 1. Draw and update background market indicators first
-            backgroundElements.forEach(el => {
-                el.update();
-                el.draw(ctx);
-            });
-            
-            // 2. Draw foreground morphing particles
-            time += 0.035;
-            const floatX = Math.sin(time * 0.8) * 5;
-            const floatY = Math.cos(time * 1.2) * 6;
-            
-            particles.forEach(p => {
-                p.update(floatX, floatY, mouse);
-                p.draw(ctx);
-            });
+            if (canvas.offsetWidth > 0 && canvas.offsetHeight > 0) {
+                ctx.clearRect(0, 0, 450, 450);
+                
+                // 1. Draw and update background market indicators first
+                backgroundElements.forEach(el => {
+                    el.update();
+                    el.draw(ctx);
+                });
+                
+                // 2. Draw foreground morphing particles
+                time += 0.035;
+                const floatX = Math.sin(time * 0.8) * 5;
+                const floatY = Math.cos(time * 1.2) * 6;
+                
+                particles.forEach(p => {
+                    p.update(floatX, floatY, mouse);
+                    p.draw(ctx);
+                });
+            }
             
             requestAnimationFrame(animate);
         }
