@@ -22,10 +22,13 @@ jobs:
       - name: Run scraper
         run: node scraper.js
       
+      - name: Copy data.json to dist
+        run: cp data.json dist/data.json
+      
       - name: Commit changes
         run: |
           git config user.name "Arefa AI"
           git config user.email "arefa@luminaframeworks.com"
-          git add data.json
+          git add data.json dist/data.json
           git commit -m "📊 Update hardware data $(date +'%Y-%m-%d')" || echo "No changes"
           git push
