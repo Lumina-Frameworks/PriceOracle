@@ -25,10 +25,9 @@ jobs:
       - name: Copy data.json to dist
         run: cp data.json dist/data.json
       
-      - name: Commit changes
+      - name: Commit and push changes
         run: |
           git config user.name "Arefa AI"
           git config user.email "arefa@luminaframeworks.com"
           git add data.json dist/data.json
-          git commit -m "📊 Update hardware data $(date +'%Y-%m-%d')" || echo "No changes"
-          git push
+          git diff --staged --quiet || (git commit -m "📊 Update hardware data $(date +'%Y-%m-%d')" && git push)
