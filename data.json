@@ -1,17 +1,16 @@
 {
-  "lastUpdated": "2026-07-22T03:29:29.879Z",
+  "lastUpdated": "2026-07-22T08:40:30.880Z",
   "ram": {
     "displayName": "Memory (RAM)",
     "items": [
       {
         "id": "ddr4-16gb",
         "name": "DDR4 16GB (2x8GB) 3200MHz",
-        "price": 42.6,
-        "change": -7.1,
+        "price": 42.19,
+        "change": -8.3,
         "confidence": 77,
         "trend": "down",
         "history": [
-          47.2,
           46.8,
           46.5,
           46.2,
@@ -40,18 +39,18 @@
           44.67,
           43.64,
           43.08,
-          42.6
+          42.6,
+          42.19
         ]
       },
       {
         "id": "ddr5-32gb",
         "name": "DDR5 32GB (2x16GB) 6000MHz",
-        "price": 106.63,
-        "change": 8.1,
-        "confidence": 83,
+        "price": 108.12,
+        "change": 9.8,
+        "confidence": 74,
         "trend": "up",
         "history": [
-          102.9,
           102.5,
           102,
           101.8,
@@ -80,54 +79,51 @@
           102.68,
           103.31,
           105.03,
-          106.63
+          106.63,
+          108.12
         ]
       }
     ],
     "outlook": "Slight upward pressure on older DDR4 modules due to reduced production capacity as manufacturers shift focus to DDR5. DDR5 prices are stabilizing as yields improve and supply exceeds mainstream desktop demands.",
     "news": [
       {
-        "headline": "Steam Machine Running Windows With Performance On-Par With SteamOS",
-        "source": "TechPowerUp",
-        "date": "2026-07-16",
-        "impact": "neutral",
-        "url": "https://www.techpowerup.com/350800/steam-machine-running-windows-with-performance-on-par-with-steamos",
+        "headline": " One of Nvidia CEO Jensen Huang's leather jackets has fetched an auction price of $960,000: 'It has become a symbol for the vision at the forefront of the AI revolution' ",
+        "source": "PC Gamer",
+        "date": "2026-07-20",
+        "impact": "bullish",
+        "url": "https://www.pcgamer.com/hardware/one-of-nvidia-ceo-jensen-huangs-leather-jackets-has-fetched-an-auction-price-of-usd960-000-it-has-become-a-symbol-for-the-vision-at-the-forefront-of-the-ai-revolution/",
         "affectedItems": []
       },
       {
-        "headline": "(PR) NVIDIA Introduces New Jetson Thor Computers to Advance Mainstream Robotics and Edge AI",
-        "source": "TechPowerUp",
-        "date": "2026-07-16",
+        "headline": " 'There are limits to how much prices can be raised' says SK hynix chairman about memory crisis but I'm not sure the market will care ",
+        "source": "PC Gamer",
+        "date": "2026-07-20",
         "impact": "bullish",
-        "url": "https://www.techpowerup.com/350803/nvidia-introduces-new-jetson-thor-computers-to-advance-mainstream-robotics-and-edge-ai",
-        "affectedItems": [
-          "ddr5-32gb"
-        ]
-      },
-      {
-        "headline": "(PR) AAEON Outlines Plans for Embedded AI Box PCs With Jetson T2000 and T3000 Modules",
-        "source": "TechPowerUp",
-        "date": "2026-07-16",
-        "impact": "neutral",
-        "url": "https://www.techpowerup.com/350805/aaeon-outlines-plans-for-embedded-ai-box-pcs-with-jetson-t2000-and-t3000-modules",
-        "affectedItems": [
-          "ddr5-32gb"
-        ]
-      },
-      {
-        "headline": "(PR) Bosgame Demonstrates Scalable Private AI with 7-Node AI MAX+ 395 Cluster",
-        "source": "TechPowerUp",
-        "date": "2026-07-16",
-        "impact": "bullish",
-        "url": "https://www.techpowerup.com/350823/bosgame-demonstrates-scalable-private-ai-with-7-node-ai-max-395-cluster",
+        "url": "https://www.pcgamer.com/hardware/memory/there-are-limits-to-how-much-prices-can-be-raised-says-sk-hynix-chairman-about-memory-crisis-but-im-not-sure-the-market-will-care/",
         "affectedItems": []
       },
       {
-        "headline": "(PR) iBUYPOWER Relaunches RDYxYOU Creator Collab PCs",
+        "headline": " TSMC admits it's 'jealous' of memory chipmakers' margins, but is limiting its own price hike because its customers would not survive price increases of 'four to five times' ",
+        "source": "PC Gamer",
+        "date": "2026-07-21",
+        "impact": "bullish",
+        "url": "https://www.pcgamer.com/hardware/tsmc-admits-its-jealous-of-memory-chipmakers-margins-but-is-limiting-its-own-price-hike-because-its-customers-would-not-survive-price-increases-of-four-to-five-times/",
+        "affectedItems": []
+      },
+      {
+        "headline": " Path of Exile 2 players broke the game by summoning 2,000 skeletons and then lured unsuspecting players into the ultimate frame rate shredder ",
+        "source": "PC Gamer",
+        "date": "2026-07-21",
+        "impact": "neutral",
+        "url": "https://www.pcgamer.com/games/rpg/path-of-exile-2-players-broke-the-game-by-summoning-2-000-skeletons-and-then-lured-unsuspecting-players-into-the-ultimate-frame-rate-shredder/",
+        "affectedItems": []
+      },
+      {
+        "headline": "Intel to Launch 28-Core \"Nova Lake-S\" Before 52-Core Version",
         "source": "TechPowerUp",
         "date": "2026-07-17",
         "impact": "bullish",
-        "url": "https://www.techpowerup.com/350843/ibuypower-relaunches-rdyxyou-creator-collab-pcs",
+        "url": "https://www.techpowerup.com/350842/intel-to-launch-28-core-nova-lake-s-before-52-core-version",
         "affectedItems": []
       }
     ]
@@ -138,12 +134,11 @@
       {
         "id": "rtx-4070",
         "name": "NVIDIA GeForce RTX 4070 12GB",
-        "price": 550.1,
-        "change": 0.1,
-        "confidence": 65,
+        "price": 550.17,
+        "change": 0,
+        "confidence": 67,
         "trend": "up",
         "history": [
-          524.5,
           527,
           528,
           526.5,
@@ -172,18 +167,18 @@
           549.31,
           548.83,
           549.34,
-          550.1
+          550.1,
+          550.17
         ]
       },
       {
         "id": "rx-7800-xt",
         "name": "AMD Radeon RX 7800 XT 16GB",
-        "price": 500.2,
-        "change": 0.2,
-        "confidence": 68,
+        "price": 500.95,
+        "change": 0.4,
+        "confidence": 62,
         "trend": "up",
         "history": [
-          511,
           509,
           508.5,
           508,
@@ -212,18 +207,18 @@
           498.65,
           499.01,
           499.09,
-          500.2
+          500.2,
+          500.95
         ]
       },
       {
         "id": "rtx-4080-super",
         "name": "NVIDIA GeForce RTX 4080 Super 16GB",
-        "price": 993.53,
-        "change": -0.6,
-        "confidence": 67,
+        "price": 994.71,
+        "change": -0.4,
+        "confidence": 58,
         "trend": "down",
         "history": [
-          991.5,
           993,
           994,
           993.5,
@@ -252,50 +247,51 @@
           997.37,
           997.58,
           996.14,
-          993.53
+          993.53,
+          994.71
         ]
       }
     ],
     "outlook": "Mid-range GPU prices remain sticky, with NVIDIA maintaining solid price control. AMD is engaging in aggressive price corrections on the RDNA3 lineup ahead of next-generation platform releases, providing excellent price-to-performance for value seekers.",
     "news": [
       {
-        "headline": "(PR) Phanteks Announces Enthoo Pro 2 Server Edition V2 and Enthoo Elite Server Cases",
-        "source": "TechPowerUp",
-        "date": "2026-07-16",
-        "impact": "bullish",
-        "url": "https://www.techpowerup.com/350799/phanteks-announces-enthoo-pro-2-server-edition-v2-and-enthoo-elite-server-cases",
+        "headline": " If you're looking for ideas on how to mod your RTX 4060, maybe remove its fans and slap a ridiculously big heatsink on it like this person did ",
+        "source": "PC Gamer",
+        "date": "2026-07-20",
+        "impact": "neutral",
+        "url": "https://www.pcgamer.com/hardware/graphics-cards/if-youre-looking-for-ideas-on-how-to-mod-your-rtx-4060-maybe-remove-its-fans-and-slap-a-ridiculously-big-heatsink-on-it-like-this-person-did/",
         "affectedItems": []
       },
       {
-        "headline": "(PR) AMD Appoints Alan Smith as Newest Corporate Fellow",
-        "source": "TechPowerUp",
-        "date": "2026-07-16",
-        "impact": "bearish",
-        "url": "https://www.techpowerup.com/350821/amd-appoints-alan-smith-as-newest-corporate-fellow",
+        "headline": " FBI arrests 21-year-old who allegedly stole $200,000 with malware-infected Steam games and spent the money on traceable UberEats gift cards ",
+        "source": "PC Gamer",
+        "date": "2026-07-20",
+        "impact": "neutral",
+        "url": "https://www.pcgamer.com/gaming-industry/fbi-arrests-21-year-old-who-allegedly-stole-usd200-000-with-malware-infected-steam-games-and-spent-the-money-on-traceable-ubereats-gift-cards/",
         "affectedItems": []
       },
       {
-        "headline": "TSMC's 2 nm Node Gains Momentum with Fourfold Increase in Tape-Outs",
-        "source": "TechPowerUp",
-        "date": "2026-07-16",
-        "impact": "bullish",
-        "url": "https://www.techpowerup.com/350827/tsmcs-2-nm-node-gains-momentum-with-fourfold-increase-in-tape-outs",
+        "headline": " Nvidia finally reveals what controls devs actually have for DLSS 5, and don't worry folks, there are TWO main sliders to control the AI filter ",
+        "source": "PC Gamer",
+        "date": "2026-07-21",
+        "impact": "neutral",
+        "url": "https://www.pcgamer.com/hardware/nvidia-finally-reveals-what-controls-devs-actually-have-for-dlss-5-and-dont-worry-folks-there-are-two-main-sliders-to-control-the-ai-filter/",
         "affectedItems": []
       },
       {
-        "headline": "(PR) Onimusha: Way of the Sword Is Coming to GeForce NOW",
-        "source": "TechPowerUp",
-        "date": "2026-07-16",
-        "impact": "bullish",
-        "url": "https://www.techpowerup.com/350833/onimusha-way-of-the-sword-is-coming-to-geforce-now",
+        "headline": " Redditor uses 'ticking time bomb' vial of gallium to stop their GPU sagging ",
+        "source": "PC Gamer",
+        "date": "2026-07-21",
+        "impact": "neutral",
+        "url": "https://www.pcgamer.com/hardware/graphics-cards/redditor-uses-ticking-time-bomb-vial-of-gallium-to-stop-their-gpu-sagging/",
         "affectedItems": []
       },
       {
-        "headline": "Marvel Tokon: Fighting Souls Open Beta Detailed: 15 Characters and No PS Plus Requirement",
+        "headline": "Legendary SEGA Game Titles Come to NVIDIA's RTX Spark PC Platform",
         "source": "TechPowerUp",
         "date": "2026-07-16",
         "impact": "neutral",
-        "url": "https://www.techpowerup.com/350835/marvel-tokon-fighting-souls-open-beta-detailed-15-characters-and-no-ps-plus-requirement",
+        "url": "https://www.techpowerup.com/350792/legendary-sega-game-titles-come-to-nvidias-rtx-spark-pc-platform",
         "affectedItems": []
       }
     ]
@@ -306,12 +302,11 @@
       {
         "id": "i7-14700k",
         "name": "Intel Core i7-14700K 20-Core",
-        "price": 388.58,
-        "change": -0.2,
-        "confidence": 63,
+        "price": 388.43,
+        "change": -0.4,
+        "confidence": 58,
         "trend": "down",
         "history": [
-          405.5,
           404,
           403,
           403.5,
@@ -340,18 +335,18 @@
           390.59,
           390.08,
           389.15,
-          388.58
+          388.58,
+          388.43
         ]
       },
       {
         "id": "ryzen-7800x3d",
         "name": "AMD Ryzen 7 7800X3D 8-Core",
-        "price": 363.25,
-        "change": -1.4,
-        "confidence": 67,
+        "price": 362.67,
+        "change": -1.7,
+        "confidence": 61,
         "trend": "down",
         "history": [
-          349.5,
           350,
           352,
           351.5,
@@ -380,50 +375,51 @@
           361.72,
           362.74,
           362.39,
-          363.25
+          363.25,
+          362.67
         ]
       }
     ],
     "outlook": "AMD's Ryzen 7 7800X3D remains the top-selling gaming CPU, driving prices up due to sustained high demand and localized stock shortages. Intel 14th gen processors continue a downward trajectory as retailers clear inventories for Arrow Lake processors.",
     "news": [
       {
-        "headline": "(PR) Intel and Google Cloud Collaborate to Drive Intel's Enterprise AI Transformation",
+        "headline": "(PR) Alphacool Unveils New CPU+VRM Monoblocks for MSI, GIGABYTE, and ASUS",
         "source": "TechPowerUp",
         "date": "2026-07-16",
         "impact": "bullish",
-        "url": "https://www.techpowerup.com/350829/intel-and-google-cloud-collaborate-to-drive-intels-enterprise-ai-transformation",
+        "url": "https://www.techpowerup.com/350809/alphacool-unveils-new-cpu-vrm-monoblocks-for-msi-gigabyte-and-asus",
         "affectedItems": []
       },
       {
-        "headline": "(PR) IEEE Study Highlights How Micro-Transfer Printing Can Lead to Advanced Silicon Photonics",
+        "headline": "Thermalright Launches Royal Pretor 130 Vision CPU Cooler",
         "source": "TechPowerUp",
-        "date": "2026-07-20",
+        "date": "2026-07-21",
         "impact": "bullish",
-        "url": "https://www.techpowerup.com/350894/ieee-study-highlights-how-micro-transfer-printing-can-lead-to-advanced-silicon-photonics",
+        "url": "https://www.techpowerup.com/350914/thermalright-launches-royal-pretor-130-vision-cpu-cooler",
         "affectedItems": []
       },
       {
-        "headline": " Zilog Z80 turns 50 as an open-source replacement heads to drop-in DIP40 silicon — iconic 8-bit CPU launched in July 1976 and was discontinued in 2024 ",
-        "source": "Tom's Hardware",
-        "date": "2026-07-19",
+        "headline": "(PR) xMEMS Launches the World's Smallest Active Micro Fan to Break the Thermal Wall in Smart Glasses",
+        "source": "TechPowerUp",
+        "date": "2026-07-21",
         "impact": "bearish",
-        "url": "https://www.tomshardware.com/tech-industry/zilog-z80-turns-50-as-open-source-replacement-heads-for-drop-in-dip40-silicon",
+        "url": "https://www.techpowerup.com/350931/xmems-launches-the-worlds-smallest-active-micro-fan-to-break-the-thermal-wall-in-smart-glasses",
         "affectedItems": []
       },
       {
-        "headline": " SMIC's third-gen 7nm node shows smaller metal pitch than Intel 18A, higher transistor density than TSMC N6 without EUV — analysis of N+3 shows significant advancement for Chinese semi manufacturing ",
-        "source": "Tom's Hardware",
+        "headline": "(PR) Intel and Fortinet Collaborate to Advance Cybersecurity Innovation",
+        "source": "TechPowerUp",
         "date": "2026-07-21",
         "impact": "bullish",
-        "url": "https://www.tomshardware.com/tech-industry/semiconductors/smics-third-gen-7nm-node-shows-smaller-metal-pitch-than-intel-18a-higher-transistor-density-than-tsmc-n6-without-euv-analysis-of-n-3-shows-significant-advancement-for-chinese-semi-manufacturing",
+        "url": "https://www.techpowerup.com/350932/intel-and-fortinet-collaborate-to-advance-cybersecurity-innovation",
         "affectedItems": []
       },
       {
-        "headline": " Intel layoffs to hit Data Center group — division focused on server CPUs, AI chips, and data center architecture to be hit by an unknown number of cuts ",
-        "source": "Tom's Hardware",
+        "headline": "Acer Predator Atlas 8 Debuting in Autumn at $1,000+ With Base Intel Arc G3",
+        "source": "TechPowerUp",
         "date": "2026-07-21",
-        "impact": "bullish",
-        "url": "https://www.tomshardware.com/tech-industry/policy/intel-layoffs-to-hit-data-center-group-division-focused-on-server-cpus-ai-chips-and-data-center-architecture-to-be-hit-by-an-unknown-number-of-cuts",
+        "impact": "bearish",
+        "url": "https://www.techpowerup.com/350933/acer-predator-atlas-8-debuting-in-autumn-at-usd-1-000-with-base-intel-arc-g3",
         "affectedItems": []
       }
     ]
@@ -434,12 +430,11 @@
       {
         "id": "zephyrus-g14",
         "name": "ASUS ROG Zephyrus G14 (2026)",
-        "price": 1503.91,
-        "change": 0.3,
-        "confidence": 65,
+        "price": 1502.18,
+        "change": 0.2,
+        "confidence": 62,
         "trend": "up",
         "history": [
-          1472,
           1475,
           1470,
           1474,
@@ -468,18 +463,18 @@
           1500.81,
           1502.64,
           1503.16,
-          1503.91
+          1503.91,
+          1502.18
         ]
       },
       {
         "id": "macbook-air-m3",
         "name": "Apple MacBook Air 13\" M3 8GB/256GB",
-        "price": 1000.51,
-        "change": 0.2,
-        "confidence": 77,
+        "price": 1014.05,
+        "change": 1.5,
+        "confidence": 79,
         "trend": "up",
         "history": [
-          1018,
           1015,
           1012,
           1015,
@@ -508,18 +503,18 @@
           997.61,
           1000.54,
           998.78,
-          1000.51
+          1000.51,
+          1014.05
         ]
       },
       {
         "id": "legion-5-pro",
         "name": "Lenovo Legion 5 Pro 16\" AMD",
-        "price": 1261.54,
-        "change": 1,
-        "confidence": 59,
+        "price": 1258.6,
+        "change": 0.7,
+        "confidence": 62,
         "trend": "up",
         "history": [
-          1220,
           1222,
           1218,
           1224,
@@ -548,7 +543,8 @@
           1262.44,
           1259.11,
           1259.21,
-          1261.54
+          1261.54,
+          1258.6
         ]
       }
     ],
@@ -602,87 +598,83 @@
   },
   "globalNews": [
     {
-      "headline": "Steam Machine Running Windows With Performance On-Par With SteamOS",
+      "headline": " One of Nvidia CEO Jensen Huang's leather jackets has fetched an auction price of $960,000: 'It has become a symbol for the vision at the forefront of the AI revolution' ",
+      "source": "PC Gamer",
+      "date": "2026-07-20",
+      "impact": "bullish",
+      "url": "https://www.pcgamer.com/hardware/one-of-nvidia-ceo-jensen-huangs-leather-jackets-has-fetched-an-auction-price-of-usd960-000-it-has-become-a-symbol-for-the-vision-at-the-forefront-of-the-ai-revolution/",
+      "affectedItems": []
+    },
+    {
+      "headline": " 'There are limits to how much prices can be raised' says SK hynix chairman about memory crisis but I'm not sure the market will care ",
+      "source": "PC Gamer",
+      "date": "2026-07-20",
+      "impact": "bullish",
+      "url": "https://www.pcgamer.com/hardware/memory/there-are-limits-to-how-much-prices-can-be-raised-says-sk-hynix-chairman-about-memory-crisis-but-im-not-sure-the-market-will-care/",
+      "affectedItems": []
+    },
+    {
+      "headline": " If you're looking for ideas on how to mod your RTX 4060, maybe remove its fans and slap a ridiculously big heatsink on it like this person did ",
+      "source": "PC Gamer",
+      "date": "2026-07-20",
+      "impact": "neutral",
+      "url": "https://www.pcgamer.com/hardware/graphics-cards/if-youre-looking-for-ideas-on-how-to-mod-your-rtx-4060-maybe-remove-its-fans-and-slap-a-ridiculously-big-heatsink-on-it-like-this-person-did/",
+      "affectedItems": []
+    },
+    {
+      "headline": " FBI arrests 21-year-old who allegedly stole $200,000 with malware-infected Steam games and spent the money on traceable UberEats gift cards ",
+      "source": "PC Gamer",
+      "date": "2026-07-20",
+      "impact": "neutral",
+      "url": "https://www.pcgamer.com/gaming-industry/fbi-arrests-21-year-old-who-allegedly-stole-usd200-000-with-malware-infected-steam-games-and-spent-the-money-on-traceable-ubereats-gift-cards/",
+      "affectedItems": []
+    },
+    {
+      "headline": " Nvidia finally reveals what controls devs actually have for DLSS 5, and don't worry folks, there are TWO main sliders to control the AI filter ",
+      "source": "PC Gamer",
+      "date": "2026-07-21",
+      "impact": "neutral",
+      "url": "https://www.pcgamer.com/hardware/nvidia-finally-reveals-what-controls-devs-actually-have-for-dlss-5-and-dont-worry-folks-there-are-two-main-sliders-to-control-the-ai-filter/",
+      "affectedItems": []
+    },
+    {
+      "headline": " Redditor uses 'ticking time bomb' vial of gallium to stop their GPU sagging ",
+      "source": "PC Gamer",
+      "date": "2026-07-21",
+      "impact": "neutral",
+      "url": "https://www.pcgamer.com/hardware/graphics-cards/redditor-uses-ticking-time-bomb-vial-of-gallium-to-stop-their-gpu-sagging/",
+      "affectedItems": []
+    },
+    {
+      "headline": " TSMC admits it's 'jealous' of memory chipmakers' margins, but is limiting its own price hike because its customers would not survive price increases of 'four to five times' ",
+      "source": "PC Gamer",
+      "date": "2026-07-21",
+      "impact": "bullish",
+      "url": "https://www.pcgamer.com/hardware/tsmc-admits-its-jealous-of-memory-chipmakers-margins-but-is-limiting-its-own-price-hike-because-its-customers-would-not-survive-price-increases-of-four-to-five-times/",
+      "affectedItems": []
+    },
+    {
+      "headline": " Path of Exile 2 players broke the game by summoning 2,000 skeletons and then lured unsuspecting players into the ultimate frame rate shredder ",
+      "source": "PC Gamer",
+      "date": "2026-07-21",
+      "impact": "neutral",
+      "url": "https://www.pcgamer.com/games/rpg/path-of-exile-2-players-broke-the-game-by-summoning-2-000-skeletons-and-then-lured-unsuspecting-players-into-the-ultimate-frame-rate-shredder/",
+      "affectedItems": []
+    },
+    {
+      "headline": "Legendary SEGA Game Titles Come to NVIDIA's RTX Spark PC Platform",
       "source": "TechPowerUp",
       "date": "2026-07-16",
       "impact": "neutral",
-      "url": "https://www.techpowerup.com/350800/steam-machine-running-windows-with-performance-on-par-with-steamos",
+      "url": "https://www.techpowerup.com/350792/legendary-sega-game-titles-come-to-nvidias-rtx-spark-pc-platform",
       "affectedItems": []
     },
     {
-      "headline": "(PR) NVIDIA Introduces New Jetson Thor Computers to Advance Mainstream Robotics and Edge AI",
+      "headline": "(PR) Alphacool Unveils New CPU+VRM Monoblocks for MSI, GIGABYTE, and ASUS",
       "source": "TechPowerUp",
       "date": "2026-07-16",
       "impact": "bullish",
-      "url": "https://www.techpowerup.com/350803/nvidia-introduces-new-jetson-thor-computers-to-advance-mainstream-robotics-and-edge-ai",
-      "affectedItems": [
-        "ddr5-32gb"
-      ]
-    },
-    {
-      "headline": "(PR) AAEON Outlines Plans for Embedded AI Box PCs With Jetson T2000 and T3000 Modules",
-      "source": "TechPowerUp",
-      "date": "2026-07-16",
-      "impact": "neutral",
-      "url": "https://www.techpowerup.com/350805/aaeon-outlines-plans-for-embedded-ai-box-pcs-with-jetson-t2000-and-t3000-modules",
-      "affectedItems": [
-        "ddr5-32gb"
-      ]
-    },
-    {
-      "headline": "(PR) Phanteks Announces Enthoo Pro 2 Server Edition V2 and Enthoo Elite Server Cases",
-      "source": "TechPowerUp",
-      "date": "2026-07-16",
-      "impact": "bullish",
-      "url": "https://www.techpowerup.com/350799/phanteks-announces-enthoo-pro-2-server-edition-v2-and-enthoo-elite-server-cases",
-      "affectedItems": []
-    },
-    {
-      "headline": "(PR) AMD Appoints Alan Smith as Newest Corporate Fellow",
-      "source": "TechPowerUp",
-      "date": "2026-07-16",
-      "impact": "bearish",
-      "url": "https://www.techpowerup.com/350821/amd-appoints-alan-smith-as-newest-corporate-fellow",
-      "affectedItems": []
-    },
-    {
-      "headline": "(PR) Bosgame Demonstrates Scalable Private AI with 7-Node AI MAX+ 395 Cluster",
-      "source": "TechPowerUp",
-      "date": "2026-07-16",
-      "impact": "bullish",
-      "url": "https://www.techpowerup.com/350823/bosgame-demonstrates-scalable-private-ai-with-7-node-ai-max-395-cluster",
-      "affectedItems": []
-    },
-    {
-      "headline": "TSMC's 2 nm Node Gains Momentum with Fourfold Increase in Tape-Outs",
-      "source": "TechPowerUp",
-      "date": "2026-07-16",
-      "impact": "bullish",
-      "url": "https://www.techpowerup.com/350827/tsmcs-2-nm-node-gains-momentum-with-fourfold-increase-in-tape-outs",
-      "affectedItems": []
-    },
-    {
-      "headline": "(PR) Intel and Google Cloud Collaborate to Drive Intel's Enterprise AI Transformation",
-      "source": "TechPowerUp",
-      "date": "2026-07-16",
-      "impact": "bullish",
-      "url": "https://www.techpowerup.com/350829/intel-and-google-cloud-collaborate-to-drive-intels-enterprise-ai-transformation",
-      "affectedItems": []
-    },
-    {
-      "headline": "(PR) Onimusha: Way of the Sword Is Coming to GeForce NOW",
-      "source": "TechPowerUp",
-      "date": "2026-07-16",
-      "impact": "bullish",
-      "url": "https://www.techpowerup.com/350833/onimusha-way-of-the-sword-is-coming-to-geforce-now",
-      "affectedItems": []
-    },
-    {
-      "headline": "Marvel Tokon: Fighting Souls Open Beta Detailed: 15 Characters and No PS Plus Requirement",
-      "source": "TechPowerUp",
-      "date": "2026-07-16",
-      "impact": "neutral",
-      "url": "https://www.techpowerup.com/350835/marvel-tokon-fighting-souls-open-beta-detailed-15-characters-and-no-ps-plus-requirement",
+      "url": "https://www.techpowerup.com/350809/alphacool-unveils-new-cpu-vrm-monoblocks-for-msi-gigabyte-and-asus",
       "affectedItems": []
     }
   ]
