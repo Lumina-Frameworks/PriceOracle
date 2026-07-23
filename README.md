@@ -18,14 +18,14 @@
 
 ## 🔮 What is PriceOracle?
 
-**PriceOracle** is a modern, high-fidelity web application and background scraper designed to track, analyze, and forecast price movements for PC hardware (RAM, GPUs, CPUs) and Laptops. 
+**PriceOracle** is a modern, high-fidelity web application and background scraper designed to track, analyze, and forecast price movements for PC hardware (CPU, GPU, RAM, Storage) and Laptops, plus Storage (SSD/HDD). 
 
 By analyzing real-time tech news sentiment from major publications and combining it with historical price structures, PriceOracle calculates short-term price predictions and index trends, presenting them through a stunning, glassmorphic UI complete with dynamic interactive visual widgets.
 
 ### 🌟 Key Features
 
-*   📈 **Category Price Indexes:** 30-day aggregate price index tracking for RAM, GPUs, CPUs, and Laptops, capturing baseline valuation movements.
-*   🧠 **Neural Forecasting Simulation:** Projected 7-day price changes with dynamic algorithmic confidence percentages calculated from market indicators.
+*   📈 **Category Price Indexes:** 30-day aggregate price index tracking for RAM, GPUs, CPUs, Storage, and Laptops, capturing baseline valuation movements.
+*   🧠 **Neural Forecasting Simulation:** Projected 7-day price changes with dynamic algorithmic confidence percentages (always displayed) calculated from trend consistency, volatility, and news agreement.
 *   📊 **Zero-Dependency SVG Charts:** High-performance, lightweight vector line charts rendered entirely on the client side using pure JavaScript & inline SVGs.
 *   📰 **Sentiment-Driven News Engine:** Automated RSS ingestion from authorized tech outlets with integrated sentiment indexing (Bullish / Bearish / Neutral).
 *   ✨ **Premium UI Experience:** Immersive dark-mode first design with glassmorphic cards, glowing neon accent outlines, and interactive morphing HTML5 Canvas background particle models.
@@ -37,7 +37,7 @@ By analyzing real-time tech news sentiment from major publications and combining
 
 ```mermaid
 graph TD
-    A[Tech News RSS Feeds<br/>Tom's Hardware, TechPowerUp, PC Gamer] -->|Ingested by| B(Node.js Scraper Script)
+    A[Tech News RSS Feeds<br/>Tom's Hardware, TechPowerUp, PC Gamer, AnandTech, VideoCardz] -->|Ingested by| B(Node.js Scraper Script)
     B -->|Keyword-Matching &<br/>Sentiment Analysis| C[(data.json DB)]
     C -->|Hydrated at Runtime| D[Vite Frontend SPA]
     D -->|Hash-Based Router| E[Dashboard & Analytics Views]

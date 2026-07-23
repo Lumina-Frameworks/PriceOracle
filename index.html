@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="PriceOracle - AI-powered hardware price prediction website for RAM, GPU, and CPU. Track prices, analyze trends, and browse recent tech news.">
-    <meta name="keywords" content="hardware, price predictor, GPU prices, CPU prices, RAM prices, PriceOracle, hardware watch">
+    <meta name="description" content="PriceOracle - AI-powered hardware price prediction website for CPU, GPU, RAM, Storage, and Laptops. Track prices, analyze trends, and browse market-moving tech news.">
+    <meta name="keywords" content="hardware, price predictor, GPU prices, CPU prices, RAM prices, SSD prices, laptop prices, PriceOracle, hardware watch">
     <title>PriceOracle - Hardware Price Predictor & Market Analytics</title>
     
     <!-- Google Fonts -->
@@ -87,7 +87,7 @@
                     <span>AI Forecasting Engine Active</span>
                 </div>
                 <h1 class="hero-title">Algorithmic Price Forecasting Core</h1>
-                <p class="hero-subtitle">Neural forecasting models & predictive market intelligence for PC hardware & laptops</p>
+                <p class="hero-subtitle">Neural forecasting models & predictive market intelligence for CPU, GPU, RAM, Storage & Laptops</p>
                 
                 <!-- Floating Interactive Component Canvas -->
                 <div class="hero-particle-widget">
@@ -193,6 +193,18 @@
                                 <div class="chart-skeleton"></div>
                             </div>
                         </div>
+                        <div id="storage-index-card" class="index-chart-card">
+                            <div class="index-card-header">
+                                <div class="index-info-wrap">
+                                    <span class="index-label">Storage Price Index</span>
+                                    <h4 id="storage-index-val" class="index-value">--</h4>
+                                </div>
+                                <span id="storage-index-change" class="index-change">--</span>
+                            </div>
+                            <div id="storage-index-chart" class="index-chart-wrapper">
+                                <div class="chart-skeleton"></div>
+                            </div>
+                        </div>
                         <div id="laptop-index-card" class="index-chart-card">
                             <div class="index-card-header">
                                 <div class="index-info-wrap">
@@ -261,6 +273,14 @@
                                 <line x1="1" y1="15" x2="4" y2="15"></line>
                             </svg>
                             CPU
+                        </button>
+                        <button class="tab-btn" data-category="storage">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                <path d="M3 5v6c0 1.7 4 3 9 3s9-1.3 9-3V5"></path>
+                                <path d="M3 11v6c0 1.7 4 3 9 3s9-1.3 9-3v-6"></path>
+                            </svg>
+                            STORAGE
                         </button>
                         <button class="tab-btn" data-category="laptop">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -379,7 +399,7 @@
                     <div class="about-content">
                         <h2 class="about-title">Predictive Intelligence Infrastructure</h2>
                         <p class="about-paragraph">
-                            PriceOracle is a state-of-the-art predictive analytics suite focusing on consumer computing hardware components and laptop markets. 
+                            PriceOracle is a state-of-the-art predictive analytics suite focusing on consumer computing hardware components (CPU, GPU, RAM, Storage) and laptop markets. 
                             We aggregate price indexes and news sentiment maps daily to model market dynamics.
                         </p>
                         <p class="about-paragraph">

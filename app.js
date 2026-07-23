@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!dashboardGrid || !marketData) return;
         dashboardGrid.innerHTML = "";
 
-        const categories = ["ram", "gpu", "cpu", "laptop"];
+        const categories = ["ram", "gpu", "cpu", "storage", "laptop"];
         
         categories.forEach(cat => {
             const catData = marketData[cat];
@@ -158,6 +158,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 iconSvg = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>`;
             } else if (cat === "cpu") {
                 iconSvg = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="15" x2="23" y2="15"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="15" x2="4" y2="15"></line></svg>`;
+            } else if (cat === "storage") {
+                iconSvg = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5v6c0 1.7 4 3 9 3s9-1.3 9-3V5"></path><path d="M3 11v6c0 1.7 4 3 9 3s9-1.3 9-3v-6"></path></svg>`;
             } else {
                 iconSvg = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="12" rx="2"></rect><path d="M2 20h20"></path><path d="M5 16h14"></path></svg>`;
             }
@@ -183,6 +185,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 const trendArrow = isUp ? "↑" : "↓";
                 const trendColorClass = isUp ? "trend-up" : "trend-down";
                 const displayChange = (isUp ? "+" : "") + item.change + "%";
+                const confValue = Math.max(0, Math.min(100, Number(item.confidence) || 0));
 
                 const sparklinePoints = item.history.slice(-7);
                 const sparklinePath = generateSparklinePath(sparklinePoints, 100, 25);
@@ -225,10 +228,10 @@ document.addEventListener("DOMContentLoaded", () => {
                                     <circle class="bg-circle" cx="10" cy="10" r="8"></circle>
                                     <circle class="fg-circle" cx="10" cy="10" r="8" 
                                             stroke-dasharray="50.26" 
-                                            stroke-dashoffset="${50.26 - (50.26 * item.confidence) / 100}">
+                                            stroke-dashoffset="${50.26 - (50.26 * confValue) / 100}">
                                     </circle>
                                 </svg>
-                                <span class="conf-text">${item.confidence}% <span class="conf-label">conf</span></span>
+                                <span class="conf-text">${confValue}% <span class="conf-label">confidence</span></span>
                             </div>
                         </div>
                     </div>
@@ -246,7 +249,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 7. Category price action index logic
     function hydrateCategoryIndexes() {
-        const categories = ["ram", "gpu", "cpu", "laptop"];
+        const categories = ["ram", "gpu", "cpu", "storage", "laptop"];
         categories.forEach(cat => {
             const catData = marketData[cat];
             const items = catData.items;
@@ -431,7 +434,9 @@ document.addEventListener("DOMContentLoaded", () => {
         
         const chartItemConfidence = document.getElementById("chart-item-confidence");
         if (chartItemConfidence) {
-            chartItemConfidence.textContent = `${currentItem.confidence}% CONFIDENCE`;
+            const confValue = Math.max(0, Math.min(100, Number(currentItem.confidence) || 0));
+            chartItemConfidence.textContent = `${confValue}% CONFIDENCE`;
+            chartItemConfidence.style.display = "inline-flex";
         }
 
         // --- NEW EXPERT FEATURES ---
@@ -465,7 +470,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let recDesc = "";
         
         const change = currentItem.change;
-        const conf = currentItem.confidence;
+        const conf = Math.max(0, Math.min(100, Number(currentItem.confidence) || 0));
         
         if (isUp) {
             if (change > 2.0 && conf > 75) {
@@ -794,11 +799,24 @@ document.addEventListener("DOMContentLoaded", () => {
                     e.stopPropagation();
                     const targetId = e.currentTarget.dataset.item;
                     
-                    // Match target category
+                    // Match target category from expanded catalog
                     let category = "gpu";
                     if (targetId.includes("ddr")) category = "ram";
-                    else if (targetId.includes("7800x3d") || targetId.includes("14700k")) category = "cpu";
-                    else if (targetId.includes("zephyrus") || targetId.includes("macbook") || targetId.includes("legion")) category = "laptop";
+                    else if (targetId.includes("ssd") || targetId.includes("hdd") || targetId.includes("nvme") || targetId.includes("pcie")) category = "storage";
+                    else if (
+                        targetId.includes("x3d") ||
+                        targetId.includes("7600x") ||
+                        targetId.includes("14600") ||
+                        targetId.includes("14700") ||
+                        targetId.includes("14900")
+                    ) category = "cpu";
+                    else if (
+                        targetId.includes("zephyrus") ||
+                        targetId.includes("macbook") ||
+                        targetId.includes("legion") ||
+                        targetId.includes("razer") ||
+                        targetId.includes("thinkpad")
+                    ) category = "laptop";
 
                     currentCategory = category;
                     document.querySelectorAll(".tab-btn").forEach(btn => {
@@ -820,7 +838,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Match item raw keys to readable names
     function getItemReadableName(itemId) {
         if (!marketData) return itemId;
-        const allItems = [...marketData.ram.items, ...marketData.gpu.items, ...marketData.cpu.items, ...marketData.laptop.items];
+        const allItems = ["ram", "gpu", "cpu", "storage", "laptop"].flatMap(cat => (marketData[cat] && marketData[cat].items) ? marketData[cat].items : []);
         const match = allItems.find(i => i.id === itemId);
         return match ? match.name.split(" (")[0] : itemId;
     }
@@ -1205,78 +1223,50 @@ document.addEventListener("DOMContentLoaded", () => {
     // Fallback Data Loader if Fetch fails (direct client viewing support)
     function loadFallbackData() {
         marketData = {
-            "lastUpdated": "2026-07-20T12:00:00",
+            "lastUpdated": "2026-07-23T12:00:00Z",
             "ram": {
                 "displayName": "Memory (RAM)",
                 "items": [
-                    {
-                        "id": "ddr4-16gb",
-                        "name": "DDR4 16GB (2x8GB) 3200MHz",
-                        "price": 45.99,
-                        "change": 2.3,
-                        "confidence": 65,
-                        "trend": "up",
-                        "history": [48.50, 48.00, 47.90, 47.50, 47.00, 47.20, 46.80, 46.50, 46.20, 46.00, 45.80, 45.50, 45.20, 45.00, 45.30, 45.10, 44.90, 44.80, 44.50, 44.20, 44.00, 44.30, 44.60, 44.80, 45.00, 45.20, 45.50, 45.70, 45.85, 45.99]
-                    },
-                    {
-                        "id": "ddr5-32gb",
-                        "name": "DDR5 32GB (2x16GB) 6000MHz",
-                        "price": 98.50,
-                        "change": -1.5,
-                        "confidence": 72,
-                        "trend": "down",
-                        "history": [105.00, 104.50, 104.00, 103.80, 103.20, 102.90, 102.50, 102.00, 101.80, 101.50, 101.20, 101.00, 100.80, 100.50, 100.20, 99.90, 99.80, 99.50, 99.20, 99.00, 99.20, 99.00, 98.80, 98.70, 98.60, 98.80, 98.90, 98.70, 98.60, 98.50]
-                    }
+                    {"id": "ddr4-16gb", "name": "DDR4 16GB (2x8GB) 3200MHz", "price": 42.21, "change": -1.2, "confidence": 68, "trend": "down", "history": [46.5,46.2,46,45.8,45.5,45.2,45,45.3,45.1,44.9,44.8,44.5,44.2,44,44.3,44.6,44.8,45,45.2,45.5,45.7,45.85,45.99,45.23,44.67,43.64,43.08,42.6,42.19,42.21]},
+                    {"id": "ddr5-32gb", "name": "DDR5 32GB (2x16GB) 6000MHz", "price": 109.04, "change": 2.4, "confidence": 74, "trend": "up", "history": [102,101.8,101.5,101.2,101,100.8,100.5,100.2,99.9,99.8,99.5,99.2,99,99.2,99,98.8,98.7,98.6,98.8,98.9,98.7,98.6,98.5,100.27,102.68,103.31,105.03,106.63,108.12,109.04]}
                 ],
-                "outlook": "Slight upward pressure on older DDR4 modules.",
+                "outlook": "DDR5 remains under mild upward pressure as AI memory demand crowds out consumer capacity.",
                 "news": []
             },
             "gpu": {
                 "displayName": "Graphics Cards (GPU)",
                 "items": [
-                    {
-                        "id": "rtx-4070",
-                        "name": "NVIDIA GeForce RTX 4070 12GB",
-                        "price": 549.99,
-                        "change": 4.2,
-                        "confidence": 85,
-                        "trend": "up",
-                        "history": [520.00, 521.50, 520.00, 522.00, 525.00, 524.50, 527.00, 528.00, 526.50, 530.00, 532.00, 531.00, 535.00, 536.50, 535.00, 538.00, 540.00, 539.00, 542.00, 544.50, 543.00, 545.00, 546.00, 545.50, 547.00, 548.50, 547.90, 549.00, 549.50, 549.99]
-                    }
+                    {"id": "rtx-4070", "name": "NVIDIA GeForce RTX 4070 12GB", "price": 549.91, "change": 0.3, "confidence": 76, "trend": "up", "history": [528,526.5,530,532,531,535,536.5,535,538,540,539,542,544.5,543,545,546,545.5,547,548.5,547.9,549,549.5,549.99,549.53,549.31,548.83,549.34,550.1,550.17,549.91]},
+                    {"id": "rx-7800-xt", "name": "AMD Radeon RX 7800 XT 16GB", "price": 499.92, "change": -0.8, "confidence": 70, "trend": "down", "history": [508.5,508,506,505,505.5,504,503,503.5,502,501,501.5,500,499.5,499,500,499.5,499,498.5,499,499.5,499.2,499.1,499,498.68,498.65,499.01,499.09,500.2,500.95,499.92]}
                 ],
-                "outlook": "Mid-range GPU prices remain sticky.",
+                "outlook": "Mid-range GPU prices remain sticky while AMD applies tactical discounts.",
                 "news": []
             },
             "cpu": {
                 "displayName": "Processors (CPU)",
                 "items": [
-                    {
-                        "id": "ryzen-7800x3d",
-                        "name": "AMD Ryzen 7 7800X3D 8-Core",
-                        "price": 369.00,
-                        "change": 6.5,
-                        "confidence": 90,
-                        "trend": "up",
-                        "history": [345.00, 346.00, 345.50, 347.00, 348.00, 349.50, 350.00, 352.00, 351.50, 353.00, 355.00, 354.50, 356.00, 357.00, 356.50, 358.00, 360.00, 359.50, 361.00, 362.50, 362.00, 364.00, 365.00, 364.50, 366.00, 367.00, 366.50, 368.00, 368.50, 369.00]
-                    }
+                    {"id": "ryzen-7800x3d", "name": "AMD Ryzen 7 7800X3D 8-Core", "price": 363.25, "change": 1.1, "confidence": 82, "trend": "up", "history": [352,351.5,353,355,354.5,356,357,356.5,358,360,359.5,361,362.5,362,364,365,364.5,366,367,366.5,368,368.5,369,361.88,361.72,362.74,362.39,363.25,362.67,363.25]},
+                    {"id": "i7-14700k", "name": "Intel Core i7-14700K 20-Core", "price": 388.96, "change": -1.5, "confidence": 75, "trend": "down", "history": [403,403.5,402,401,401.5,400,399.5,399,398,397,397.5,396,395,394.5,394,393.5,393,392,391,390.5,390,389.5,389.99,390.95,390.59,390.08,389.15,388.58,388.43,388.96]}
                 ],
-                "outlook": "AMD's Ryzen 7 7800X3D remains top-selling.",
+                "outlook": "X3D chips stay firm while Intel 14th-gen continues inventory clearance.",
+                "news": []
+            },
+            "storage": {
+                "displayName": "Storage (SSD/HDD)",
+                "items": [
+                    {"id": "ssd-1tb-nvme", "name": "1TB NVMe SSD (PCIe 4.0)", "price": 69.99, "change": 3.2, "confidence": 77, "trend": "up", "history": [62,62.2,62.5,62.8,63,63.4,63.8,64,64.5,64.8,65,65.4,65.8,66,66.3,66.6,66.9,67.1,67.4,67.7,68,68.2,68.5,68.8,69,69.2,69.4,69.6,69.8,69.99]},
+                    {"id": "ssd-2tb-nvme", "name": "2TB NVMe SSD (PCIe 4.0)", "price": 129.99, "change": 2.8, "confidence": 75, "trend": "up", "history": [118,118.5,119,119.5,120,120.5,121,121.5,122,122.5,123,123.5,124,124.5,125,125.4,125.8,126.1,126.5,126.9,127.2,127.5,127.9,128.2,128.5,128.8,129.1,129.4,129.7,129.99]}
+                ],
+                "outlook": "NAND pricing is turning bullish as AI servers absorb enterprise SSD capacity.",
                 "news": []
             },
             "laptop": {
                 "displayName": "Laptops",
                 "items": [
-                    {
-                        "id": "zephyrus-g14",
-                        "name": "ASUS ROG Zephyrus G14 (2026)",
-                        "price": 1499.00,
-                        "change": 1.8,
-                        "confidence": 70,
-                        "trend": "up",
-                        "history": [1460.00, 1455.00, 1465.00, 1470.00, 1468.00, 1472.00, 1475.00, 1470.00, 1474.00, 1478.00, 1480.00, 1476.00, 1482.00, 1485.00, 1483.00, 1488.00, 1490.00, 1489.00, 1492.00, 1495.00, 1493.00, 1495.00, 1496.00, 1495.50, 1497.00, 1498.50, 1497.90, 1499.00, 1499.50, 1499.00]
-                    }
+                    {"id": "zephyrus-g14", "name": "ASUS ROG Zephyrus G14 (2026)", "price": 1498.38, "change": 0.2, "confidence": 73, "trend": "up", "history": [1470,1474,1478,1480,1476,1482,1485,1483,1488,1490,1489,1492,1493,1494,1495,1494,1495,1496,1495.5,1496,1496.5,1497,1497.2,1497.5,1497.8,1498,1498.1,1498.2,1498.3,1498.38]},
+                    {"id": "macbook-air-m3", "name": "Apple MacBook Air 13\" M3 8GB/256GB", "price": 1020.52, "change": -1.1, "confidence": 84, "trend": "down", "history": [1050,1048,1046,1044,1042,1040,1038,1036,1035,1034,1033,1032,1031,1030,1029,1028,1027,1026,1025,1024.5,1024,1023.5,1023,1022.5,1022,1021.5,1021.2,1021,1020.7,1020.52]}
                 ],
-                "outlook": "Laptop prices face mixed movements.",
+                "outlook": "Gaming laptops are promotional while premium notebooks remain comparatively stable.",
                 "news": []
             },
             "globalNews": []

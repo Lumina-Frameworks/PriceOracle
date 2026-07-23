@@ -547,7 +547,7 @@ body::before {
 /* Dashboard Grid & Cards */
 .dashboard-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 24px;
     margin-bottom: 48px;
 }
@@ -865,7 +865,7 @@ body::before {
 
 .index-charts-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 24px;
     margin-top: 24px;
 }

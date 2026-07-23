@@ -1,7 +1,7 @@
 {
   "name": "price-oracle",
   "version": "1.0.0",
-  "description": "PriceOracle - AI-powered hardware price prediction website for RAM, GPU, and CPU",
+  "description": "PriceOracle - AI-powered hardware price prediction website for CPU, GPU, RAM, Storage, and Laptops",
   "main": "index.html",
   "scripts": {
     "dev": "vite",
