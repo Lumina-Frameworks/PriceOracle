@@ -660,7 +660,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
         svg.appendChild(areaPath);
 
-        // Draw line path
+        // Draw line path (use real path length so draw animation reaches the final point)
         const mainLine = createSVGElement("path", {
             class: `chart-line chart-line-${item.trend}`,
             d: linePathStr
@@ -681,6 +681,20 @@ document.addEventListener("DOMContentLoaded", () => {
         svg.appendChild(trackerCircle);
 
         chartWrapper.appendChild(svg);
+
+        // Measure real path length after mount so draw animation always finishes at "Today"
+        try {
+            const pathLen = mainLine.getTotalLength();
+            const dashLen = Math.max(pathLen + 8, 1);
+            mainLine.style.strokeDasharray = `${dashLen}`;
+            mainLine.style.strokeDashoffset = `${dashLen}`;
+            mainLine.style.animation = "none";
+            void mainLine.getBoundingClientRect();
+            mainLine.style.animation = "";
+        } catch (err) {
+            mainLine.style.strokeDasharray = "none";
+            mainLine.style.strokeDashoffset = "0";
+        }
 
         // Tooltip
         const tooltip = document.createElement("div");

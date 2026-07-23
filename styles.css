@@ -1164,8 +1164,7 @@ body::before {
     stroke-width: 3;
     stroke-linecap: round;
     stroke-linejoin: round;
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
+    /* dasharray/offset are set in JS to the real path length so the line always fully draws */
     animation: drawLine 1.5s forwards ease-out;
 }
 
