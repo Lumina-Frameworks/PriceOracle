@@ -1,17 +1,16 @@
 {
-  "lastUpdated": "2026-08-08T09:07:49.684Z",
+  "lastUpdated": "2026-08-09T09:21:08.263Z",
   "ram": {
     "displayName": "Memory (RAM)",
     "items": [
       {
         "id": "ddr4-16gb",
         "name": "DDR4 16GB (2x8GB) 3200MHz",
-        "price": 36.11,
-        "change": 5,
-        "confidence": 86,
+        "price": 36.62,
+        "change": 6.3,
+        "confidence": 85,
         "trend": "up",
         "history": [
-          34.59,
           34.58,
           34.5,
           34.41,
@@ -40,18 +39,18 @@
           34.59,
           34.98,
           35.61,
-          36.11
+          36.11,
+          36.62
         ]
       },
       {
         "id": "ddr4-32gb",
         "name": "DDR4 32GB (2x16GB) 3600MHz",
-        "price": 63.2,
-        "change": 5.3,
-        "confidence": 84,
+        "price": 64.24,
+        "change": 7,
+        "confidence": 87,
         "trend": "up",
         "history": [
-          62.09,
           62.43,
           61.87,
           62.13,
@@ -80,18 +79,18 @@
           61.2,
           61.84,
           62.33,
-          63.2
+          63.2,
+          64.24
         ]
       },
       {
         "id": "ddr5-32gb",
         "name": "DDR5 32GB (2x16GB) 6000MHz",
-        "price": 92.12,
-        "change": 1.3,
-        "confidence": 82,
-        "trend": "up",
+        "price": 91.67,
+        "change": -0.3,
+        "confidence": 78,
+        "trend": "down",
         "history": [
-          77.16,
           77.47,
           77.62,
           76.62,
@@ -120,18 +119,18 @@
           93.92,
           94.04,
           91.99,
-          92.12
+          92.12,
+          91.67
         ]
       },
       {
         "id": "ddr5-64gb",
         "name": "DDR5 64GB (2x32GB) 6000MHz",
-        "price": 178.51,
-        "change": 1.1,
-        "confidence": 81,
-        "trend": "up",
+        "price": 176.46,
+        "change": -0.5,
+        "confidence": 84,
+        "trend": "down",
         "history": [
-          145.71,
           148,
           148.83,
           150.59,
@@ -160,86 +159,79 @@
           181.11,
           180.86,
           178.64,
-          178.51
+          178.51,
+          176.46
         ]
       }
     ],
     "outlook": "RAM prices have adjusted lower towards realistic retail market levels as supplier supply bottlenecks ease and retail promotions take effect.",
     "news": [
       {
-        "headline": "Asus ROG Zephyrus G16 (2026) review",
+        "headline": "Microsoft quietly deletes 32 GB RAM recommendation, which I'm sure has nothing to do with it bringing back 8 GB laptops",
         "source": "PC Gamer",
-        "date": "2026-08-07",
+        "date": "2026-08-06",
         "impact": "neutral",
-        "url": "https://www.pcgamer.com/hardware/gaming-laptops/asus-rog-zephyrus-g16-2026-review/",
-        "affectedItems": [
-          "zephyrus-g14"
-        ]
+        "url": "https://www.pcgamer.com/hardware/gaming-laptops/microsoft-quietly-deletes-32-gb-ram-recommendation-which-im-sure-has-nothing-to-do-with-it-bringing-back-8-gb-laptops/",
+        "affectedItems": []
       },
       {
-        "headline": "(PR) Stormcraft PC Launches Valkyrie Series Gaming Desktops",
+        "headline": "Microsoft Raises Xbox Prices by Up to 43% in Europe and UK",
+        "source": "TechPowerUp",
+        "date": "2026-08-03",
+        "impact": "bullish",
+        "url": "https://www.techpowerup.com/351296/microsoft-raises-xbox-prices-by-up-to-43-in-europe-and-uk",
+        "affectedItems": []
+      },
+      {
+        "headline": "AMD \"Zen 6\" to Improve 1% Lows and In-Game Stuttering",
+        "source": "TechPowerUp",
+        "date": "2026-08-03",
+        "impact": "bullish",
+        "url": "https://www.techpowerup.com/351297/amd-zen-6-to-improve-1-lows-and-in-game-stuttering",
+        "affectedItems": []
+      },
+      {
+        "headline": "Lexar Lists 32 GB DDR5-7200 Memory With Chinese DRAM at $592",
         "source": "TechPowerUp",
         "date": "2026-08-03",
         "impact": "neutral",
-        "url": "https://www.techpowerup.com/351330/stormcraft-pc-launches-valkyrie-series-gaming-desktops",
-        "affectedItems": [
-          "ddr5-32gb",
-          "ddr5-64gb",
-          "rx-9070-xt",
-          "ryzen-7800x3d",
-          "ryzen-9800x3d"
-        ]
-      },
-      {
-        "headline": "(PR) Sandisk and SK hynix Advance Global Standardization of High Bandwidth Flash with Release of First OCP Technical Specification",
-        "source": "TechPowerUp",
-        "date": "2026-08-04",
-        "impact": "bullish",
-        "url": "https://www.techpowerup.com/351335/sandisk-and-sk-hynix-advance-global-standardization-of-high-bandwidth-flash-with-release-of-first-ocp-technical-specification",
-        "affectedItems": []
-      },
-      {
-        "headline": "Memory Makers Seal 2027 Deals: No Room for New Buyers",
-        "source": "TechPowerUp",
-        "date": "2026-08-04",
-        "impact": "bullish",
-        "url": "https://www.techpowerup.com/351344/memory-makers-seal-2027-deals-no-room-for-new-buyers",
-        "affectedItems": []
-      },
-      {
-        "headline": "Nextorage Releases NX-F2AE V90 SDXC UHS-II Memory Cards",
-        "source": "TechPowerUp",
-        "date": "2026-08-04",
-        "impact": "neutral",
-        "url": "https://www.techpowerup.com/351345/nextorage-releases-nx-f2ae-v90-sdxc-uhs-ii-memory-cards",
-        "affectedItems": []
-      },
-      {
-        "headline": "(PR) NVM Express Publishes Set of NVMe Specifications Enhancing Security, Manageability and Sustainability",
-        "source": "TechPowerUp",
-        "date": "2026-08-04",
-        "impact": "bullish",
-        "url": "https://www.techpowerup.com/351348/nvm-express-publishes-set-of-nvme-specifications-enhancing-security-manageability-and-sustainability",
-        "affectedItems": []
-      },
-      {
-        "headline": "(PR) Microchip Partners with Micron to Showcase High-Performance PCIe Gen 6 Storage Architecture",
-        "source": "TechPowerUp",
-        "date": "2026-08-04",
-        "impact": "bullish",
-        "url": "https://www.techpowerup.com/351349/microchip-partners-with-micron-to-showcase-high-performance-pcie-gen-6-storage-architecture",
-        "affectedItems": []
-      },
-      {
-        "headline": "CXMT Enters LPDDR6 Risk Production with 12.8 Gbps Memory Chips",
-        "source": "TechPowerUp",
-        "date": "2026-08-04",
-        "impact": "bullish",
-        "url": "https://www.techpowerup.com/351350/cxmt-enters-lpddr6-risk-production-with-12-8-gbps-memory-chips",
+        "url": "https://www.techpowerup.com/351307/lexar-lists-32-gb-ddr5-7200-memory-with-chinese-dram-at-usd-592",
         "affectedItems": [
           "ddr5-32gb",
           "ddr5-64gb"
         ]
+      },
+      {
+        "headline": "CXMT Reportedly Plans Second Fab in Beijing to Boost DRAM Output",
+        "source": "TechPowerUp",
+        "date": "2026-08-03",
+        "impact": "bullish",
+        "url": "https://www.techpowerup.com/351308/cxmt-reportedly-plans-second-fab-in-beijing-to-boost-dram-output",
+        "affectedItems": []
+      },
+      {
+        "headline": "(PR) Kioxia to Showcase CXL Compatible Memory Expansion Module KIOXIA XL1 Series for AI Workloads",
+        "source": "TechPowerUp",
+        "date": "2026-08-03",
+        "impact": "bullish",
+        "url": "https://www.techpowerup.com/351310/kioxia-to-showcase-cxl-compatible-memory-expansion-module-kioxia-xl1-series-for-ai-workloads",
+        "affectedItems": []
+      },
+      {
+        "headline": "(PR) Kioxia Announces GP1 Series Super High IOPS SSDs for AI Applications",
+        "source": "TechPowerUp",
+        "date": "2026-08-03",
+        "impact": "neutral",
+        "url": "https://www.techpowerup.com/351318/kioxia-announces-gp1-series-super-high-iops-ssds-for-ai-applications",
+        "affectedItems": []
+      },
+      {
+        "headline": "(PR) GameSir Launches Tarantula 8K PC Wired Esports Controller with 8000 Hz Polling Rate and Gen-2 TMR Sticks",
+        "source": "TechPowerUp",
+        "date": "2026-08-03",
+        "impact": "bearish",
+        "url": "https://www.techpowerup.com/351319/gamesir-launches-tarantula-8k-pc-wired-esports-controller-with-8000-hz-polling-rate-and-gen-2-tmr-sticks",
+        "affectedItems": []
       }
     ]
   },
@@ -249,12 +241,11 @@
       {
         "id": "rtx-4060",
         "name": "NVIDIA GeForce RTX 4060 8GB",
-        "price": 290.03,
-        "change": -0.2,
-        "confidence": 68,
+        "price": 290.38,
+        "change": -0.1,
+        "confidence": 61,
         "trend": "down",
         "history": [
-          293.54,
           293.46,
           295.45,
           292.5,
@@ -283,18 +274,18 @@
           290.35,
           290.37,
           290.05,
-          290.03
+          290.03,
+          290.38
         ]
       },
       {
         "id": "rtx-4070",
         "name": "NVIDIA GeForce RTX 4070 12GB",
-        "price": 550.33,
-        "change": 0,
-        "confidence": 68,
+        "price": 551.5,
+        "change": 0.3,
+        "confidence": 65,
         "trend": "up",
         "history": [
-          546.22,
           548.3,
           550.17,
           545.98,
@@ -323,18 +314,18 @@
           551.53,
           550.82,
           550.5,
-          550.33
+          550.33,
+          551.5
         ]
       },
       {
         "id": "rtx-4080-super",
         "name": "NVIDIA GeForce RTX 4080 Super 16GB",
-        "price": 1002.22,
-        "change": 0,
-        "confidence": 65,
-        "trend": "up",
+        "price": 1000.76,
+        "change": -0.3,
+        "confidence": 69,
+        "trend": "down",
         "history": [
-          1003.38,
           1002.91,
           1005.44,
           996.29,
@@ -363,18 +354,18 @@
           1001.14,
           1002.71,
           1003.22,
-          1002.22
+          1002.22,
+          1000.76
         ]
       },
       {
         "id": "rtx-5090",
         "name": "NVIDIA GeForce RTX 5090 32GB",
-        "price": 2374.6,
-        "change": 3,
-        "confidence": 71,
+        "price": 2374.27,
+        "change": 2.7,
+        "confidence": 76,
         "trend": "up",
         "history": [
-          1984.04,
           1958.03,
           2013.14,
           2012.12,
@@ -403,18 +394,18 @@
           2341.01,
           2377.92,
           2378.62,
-          2374.6
+          2374.6,
+          2374.27
         ]
       },
       {
         "id": "rx-7800-xt",
         "name": "AMD Radeon RX 7800 XT 16GB",
-        "price": 497.62,
-        "change": -0.7,
-        "confidence": 71,
+        "price": 496.39,
+        "change": -1,
+        "confidence": 74,
         "trend": "down",
         "history": [
-          519.89,
           522.69,
           517.04,
           513.21,
@@ -443,18 +434,18 @@
           499.78,
           498.65,
           497.77,
-          497.62
+          497.62,
+          496.39
         ]
       },
       {
         "id": "rx-9070-xt",
         "name": "AMD Radeon RX 9070 XT 16GB",
-        "price": 637.69,
-        "change": 6.8,
-        "confidence": 73,
+        "price": 636.49,
+        "change": 4.8,
+        "confidence": 55,
         "trend": "up",
         "history": [
-          645.17,
           648.93,
           648.65,
           648.65,
@@ -483,12 +474,75 @@
           627.36,
           636.66,
           637.44,
-          637.69
+          637.69,
+          636.49
         ]
       }
     ],
     "outlook": "Flagship Blackwell cards remain expensive on thin retail supply and AI/workstation pull. Mid-range Ada Lovelace pricing is sticky, while AMD continues tactical discounts on outgoing RDNA3 inventory ahead of broader RDNA4 availability.",
     "news": [
+      {
+        "headline": "It is genuinely cheaper for me to fly to QuakeCon and buy a RTX 5090 at the Nvidia booth than pick up the GPU absolutely anywhere else",
+        "source": "PC Gamer",
+        "date": "2026-08-06",
+        "impact": "bearish",
+        "url": "https://www.pcgamer.com/hardware/graphics-cards/it-is-genuinely-cheaper-for-me-to-fly-to-quakecon-and-buy-a-rtx-5090-at-the-nvidia-booth-than-pick-up-the-gpu-absolutely-anywhere-else/",
+        "affectedItems": [
+          "rtx-5090"
+        ]
+      },
+      {
+        "headline": "GIGABYTE Reportedly Hikes GPU Pricing by Up to 40% in Japan",
+        "source": "TechPowerUp",
+        "date": "2026-08-04",
+        "impact": "neutral",
+        "url": "https://www.techpowerup.com/351362/gigabyte-reportedly-hikes-gpu-pricing-by-up-to-40-in-japan",
+        "affectedItems": []
+      },
+      {
+        "headline": "DropReference Launches in the US with PC Part Price Comparison and Gaming Performance Estimates",
+        "source": "TechPowerUp",
+        "date": "2026-08-07",
+        "impact": "bearish",
+        "url": "https://www.techpowerup.com/350687/dropreference-launches-in-the-us-with-pc-part-price-comparison-and-gaming-performance-estimates",
+        "affectedItems": []
+      },
+      {
+        "headline": "Frore claims its LiquidJet can drop Nvidia Rubin GPU temperatures by 10°C — can also boost performance by 15% as hyperscalers eye using delidded GPUs in production environments",
+        "source": "Tom's Hardware",
+        "date": "2026-08-05",
+        "impact": "neutral",
+        "url": "https://www.tomshardware.com/pc-components/liquid-cooling/frore-claims-its-liquidjet-can-drop-nvidia-rubin-gpu-temperatures-by-10-c-can-also-boost-performance-by-15-percent-as-hyperscalers-eye-using-delidded-gpus-in-production-environments",
+        "affectedItems": []
+      },
+      {
+        "headline": "Elon Musk says SpaceX will exclusively use Nvidia GPUs 'because they are the best' — says optimized Vera Rubin NVL72 will be launched into space next year",
+        "source": "Tom's Hardware",
+        "date": "2026-08-05",
+        "impact": "neutral",
+        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/elon-musk-says-spacex-will-exclusively-use-nvidia-gpus-because-they-are-the-best-says-optimized-vera-rubin-nvl72-will-be-launched-into-space-next-year",
+        "affectedItems": []
+      },
+      {
+        "headline": "PC gamer vibe-codes a safeguard against RTX 5090 power connector failures — monitors per-pin power draw, shuts down system if it exceeds 9.5A for more than 15 seconds",
+        "source": "Tom's Hardware",
+        "date": "2026-08-06",
+        "impact": "bullish",
+        "url": "https://www.tomshardware.com/pc-components/gpus/pc-gamer-vibe-codes-a-safeguard-against-rtx-5090-power-connector-failures-monitors-per-pin-power-draw-shuts-down-system-if-it-exceeds-9-5a-for-more-than-15-seconds",
+        "affectedItems": [
+          "rtx-5090"
+        ]
+      },
+      {
+        "headline": "Nvidia RTX 5090 ships in bizarre 8-motherboard bundle — retailers hold GPUs hostage similar to the crypto boom",
+        "source": "Tom's Hardware",
+        "date": "2026-08-08",
+        "impact": "neutral",
+        "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-rtx-5090-ships-in-bizarre-8-motherboard-bundle-retailers-hold-gpus-hostage-similar-to-the-crypto-boom",
+        "affectedItems": [
+          "rtx-5090"
+        ]
+      },
       {
         "headline": "AMD RDNA 5 Patches for DCN6 Display Engine Arrive in Linux Kernel",
         "source": "TechPowerUp",
@@ -496,68 +550,6 @@
         "impact": "neutral",
         "url": "https://www.techpowerup.com/351306/amd-rdna-5-patches-for-dcn6-display-engine-arrive-in-linux-kernel",
         "affectedItems": []
-      },
-      {
-        "headline": "TSMC Targets 100,000 N2 Wafers per Month by the End of 2026",
-        "source": "TechPowerUp",
-        "date": "2026-08-03",
-        "impact": "bullish",
-        "url": "https://www.techpowerup.com/351326/tsmc-targets-100-000-n2-wafers-per-month-by-the-end-of-2026",
-        "affectedItems": []
-      },
-      {
-        "headline": "(PR) MSI Launches \"DRACO EPIC EDITION\" Hardware and Peripherals Suite for 40th Anniversary",
-        "source": "TechPowerUp",
-        "date": "2026-08-04",
-        "impact": "neutral",
-        "url": "https://www.techpowerup.com/351340/msi-launches-draco-epic-edition-hardware-and-peripherals-suite-for-40th-anniversary",
-        "affectedItems": []
-      },
-      {
-        "headline": "AMD RDNA 4m iGPU Support Arrives in Open-Source Mesa GPU Driver",
-        "source": "TechPowerUp",
-        "date": "2026-08-07",
-        "impact": "neutral",
-        "url": "https://www.techpowerup.com/351431/amd-rdna-4m-igpu-support-arrives-in-open-source-mesa-gpu-driver",
-        "affectedItems": []
-      },
-      {
-        "headline": "$4,429 order for a ROG Astral RTX 5090 cancelled by Nvidia due to a 'late' price increase, with Asus blamed — marketplace buyer refunded after immediate $500 increase, with top-spec GPU now almost 2.5x higher than MSRP",
-        "source": "Tom's Hardware",
-        "date": "2026-08-05",
-        "impact": "bullish",
-        "url": "https://www.tomshardware.com/pc-components/gpus/usd4-429-order-for-a-rog-astral-rtx-5090-cancelled-by-nvidia-due-to-a-late-price-increase-with-asus-blamed-marketplace-buyer-refunded-after-immediate-usd500-increase-with-top-spec-gpu-now-almost-2-5x-higher-than-msrp",
-        "affectedItems": [
-          "rtx-5090"
-        ]
-      },
-      {
-        "headline": "Anthropic co-designing custom AI inference chips to bypass costly Nvidia GPUs — Samsung reported as manufacturing partner for Claude maker",
-        "source": "Tom's Hardware",
-        "date": "2026-08-07",
-        "impact": "neutral",
-        "url": "https://www.tomshardware.com/tech-industry/anthropic-to-build-its-own-co-designed-custom-ai-accelerator-for-inferencing-workloads-samsung-reported-to-be-partnering-with-the-claude-ai-maker-for-manufacturing",
-        "affectedItems": []
-      },
-      {
-        "headline": "Nvidia sells RTX 50-series GPUs at MSRP during QuakeCon 2026 — graphics cards sold at launch prices more than a year after release are now considered an attraction",
-        "source": "Tom's Hardware",
-        "date": "2026-08-07",
-        "impact": "neutral",
-        "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-sells-rtx-50-series-gpus-at-msrp-during-quakecon-2026-graphics-cards-sold-at-launch-prices-more-than-a-year-after-release-are-now-considered-an-attraction",
-        "affectedItems": [
-          "rtx-5090"
-        ]
-      },
-      {
-        "headline": "Grab an entire RTX 5090 PC for just $380 more than the standalone graphics card — save $1,550 off Alienware's Area-51 gaming rig",
-        "source": "Tom's Hardware",
-        "date": "2026-08-07",
-        "impact": "neutral",
-        "url": "https://www.tomshardware.com/desktops/gaming-pcs/grab-an-entire-rtx-5090-pc-for-just-usd380-more-than-the-standalone-graphics-card-save-usd1-550-off-alienwares-area-51-gaming-rig",
-        "affectedItems": [
-          "rtx-5090"
-        ]
       }
     ]
   },
@@ -567,12 +559,11 @@
       {
         "id": "i5-14600k",
         "name": "Intel Core i5-14600K 14-Core",
-        "price": 284.92,
-        "change": -0.4,
-        "confidence": 68,
+        "price": 284.66,
+        "change": -0.6,
+        "confidence": 71,
         "trend": "down",
         "history": [
-          288.23,
           289.9,
           293.41,
           293.3,
@@ -601,18 +592,18 @@
           286.09,
           285.71,
           284.99,
-          284.92
+          284.92,
+          284.66
         ]
       },
       {
         "id": "i7-14700k",
         "name": "Intel Core i7-14700K 20-Core",
-        "price": 381,
-        "change": -0.4,
+        "price": 380.6,
+        "change": -0.5,
         "confidence": 70,
         "trend": "down",
         "history": [
-          383.98,
           385.08,
           389.34,
           386.28,
@@ -641,18 +632,18 @@
           382.94,
           382.52,
           381.85,
-          381
+          381,
+          380.6
         ]
       },
       {
         "id": "i9-14900k",
         "name": "Intel Core i9-14900K 24-Core",
-        "price": 477.48,
+        "price": 476.37,
         "change": -1.1,
         "confidence": 75,
         "trend": "down",
         "history": [
-          490.94,
           489.63,
           492.04,
           490.99,
@@ -681,18 +672,18 @@
           480.07,
           478.63,
           478.59,
-          477.48
+          477.48,
+          476.37
         ]
       },
       {
         "id": "ryzen-7600x",
         "name": "AMD Ryzen 5 7600X 6-Core",
-        "price": 219.17,
-        "change": 0.4,
-        "confidence": 61,
+        "price": 219.1,
+        "change": 0.2,
+        "confidence": 65,
         "trend": "up",
         "history": [
-          217.81,
           218.98,
           219.79,
           218.8,
@@ -721,18 +712,18 @@
           219.59,
           219.78,
           219.52,
-          219.17
+          219.17,
+          219.1
         ]
       },
       {
         "id": "ryzen-7800x3d",
         "name": "AMD Ryzen 7 7800X3D 8-Core",
         "price": 374.15,
-        "change": 0.8,
-        "confidence": 74,
+        "change": 0.9,
+        "confidence": 58,
         "trend": "up",
         "history": [
-          364.13,
           365.11,
           365.63,
           363.85,
@@ -761,18 +752,18 @@
           371.24,
           371.8,
           372.79,
+          374.15,
           374.15
         ]
       },
       {
         "id": "ryzen-9800x3d",
         "name": "AMD Ryzen 7 9800X3D 8-Core",
-        "price": 436.43,
-        "change": -1,
-        "confidence": 69,
+        "price": 431.55,
+        "change": -0.8,
+        "confidence": 75,
         "trend": "down",
         "history": [
-          506.16,
           513.42,
           505.67,
           494.17,
@@ -801,12 +792,47 @@
           436.73,
           436.53,
           436.1,
-          436.43
+          436.43,
+          431.55
         ]
       }
     ],
     "outlook": "X3D chips from AMD continue to lead gaming demand and hold stronger pricing power. Intel 14th-gen desktop processors are still in clearance mode as channel inventory rotates toward newer platforms, creating short-term buying opportunities.",
     "news": [
+      {
+        "headline": "(PR) Marvell Introduces Bravera SC6 SSD Controller for PCIe Gen 6 NVMe SSDs",
+        "source": "TechPowerUp",
+        "date": "2026-08-04",
+        "impact": "bullish",
+        "url": "https://www.techpowerup.com/351356/marvell-introduces-bravera-sc6-ssd-controller-for-pcie-gen-6-nvme-ssds",
+        "affectedItems": []
+      },
+      {
+        "headline": "Hardware researcher spins up 'CPU deoptimization' project to find the slowest single x86 instruction, creates hall of shame — worst offender takes 198 billion cycles spanning 62 seconds to execute",
+        "source": "Tom's Hardware",
+        "date": "2026-08-08",
+        "impact": "bearish",
+        "url": "https://www.tomshardware.com/pc-components/cpus/hardware-researcher-spins-up-cpu-deoptimization-project-to-find-the-slowest-machine-code-worst-offender-takes-198-billion-cycles-to-execute",
+        "affectedItems": []
+      },
+      {
+        "headline": "Intel's proposed orbital data centers would manage thousands of simple LEO satellites —two-tier network puts the brains of satellite constellations in higher orbit",
+        "source": "Tom's Hardware",
+        "date": "2026-08-08",
+        "impact": "bullish",
+        "url": "https://www.tomshardware.com/tech-industry/space/intels-proposed-orbital-data-centers-would-manage-thousands-of-simple-leo-satellites-two-tier-network-puts-the-brains-of-satellite-constellations-in-higher-orbit",
+        "affectedItems": []
+      },
+      {
+        "headline": "Save $160 off AMD's ultimate gaming CPU combo, includes motherboard and chip cooler — $458 combo features Ryzen 7 9800X3D, B850 motherboard, and a 240mm liquid AIO",
+        "source": "Tom's Hardware",
+        "date": "2026-08-08",
+        "impact": "bearish",
+        "url": "https://www.tomshardware.com/pc-components/cpus/save-usd160-off-amds-ultimate-gaming-cpu-combo-includes-motherboard-and-chip-cooler-usd458-combo-features-ryzen-7-9800x3d-b850-motherboard-and-a-240mm-liquid-aio",
+        "affectedItems": [
+          "ryzen-9800x3d"
+        ]
+      },
       {
         "headline": "(PR) Intel Appoints Dean Jarnac as Executive VP and Chief Sales Officer",
         "source": "TechPowerUp",
@@ -838,38 +864,6 @@
         "impact": "neutral",
         "url": "https://www.techpowerup.com/351328/lenovo-googlebook-15-renders-appear-months-ahead-of-launch",
         "affectedItems": []
-      },
-      {
-        "headline": "While Everyone's Chasing AI Coding Agents, This IDE Is $30 for Life",
-        "source": "TechPowerUp",
-        "date": "2026-08-05",
-        "impact": "bearish",
-        "url": "https://www.techpowerup.com/351313/while-everyones-chasing-ai-coding-agents-this-ide-is-usd-30-for-life",
-        "affectedItems": []
-      },
-      {
-        "headline": "(PR) Akasa Advances 2U Rackmount Fanless Case Series with Kepler R",
-        "source": "TechPowerUp",
-        "date": "2026-07-31",
-        "impact": "neutral",
-        "url": "https://www.techpowerup.com/351269/akasa-advances-2u-rackmount-fanless-case-series-with-kepler-r",
-        "affectedItems": []
-      },
-      {
-        "headline": "Lekuo Launches B650 Chipset Add-in Card for I/O Expansion",
-        "source": "TechPowerUp",
-        "date": "2026-08-04",
-        "impact": "neutral",
-        "url": "https://www.techpowerup.com/351347/lekuo-launches-b650-chipset-add-in-card-for-i-o-expansion",
-        "affectedItems": []
-      },
-      {
-        "headline": "(PR) Nothing Announces the CMF Clip Pro Open-ear Earbuds",
-        "source": "TechPowerUp",
-        "date": "2026-08-04",
-        "impact": "neutral",
-        "url": "https://www.techpowerup.com/351352/nothing-announces-the-cmf-clip-pro-open-ear-earbuds",
-        "affectedItems": []
       }
     ]
   },
@@ -879,12 +873,11 @@
       {
         "id": "ssd-1tb-nvme",
         "name": "1TB NVMe SSD (PCIe 4.0)",
-        "price": 63.85,
-        "change": -0.5,
-        "confidence": 75,
-        "trend": "down",
+        "price": 63.88,
+        "change": 0.8,
+        "confidence": 79,
+        "trend": "up",
         "history": [
-          69.18,
           69.5,
           69.17,
           69.73,
@@ -913,18 +906,18 @@
           63.38,
           63.51,
           63.78,
-          63.85
+          63.85,
+          63.88
         ]
       },
       {
         "id": "ssd-2tb-nvme",
         "name": "2TB NVMe SSD (PCIe 4.0)",
-        "price": 125.75,
-        "change": -0.2,
-        "confidence": 75,
+        "price": 123.89,
+        "change": -2.1,
+        "confidence": 78,
         "trend": "down",
         "history": [
-          129.92,
           128.67,
           128.63,
           128.59,
@@ -953,18 +946,18 @@
           126.93,
           127.27,
           126.27,
-          125.75
+          125.75,
+          123.89
         ]
       },
       {
         "id": "ssd-4tb-nvme",
         "name": "4TB NVMe SSD (PCIe 4.0)",
-        "price": 275.87,
+        "price": 276.49,
         "change": 0.8,
-        "confidence": 68,
+        "confidence": 69,
         "trend": "up",
         "history": [
-          269.4,
           273.65,
           277.91,
           278.73,
@@ -993,18 +986,18 @@
           275.04,
           274.98,
           275.01,
-          275.87
+          275.87,
+          276.49
         ]
       },
       {
         "id": "ssd-1tb-pcie5",
         "name": "1TB NVMe SSD (PCIe 5.0)",
-        "price": 132.46,
-        "change": 4.5,
-        "confidence": 69,
+        "price": 132.63,
+        "change": 2.5,
+        "confidence": 75,
         "trend": "up",
         "history": [
-          114.57,
           113.48,
           112.33,
           112.68,
@@ -1033,18 +1026,18 @@
           131.27,
           131.54,
           132.09,
-          132.46
+          132.46,
+          132.63
         ]
       },
       {
         "id": "hdd-4tb",
         "name": "4TB HDD 7200RPM",
-        "price": 88.04,
-        "change": 0.9,
-        "confidence": 72,
+        "price": 88.23,
+        "change": 1.2,
+        "confidence": 76,
         "trend": "up",
         "history": [
-          84.93,
           84.99,
           84.9,
           85.01,
@@ -1073,18 +1066,18 @@
           87.74,
           87.86,
           87.96,
-          88.04
+          88.04,
+          88.23
         ]
       },
       {
         "id": "hdd-8tb",
         "name": "8TB HDD 7200RPM",
-        "price": 155.72,
+        "price": 156.22,
         "change": 1.4,
         "confidence": 75,
         "trend": "up",
         "history": [
-          154.08,
           153.88,
           153.07,
           153.07,
@@ -1113,12 +1106,23 @@
           154.68,
           154.83,
           155.44,
-          155.72
+          155.72,
+          156.22
         ]
       }
     ],
     "outlook": "NAND pricing is turning bullish as AI servers and data centers absorb enterprise SSD capacity. Consumer NVMe kits are rising off recent lows, while HDDs firm up on cloud restocking. PCIe 5.0 drives remain premium but less volatile than earlier in the year.",
     "news": [
+      {
+        "headline": "We tested the impact of SSD speed on gaming performance in 11 titles — we analyzed from SATA to PCIe 5.0 to see whether upgrading to a faster NVMe SSD would have an impact",
+        "source": "Tom's Hardware",
+        "date": "2026-08-08",
+        "impact": "neutral",
+        "url": "https://www.tomshardware.com/pc-components/gpus/we-tested-the-impact-of-ssd-speed-on-gaming-performance-in-11-titles-we-analyzed-from-sata-to-pcie-5-0-to-see-whether-upgrading-to-a-faster-nvme-ssd-would-have-an-impact",
+        "affectedItems": [
+          "ssd-1tb-pcie5"
+        ]
+      },
       {
         "headline": "Sandisk Optimus GX 7100M 2TB SSD review: The best 2230 drive you can buy for the Steam Deck",
         "source": "Tom's Hardware",
@@ -1178,14 +1182,6 @@
         "impact": "bullish",
         "url": "https://www.tomshardware.com/pc-components/motherboards/are-your-motherboards-m-2-heatsinks-making-good-contact-with-your-ssd-we-tested-20-modern-intel-and-amd-motherboards-to-verify",
         "affectedItems": []
-      },
-      {
-        "headline": "Sub-$400 Thunderbolt 5 dock roundup — Keychron and Plugable offer dual HDMI, but UGREEN takes top spot with an M.2 NVMe slot",
-        "source": "Tom's Hardware",
-        "date": "2026-07-31",
-        "impact": "neutral",
-        "url": "https://www.tomshardware.com/peripherals/docking-stations-hubs/testing-three-sub-usd400-thunderbolt-5-docking-stations",
-        "affectedItems": []
       }
     ]
   },
@@ -1195,12 +1191,11 @@
       {
         "id": "zephyrus-g14",
         "name": "ASUS ROG Zephyrus G14 (2026)",
-        "price": 1508.22,
-        "change": 0.2,
-        "confidence": 75,
+        "price": 1511.18,
+        "change": 0.3,
+        "confidence": 69,
         "trend": "up",
         "history": [
-          1500.42,
           1493.69,
           1500.79,
           1494.67,
@@ -1229,18 +1224,18 @@
           1507.43,
           1505.73,
           1507.71,
-          1508.22
+          1508.22,
+          1511.18
         ]
       },
       {
         "id": "macbook-air-m3",
         "name": "Apple MacBook Air 13\" M3 8GB/256GB",
-        "price": 1029.87,
+        "price": 1029.18,
         "change": -7.4,
-        "confidence": 85,
+        "confidence": 69,
         "trend": "down",
         "history": [
-          1041.75,
           1040.81,
           1036.56,
           1032.13,
@@ -1269,18 +1264,18 @@
           1087.19,
           1068.91,
           1046.8,
-          1029.87
+          1029.87,
+          1029.18
         ]
       },
       {
         "id": "macbook-pro-m4",
         "name": "Apple MacBook Pro 14\" M4 16GB/512GB",
-        "price": 1639.73,
-        "change": -5.8,
-        "confidence": 83,
+        "price": 1638.35,
+        "change": -5.7,
+        "confidence": 67,
         "trend": "down",
         "history": [
-          1644.75,
           1651,
           1654.73,
           1652.08,
@@ -1309,18 +1304,18 @@
           1703.16,
           1675.75,
           1654.12,
-          1639.73
+          1639.73,
+          1638.35
         ]
       },
       {
         "id": "legion-5-pro",
         "name": "Lenovo Legion 5 Pro 16\" AMD",
-        "price": 1252.6,
-        "change": 0,
-        "confidence": 64,
+        "price": 1254.69,
+        "change": 0.4,
+        "confidence": 68,
         "trend": "up",
         "history": [
-          1271.55,
           1261.2,
           1258.9,
           1264.22,
@@ -1349,18 +1344,18 @@
           1254.51,
           1256.52,
           1253.62,
-          1252.6
+          1252.6,
+          1254.69
         ]
       },
       {
         "id": "razer-blade-16",
         "name": "Razer Blade 16 RTX 4070",
-        "price": 2515.02,
-        "change": -0.1,
-        "confidence": 69,
-        "trend": "down",
+        "price": 2518.3,
+        "change": 0.1,
+        "confidence": 65,
+        "trend": "up",
         "history": [
-          2521.71,
           2510.27,
           2509.65,
           2487.31,
@@ -1389,18 +1384,18 @@
           2520.88,
           2521.35,
           2519.61,
-          2515.02
+          2515.02,
+          2518.3
         ]
       },
       {
         "id": "thinkpad-x1",
         "name": "Lenovo ThinkPad X1 Carbon Gen 12",
-        "price": 1449.55,
-        "change": 0.1,
-        "confidence": 69,
+        "price": 1449.43,
+        "change": 0.2,
+        "confidence": 63,
         "trend": "up",
         "history": [
-          1437.42,
           1445.9,
           1442.8,
           1449.01,
@@ -1429,12 +1424,21 @@
           1446.22,
           1446.3,
           1449.19,
-          1449.55
+          1449.55,
+          1449.43
         ]
       }
     ],
     "outlook": "Apple silicon notebooks show split behavior: Air models soften during refresh cycles while Pro configs stay firm. Gaming laptops with last-gen GPUs are promotional, while premium creator and enterprise ultrabooks remain comparatively stable.",
     "news": [
+      {
+        "headline": "NASA modded space station's laptops so everyone could use the same charger — standardizing ISS chargers eliminated useless weight and reduced failure points",
+        "source": "Tom's Hardware",
+        "date": "2026-08-08",
+        "impact": "neutral",
+        "url": "https://www.tomshardware.com/tech-industry/space/nasa-modded-space-stations-laptops-so-everyone-could-use-the-same-charger-standardizing-iss-chargers-eliminated-useless-weight-and-reduced-failure-points",
+        "affectedItems": []
+      },
       {
         "headline": "HyperX Omen Max 16 review: All bark and no bite",
         "source": "Tom's Hardware",
@@ -1497,139 +1501,127 @@
         "impact": "neutral",
         "url": "https://www.tomshardware.com/laptops/ai-enthusiast-mods-bios-with-claude-code-ai-defeats-rsa-2048-signature-checks-and-unlocks-55-hidden-settings",
         "affectedItems": []
-      },
-      {
-        "headline": "(PR) Targus Expands EcoSmart Portfolio with Wired Keyboard, Mouse, and Combo",
-        "source": "TechPowerUp",
-        "date": "2026-07-31",
-        "impact": "neutral",
-        "url": "https://www.techpowerup.com/351270/targus-expands-ecosmart-portfolio-with-wired-keyboard-mouse-and-combo",
-        "affectedItems": []
       }
     ]
   },
   "globalNews": [
     {
-      "headline": "Asus ROG Zephyrus G16 (2026) review",
+      "headline": "Microsoft quietly deletes 32 GB RAM recommendation, which I'm sure has nothing to do with it bringing back 8 GB laptops",
       "source": "PC Gamer",
-      "date": "2026-08-07",
+      "date": "2026-08-06",
       "impact": "neutral",
-      "url": "https://www.pcgamer.com/hardware/gaming-laptops/asus-rog-zephyrus-g16-2026-review/",
+      "url": "https://www.pcgamer.com/hardware/gaming-laptops/microsoft-quietly-deletes-32-gb-ram-recommendation-which-im-sure-has-nothing-to-do-with-it-bringing-back-8-gb-laptops/",
+      "affectedItems": []
+    },
+    {
+      "headline": "It is genuinely cheaper for me to fly to QuakeCon and buy a RTX 5090 at the Nvidia booth than pick up the GPU absolutely anywhere else",
+      "source": "PC Gamer",
+      "date": "2026-08-06",
+      "impact": "bearish",
+      "url": "https://www.pcgamer.com/hardware/graphics-cards/it-is-genuinely-cheaper-for-me-to-fly-to-quakecon-and-buy-a-rtx-5090-at-the-nvidia-booth-than-pick-up-the-gpu-absolutely-anywhere-else/",
       "affectedItems": [
-        "zephyrus-g14"
+        "rtx-5090"
       ]
     },
     {
-      "headline": "AMD RDNA 5 Patches for DCN6 Display Engine Arrive in Linux Kernel",
-      "source": "TechPowerUp",
-      "date": "2026-08-03",
-      "impact": "neutral",
-      "url": "https://www.techpowerup.com/351306/amd-rdna-5-patches-for-dcn6-display-engine-arrive-in-linux-kernel",
-      "affectedItems": []
-    },
-    {
-      "headline": "TSMC Targets 100,000 N2 Wafers per Month by the End of 2026",
+      "headline": "Microsoft Raises Xbox Prices by Up to 43% in Europe and UK",
       "source": "TechPowerUp",
       "date": "2026-08-03",
       "impact": "bullish",
-      "url": "https://www.techpowerup.com/351326/tsmc-targets-100-000-n2-wafers-per-month-by-the-end-of-2026",
+      "url": "https://www.techpowerup.com/351296/microsoft-raises-xbox-prices-by-up-to-43-in-europe-and-uk",
       "affectedItems": []
     },
     {
-      "headline": "(PR) Stormcraft PC Launches Valkyrie Series Gaming Desktops",
+      "headline": "AMD \"Zen 6\" to Improve 1% Lows and In-Game Stuttering",
+      "source": "TechPowerUp",
+      "date": "2026-08-03",
+      "impact": "bullish",
+      "url": "https://www.techpowerup.com/351297/amd-zen-6-to-improve-1-lows-and-in-game-stuttering",
+      "affectedItems": []
+    },
+    {
+      "headline": "Lexar Lists 32 GB DDR5-7200 Memory With Chinese DRAM at $592",
       "source": "TechPowerUp",
       "date": "2026-08-03",
       "impact": "neutral",
-      "url": "https://www.techpowerup.com/351330/stormcraft-pc-launches-valkyrie-series-gaming-desktops",
-      "affectedItems": [
-        "ddr5-32gb",
-        "ddr5-64gb",
-        "rx-9070-xt",
-        "ryzen-7800x3d",
-        "ryzen-9800x3d"
-      ]
-    },
-    {
-      "headline": "(PR) Sandisk and SK hynix Advance Global Standardization of High Bandwidth Flash with Release of First OCP Technical Specification",
-      "source": "TechPowerUp",
-      "date": "2026-08-04",
-      "impact": "bullish",
-      "url": "https://www.techpowerup.com/351335/sandisk-and-sk-hynix-advance-global-standardization-of-high-bandwidth-flash-with-release-of-first-ocp-technical-specification",
-      "affectedItems": []
-    },
-    {
-      "headline": "(PR) MSI Launches \"DRACO EPIC EDITION\" Hardware and Peripherals Suite for 40th Anniversary",
-      "source": "TechPowerUp",
-      "date": "2026-08-04",
-      "impact": "neutral",
-      "url": "https://www.techpowerup.com/351340/msi-launches-draco-epic-edition-hardware-and-peripherals-suite-for-40th-anniversary",
-      "affectedItems": []
-    },
-    {
-      "headline": "Memory Makers Seal 2027 Deals: No Room for New Buyers",
-      "source": "TechPowerUp",
-      "date": "2026-08-04",
-      "impact": "bullish",
-      "url": "https://www.techpowerup.com/351344/memory-makers-seal-2027-deals-no-room-for-new-buyers",
-      "affectedItems": []
-    },
-    {
-      "headline": "Nextorage Releases NX-F2AE V90 SDXC UHS-II Memory Cards",
-      "source": "TechPowerUp",
-      "date": "2026-08-04",
-      "impact": "neutral",
-      "url": "https://www.techpowerup.com/351345/nextorage-releases-nx-f2ae-v90-sdxc-uhs-ii-memory-cards",
-      "affectedItems": []
-    },
-    {
-      "headline": "(PR) NVM Express Publishes Set of NVMe Specifications Enhancing Security, Manageability and Sustainability",
-      "source": "TechPowerUp",
-      "date": "2026-08-04",
-      "impact": "bullish",
-      "url": "https://www.techpowerup.com/351348/nvm-express-publishes-set-of-nvme-specifications-enhancing-security-manageability-and-sustainability",
-      "affectedItems": []
-    },
-    {
-      "headline": "(PR) Microchip Partners with Micron to Showcase High-Performance PCIe Gen 6 Storage Architecture",
-      "source": "TechPowerUp",
-      "date": "2026-08-04",
-      "impact": "bullish",
-      "url": "https://www.techpowerup.com/351349/microchip-partners-with-micron-to-showcase-high-performance-pcie-gen-6-storage-architecture",
-      "affectedItems": []
-    },
-    {
-      "headline": "CXMT Enters LPDDR6 Risk Production with 12.8 Gbps Memory Chips",
-      "source": "TechPowerUp",
-      "date": "2026-08-04",
-      "impact": "bullish",
-      "url": "https://www.techpowerup.com/351350/cxmt-enters-lpddr6-risk-production-with-12-8-gbps-memory-chips",
+      "url": "https://www.techpowerup.com/351307/lexar-lists-32-gb-ddr5-7200-memory-with-chinese-dram-at-usd-592",
       "affectedItems": [
         "ddr5-32gb",
         "ddr5-64gb"
       ]
     },
     {
-      "headline": "(PR) HighPoint Launches Rocket 7602L Bootable Dual-Port PCIe Gen 5 M.2 Add-In-Card",
+      "headline": "CXMT Reportedly Plans Second Fab in Beijing to Boost DRAM Output",
       "source": "TechPowerUp",
-      "date": "2026-08-04",
+      "date": "2026-08-03",
+      "impact": "bullish",
+      "url": "https://www.techpowerup.com/351308/cxmt-reportedly-plans-second-fab-in-beijing-to-boost-dram-output",
+      "affectedItems": []
+    },
+    {
+      "headline": "(PR) Kioxia to Showcase CXL Compatible Memory Expansion Module KIOXIA XL1 Series for AI Workloads",
+      "source": "TechPowerUp",
+      "date": "2026-08-03",
+      "impact": "bullish",
+      "url": "https://www.techpowerup.com/351310/kioxia-to-showcase-cxl-compatible-memory-expansion-module-kioxia-xl1-series-for-ai-workloads",
+      "affectedItems": []
+    },
+    {
+      "headline": "(PR) Kioxia Announces GP1 Series Super High IOPS SSDs for AI Applications",
+      "source": "TechPowerUp",
+      "date": "2026-08-03",
       "impact": "neutral",
-      "url": "https://www.techpowerup.com/351351/highpoint-launches-rocket-7602l-bootable-dual-port-pcie-gen-5-m-2-add-in-card",
+      "url": "https://www.techpowerup.com/351318/kioxia-announces-gp1-series-super-high-iops-ssds-for-ai-applications",
       "affectedItems": []
     },
     {
-      "headline": "(PR) Kioxia and Sandisk Unveil 10th-Gen 332-Layer QLC NAND with 4.8 Gb/s Interface Speeds",
+      "headline": "(PR) GameSir Launches Tarantula 8K PC Wired Esports Controller with 8000 Hz Polling Rate and Gen-2 TMR Sticks",
       "source": "TechPowerUp",
-      "date": "2026-08-04",
-      "impact": "bullish",
-      "url": "https://www.techpowerup.com/351353/kioxia-and-sandisk-unveil-10th-gen-332-layer-qlc-nand-with-4-8-gb-s-interface-speeds",
+      "date": "2026-08-03",
+      "impact": "bearish",
+      "url": "https://www.techpowerup.com/351319/gamesir-launches-tarantula-8k-pc-wired-esports-controller-with-8000-hz-polling-rate-and-gen-2-tmr-sticks",
       "affectedItems": []
     },
     {
-      "headline": "EU Pressures Apple Into Universal Clipboard for Compatibility With Windows",
+      "headline": "(PR) MSI Announces Availability of Crosshair A16 HX MLG Edition Gaming Laptop",
+      "source": "TechPowerUp",
+      "date": "2026-08-03",
+      "impact": "neutral",
+      "url": "https://www.techpowerup.com/351320/msi-announces-availability-of-crosshair-a16-hx-mlg-edition-gaming-laptop",
+      "affectedItems": []
+    },
+    {
+      "headline": "ASUS ROG Quietly Launches 10 Gbps Ethernet USB Dongle",
+      "source": "TechPowerUp",
+      "date": "2026-08-03",
+      "impact": "neutral",
+      "url": "https://www.techpowerup.com/351321/asus-rog-quietly-launches-10-gbps-ethernet-usb-dongle",
+      "affectedItems": []
+    },
+    {
+      "headline": "Microsoft Denies New Tracking Service in Windows 11",
+      "source": "TechPowerUp",
+      "date": "2026-08-03",
+      "impact": "neutral",
+      "url": "https://www.techpowerup.com/351323/microsoft-denies-new-tracking-service-in-windows-11",
+      "affectedItems": []
+    },
+    {
+      "headline": "NVIDIA GeForce RTX 50 Series Faces 30% Price Increase in South Korea",
+      "source": "TechPowerUp",
+      "date": "2026-08-03",
+      "impact": "bullish",
+      "url": "https://www.techpowerup.com/351329/nvidia-geforce-rtx-50-series-faces-30-price-increase-in-south-korea",
+      "affectedItems": [
+        "rtx-5090"
+      ]
+    },
+    {
+      "headline": "(PR) Marvell Introduces Bravera SC6 SSD Controller for PCIe Gen 6 NVMe SSDs",
       "source": "TechPowerUp",
       "date": "2026-08-04",
       "impact": "bullish",
-      "url": "https://www.techpowerup.com/351358/eu-pressures-apple-into-universal-clipboard-for-compatibility-with-windows",
+      "url": "https://www.techpowerup.com/351356/marvell-introduces-bravera-sc6-ssd-controller-for-pcie-gen-6-nvme-ssds",
       "affectedItems": []
     }
   ]
