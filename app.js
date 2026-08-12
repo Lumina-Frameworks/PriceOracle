@@ -150,6 +150,7 @@ document.addEventListener("DOMContentLoaded", () => {
             
             const card = document.createElement("div");
             card.className = `dashboard-card card-trend-${mainTrend}`;
+            card.dataset.category = cat;
             
             let iconSvg = "";
             if (cat === "ram") {
@@ -193,6 +194,36 @@ document.addEventListener("DOMContentLoaded", () => {
                 const itemRow = document.createElement("div");
                 itemRow.className = "card-item-row";
                 itemRow.style.cursor = "pointer";
+                itemRow.dataset.searchtext = `${item.name} ${item.id} ${cat}`.toLowerCase();
+                
+                // Helper to split brand & core model cleanly
+                let brandTag = "";
+                let nameTitle = item.name;
+                if (item.name.startsWith("NVIDIA GeForce ")) {
+                    brandTag = "NVIDIA";
+                    nameTitle = item.name.replace("NVIDIA GeForce ", "");
+                } else if (item.name.startsWith("AMD Radeon ")) {
+                    brandTag = "AMD";
+                    nameTitle = item.name.replace("AMD Radeon ", "");
+                } else if (item.name.startsWith("Intel Core ")) {
+                    brandTag = "INTEL";
+                    nameTitle = item.name.replace("Intel Core ", "");
+                } else if (item.name.startsWith("AMD Ryzen ")) {
+                    brandTag = "AMD";
+                    nameTitle = item.name.replace("AMD Ryzen ", "");
+                } else if (item.name.startsWith("ASUS ")) {
+                    brandTag = "ASUS";
+                    nameTitle = item.name.replace("ASUS ", "");
+                } else if (item.name.startsWith("Apple ")) {
+                    brandTag = "APPLE";
+                    nameTitle = item.name.replace("Apple ", "");
+                } else if (item.name.startsWith("Lenovo ")) {
+                    brandTag = "LENOVO";
+                    nameTitle = item.name.replace("Lenovo ", "");
+                } else if (item.name.startsWith("Razer ")) {
+                    brandTag = "RAZER";
+                    nameTitle = item.name.replace("Razer ", "");
+                }
                 
                 // Clicking item row takes you directly to Analytics view
                 itemRow.addEventListener("click", () => {
@@ -207,9 +238,14 @@ document.addEventListener("DOMContentLoaded", () => {
                     }, 50);
                 });
 
+                const brandBadgeHtml = brandTag ? `<span class="item-brand-tag brand-${brandTag.toLowerCase()}">${brandTag}</span>` : "";
+
                 itemRow.innerHTML = `
                     <div class="item-row-header">
-                        <span class="item-name" title="${item.name}">${item.name}</span>
+                        <div class="item-title-wrap">
+                            ${brandBadgeHtml}
+                            <span class="item-name" title="${item.name}">${nameTitle}</span>
+                        </div>
                         <span class="item-price">$${item.price.toFixed(2)}</span>
                     </div>
                     <div class="item-row-body ${trendColorClass}">
@@ -222,17 +258,11 @@ document.addEventListener("DOMContentLoaded", () => {
                                 <path class="sparkline-path" d="${sparklinePath}"></path>
                             </svg>
                         </div>
-                        <div class="item-confidence">
-                            <div class="conf-progress-wrap">
-                                <svg class="circular-progress" viewBox="0 0 20 20">
-                                    <circle class="bg-circle" cx="10" cy="10" r="8"></circle>
-                                    <circle class="fg-circle" cx="10" cy="10" r="8" 
-                                            stroke-dasharray="50.26" 
-                                            stroke-dashoffset="${50.26 - (50.26 * confValue) / 100}">
-                                    </circle>
-                                </svg>
-                                <span class="conf-text">${confValue}% <span class="conf-label">confidence</span></span>
+                        <div class="item-confidence-pill" title="${confValue}% model prediction confidence">
+                            <div class="conf-bar-bg">
+                                <div class="conf-bar-fill" style="width: ${confValue}%;"></div>
                             </div>
+                            <span class="conf-text">${confValue}%</span>
                         </div>
                     </div>
                 `;
@@ -243,8 +273,96 @@ document.addEventListener("DOMContentLoaded", () => {
             dashboardGrid.appendChild(card);
         });
 
+        const searchInput = document.getElementById("dashboard-search");
+        const searchClear = document.getElementById("search-clear");
+        const filterPills = document.querySelectorAll(".filter-pill");
+
+        let activeFilterCat = "all";
+        let activeSearchQuery = "";
+
+        if (searchInput) {
+            searchInput.addEventListener("input", (e) => {
+                activeSearchQuery = e.target.value.trim().toLowerCase();
+                if (searchClear) {
+                    searchClear.style.display = activeSearchQuery ? "block" : "none";
+                }
+                filterDashboardItems();
+            });
+        }
+
+        if (searchClear) {
+            searchClear.addEventListener("click", () => {
+                if (searchInput) searchInput.value = "";
+                activeSearchQuery = "";
+                searchClear.style.display = "none";
+                filterDashboardItems();
+            });
+        }
+
+        filterPills.forEach(pill => {
+            pill.addEventListener("click", () => {
+                filterPills.forEach(p => p.classList.remove("active"));
+                pill.classList.add("active");
+                activeFilterCat = pill.dataset.cat;
+                filterDashboardItems();
+            });
+        });
+
+        function filterDashboardItems() {
+            const cards = dashboardGrid.querySelectorAll(".dashboard-card");
+            let totalVisibleItems = 0;
+
+            cards.forEach(card => {
+                const cardCat = card.dataset.category;
+                const matchesCat = activeFilterCat === "all" || activeFilterCat === cardCat;
+                let visibleInCard = 0;
+
+                const itemRows = card.querySelectorAll(".card-item-row");
+                itemRows.forEach(row => {
+                    const text = row.dataset.searchtext || "";
+                    const matchesSearch = !activeSearchQuery || text.includes(activeSearchQuery);
+                    
+                    if (matchesCat && matchesSearch) {
+                        row.style.display = "flex";
+                        visibleInCard++;
+                        totalVisibleItems++;
+                    } else {
+                        row.style.display = "none";
+                    }
+                });
+
+                if (visibleInCard > 0) {
+                    card.style.display = "flex";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+
+            let noResultsEl = document.getElementById("dashboard-no-results");
+            if (totalVisibleItems === 0) {
+                if (!noResultsEl) {
+                    noResultsEl = document.createElement("div");
+                    noResultsEl.id = "dashboard-no-results";
+                    noResultsEl.className = "no-results-state";
+                    noResultsEl.innerHTML = `
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                        <h4>No hardware items found</h4>
+                        <p>Try searching for another keyword or clear filters.</p>
+                    `;
+                    dashboardGrid.appendChild(noResultsEl);
+                }
+                noResultsEl.style.display = "block";
+            } else if (noResultsEl) {
+                noResultsEl.style.display = "none";
+            }
+        }
+
         // Hydrate Category Price Index Charts (Aggregate valuations)
         hydrateCategoryIndexes();
+        filterDashboardItems();
     }
 
     // 7. Category price action index logic

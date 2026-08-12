@@ -169,65 +169,65 @@ function matchItemsAndCategories(title, desc, items) {
 function analyzeSentiment(title, desc) {
     const text = `${title} ${desc}`.toLowerCase();
 
-    const bullishWords = [
-        "rise",
-        "rising",
-        "increase",
-        "shortage",
-        "growth",
-        "expensive",
-        "inflation",
-        "hike",
-        "outpace",
-        "demand",
-        "stockout",
-        "higher",
-        "profit",
-        "gain",
-        "premium",
-        "tight",
-        "allocation",
-        "sold out",
-        "surge",
-        "climb",
-        "upward",
-        "scarce",
-    ];
-    const bearishWords = [
-        "cut",
-        "drop",
-        "plunge",
-        "plummet",
-        "slash",
-        "reduction",
-        "sale",
-        "discount",
-        "surplus",
-        "cheap",
-        "overproduction",
-        "lower",
-        "loss",
-        "oversupply",
-        "clearance",
-        "deal",
-        "markdown",
-        "softening",
-        "decline",
-        "falling",
-        "price cut",
-    ];
+    const bullishWeights = {
+        "shortage": 2.5,
+        "surge": 2.0,
+        "hike": 2.0,
+        "spike": 2.0,
+        "msrp jump": 3.0,
+        "jump": 1.5,
+        "demand": 1.0,
+        "inflation": 1.5,
+        "costly": 1.5,
+        "expensive": 1.5,
+        "tariff": 2.0,
+        "scalper": 2.0,
+        "out of stock": 2.5,
+        "sold out": 2.0,
+        "soar": 2.0,
+        "constrained": 1.5,
+        "price increase": 2.5,
+        "rise": 1.0,
+        "rising": 1.0,
+        "increase": 1.0,
+        "higher": 1.0,
+        "premium": 1.5
+    };
 
-    let bullishCount = 0;
-    let bearishCount = 0;
-    bullishWords.forEach((w) => {
-        if (text.includes(w)) bullishCount += 1;
-    });
-    bearishWords.forEach((w) => {
-        if (text.includes(w)) bearishCount += 1;
-    });
+    const bearishWeights = {
+        "price cut": 2.5,
+        "discount": 2.0,
+        "plummet": 2.5,
+        "slash": 2.0,
+        "reduction": 1.5,
+        "surplus": 2.0,
+        "oversupply": 2.5,
+        "cheap": 1.5,
+        "clearance": 2.0,
+        "deal": 1.5,
+        "decline": 1.5,
+        "drop": 1.5,
+        "falling": 1.5,
+        "cut": 1.0,
+        "plunge": 2.0,
+        "sale": 1.5,
+        "lower": 1.0,
+        "loss": 1.0,
+        "markdown": 1.5
+    };
 
-    if (bullishCount > bearishCount) return "bullish";
-    if (bearishCount > bullishCount) return "bearish";
+    let bullishScore = 0;
+    let bearishScore = 0;
+
+    for (const [w, weight] of Object.entries(bullishWeights)) {
+        if (text.includes(w)) bullishScore += weight;
+    }
+    for (const [w, weight] of Object.entries(bearishWeights)) {
+        if (text.includes(w)) bearishScore += weight;
+    }
+
+    if (bullishScore - bearishScore >= 1.5) return "bullish";
+    if (bearishScore - bullishScore >= 1.5) return "bearish";
     return "neutral";
 }
 
