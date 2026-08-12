@@ -270,6 +270,16 @@ document.addEventListener("DOMContentLoaded", () => {
             });
 
             card.appendChild(itemsContainer);
+
+            // Sleek Footer with item counter
+            const cardFooter = document.createElement("div");
+            cardFooter.className = "card-footer-info";
+            cardFooter.innerHTML = `
+                <span class="footer-count">${items.length} Tracked</span>
+                <span class="footer-hint">Scroll for more ↓</span>
+            `;
+            card.appendChild(cardFooter);
+
             dashboardGrid.appendChild(card);
         });
 
@@ -333,6 +343,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 if (visibleInCard > 0) {
                     card.style.display = "flex";
+                    const countEl = card.querySelector(".footer-count");
+                    if (countEl) {
+                        countEl.textContent = activeSearchQuery ? `${visibleInCard}/${card.querySelectorAll(".card-item-row").length} Items` : `${visibleInCard} Tracked`;
+                    }
                 } else {
                     card.style.display = "none";
                 }
