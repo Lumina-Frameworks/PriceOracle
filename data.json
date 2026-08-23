@@ -243,6 +243,46 @@
     "displayName": "Graphics Cards (GPU)",
     "items": [
       {
+        "id": "dgx-spark",
+        "name": "NVIDIA DGX Spark 128GB",
+        "price": 3999.0,
+        "change": 1.2,
+        "confidence": 71,
+        "trend": "up",
+        "history": [
+          3946.56,
+          3948.46,
+          3940.7,
+          3959.37,
+          3942.75,
+          3944.61,
+          3950.82,
+          3951.02,
+          3958.4,
+          3950.89,
+          3950.91,
+          3957.43,
+          3957.53,
+          3967.6,
+          3958.47,
+          3987.32,
+          3980.68,
+          3967.48,
+          3972.49,
+          3977.22,
+          3979.45,
+          3973.42,
+          3998.34,
+          4004.64,
+          3989.46,
+          3991.72,
+          3980.68,
+          3982.89,
+          3992.28,
+          3999.0
+        ]
+      },
+      {
         "id": "rtx-5090",
         "name": "NVIDIA GeForce RTX 5090 32GB",
         "price": 2436.02,
@@ -320,6 +360,46 @@
           1205.6,
           1204.8,
           1207.7
+        ]
+      },
+      {
+        "id": "rtx-3090-24gb",
+        "name": "NVIDIA GeForce RTX 3090 24GB",
+        "price": 1095.0,
+        "change": -0.8,
+        "confidence": 64,
+        "trend": "down",
+        "history": [
+          1102.46,
+          1100.63,
+          1104.7,
+          1099.32,
+          1103.07,
+          1101.27,
+          1098.27,
+          1101.89,
+          1097.47,
+          1100.63,
+          1097.13,
+          1097.0,
+          1099.61,
+          1102.83,
+          1096.36,
+          1096.92,
+          1100.15,
+          1102.65,
+          1099.09,
+          1097.2,
+          1101.97,
+          1093.51,
+          1100.31,
+          1095.02,
+          1093.44,
+          1092.89,
+          1094.25,
+          1098.39,
+          1092.51,
+          1095.0
         ]
       },
       {
@@ -403,46 +483,6 @@
         ]
       },
       {
-        "id": "rtx-5070-12gb",
-        "name": "NVIDIA GeForce RTX 5070 12GB",
-        "price": 608.18,
-        "change": 0.1,
-        "confidence": 70,
-        "trend": "up",
-        "history": [
-          629.55,
-          630.5,
-          629.65,
-          631.14,
-          629.7,
-          629.05,
-          628.93,
-          629.8,
-          628.84,
-          629.74,
-          630.61,
-          629.04,
-          628.43,
-          630.7,
-          629.17,
-          627.84,
-          629,
-          632.6,
-          637.83,
-          638.14,
-          631.57,
-          625.43,
-          612.73,
-          607.52,
-          603.08,
-          603.63,
-          605.08,
-          606.35,
-          607.19,
-          608.18
-        ]
-      },
-      {
         "id": "rx-9070-xt",
         "name": "AMD Radeon RX 9070 XT 16GB",
         "price": 622.86,
@@ -480,6 +520,86 @@
           621.49,
           622.83,
           622.86
+        ]
+      },
+      {
+        "id": "rtx-3080-10gb",
+        "name": "NVIDIA GeForce RTX 3080 10GB",
+        "price": 615.0,
+        "change": -0.5,
+        "confidence": 62,
+        "trend": "down",
+        "history": [
+          618.68,
+          617.27,
+          618.03,
+          615.54,
+          615.42,
+          616.04,
+          618.27,
+          616.92,
+          616.26,
+          617.49,
+          616.74,
+          615.88,
+          618.21,
+          617.63,
+          615.29,
+          616.81,
+          616.47,
+          618.09,
+          617.27,
+          614.99,
+          618.29,
+          613.95,
+          615.32,
+          616.89,
+          613.81,
+          615.36,
+          613.04,
+          616.03,
+          616.41,
+          615.0
+        ]
+      },
+      {
+        "id": "rtx-5070-12gb",
+        "name": "NVIDIA GeForce RTX 5070 12GB",
+        "price": 608.18,
+        "change": 0.1,
+        "confidence": 70,
+        "trend": "up",
+        "history": [
+          629.55,
+          630.5,
+          629.65,
+          631.14,
+          629.7,
+          629.05,
+          628.93,
+          629.8,
+          628.84,
+          629.74,
+          630.61,
+          629.04,
+          628.43,
+          630.7,
+          629.17,
+          627.84,
+          629,
+          632.6,
+          637.83,
+          638.14,
+          631.57,
+          625.43,
+          612.73,
+          607.52,
+          603.08,
+          603.63,
+          605.08,
+          606.35,
+          607.19,
+          608.18
         ]
       },
       {
@@ -643,6 +763,46 @@
         ]
       },
       {
+        "id": "rtx-3070-8gb",
+        "name": "NVIDIA GeForce RTX 3070 8GB",
+        "price": 385.0,
+        "change": 0.3,
+        "confidence": 61,
+        "trend": "up",
+        "history": [
+          384.16,
+          382.5,
+          383.74,
+          383.5,
+          383.52,
+          383.21,
+          384.46,
+          384.85,
+          383.47,
+          384.13,
+          382.34,
+          384.38,
+          384.28,
+          385.42,
+          384.96,
+          383.37,
+          383.75,
+          384.69,
+          382.77,
+          384.19,
+          383.36,
+          383.27,
+          383.16,
+          385.41,
+          383.51,
+          383.95,
+          384.46,
+          386.01,
+          383.64,
+          385.0
+        ]
+      },
+      {
         "id": "rtx-5060-8gb",
         "name": "NVIDIA GeForce RTX 5060 8GB",
         "price": 342.22,
@@ -721,6 +881,46 @@
           294.24,
           294.55
         ]
+      },
+      {
+        "id": "rtx-3060-12gb",
+        "name": "NVIDIA GeForce RTX 3060 12GB",
+        "price": 245.0,
+        "change": 0.2,
+        "confidence": 66,
+        "trend": "up",
+        "history": [
+          244.1,
+          244.79,
+          244.69,
+          244.82,
+          243.7,
+          244.01,
+          243.93,
+          244.99,
+          245.17,
+          243.63,
+          243.71,
+          243.85,
+          243.89,
+          244.42,
+          244.66,
+          244.05,
+          243.58,
+          244.43,
+          244.36,
+          244.79,
+          245.58,
+          245.1,
+          244.79,
+          245.02,
+          245.17,
+          243.99,
+          245.68,
+          245.48,
+          245.7,
+          245.0
+        ]
       }
     ],
     "outlook": "Flagship Blackwell cards remain expensive on thin retail supply and AI/workstation pull. Mid-range Ada Lovelace pricing is sticky, while AMD continues tactical discounts on outgoing RDNA3 inventory ahead of broader RDNA4 availability.",
@@ -734,7 +934,7 @@
         "affectedItems": []
       },
       {
-        "headline": "Gamer uncovers factory plastic left on RTX 3070 VRM pads after five years, causing overheating — claims removal and repasting dropped GPU hotspot temperatures by 30°C",
+        "headline": "Gamer uncovers factory plastic left on RTX 3070 VRM pads after five years, causing overheating \u2014 claims removal and repasting dropped GPU hotspot temperatures by 30\u00b0C",
         "source": "Tom's Hardware",
         "date": "2026-08-22",
         "impact": "bearish",
@@ -742,7 +942,7 @@
         "affectedItems": []
       },
       {
-        "headline": "25 years after the death of 3dfx, the Voodoo 3 gets a Linux driver update — classic Voodoo GPUs can now boot without a PC BIOS",
+        "headline": "25 years after the death of 3dfx, the Voodoo 3 gets a Linux driver update \u2014 classic Voodoo GPUs can now boot without a PC BIOS",
         "source": "Tom's Hardware",
         "date": "2026-08-22",
         "impact": "neutral",
@@ -750,7 +950,7 @@
         "affectedItems": []
       },
       {
-        "headline": "Don't tell Nvidia: 56% of you are willing to pay over $600 for your next graphics card... and 19% would spend over $1000 😮",
+        "headline": "Don't tell Nvidia: 56% of you are willing to pay over $600 for your next graphics card... and 19% would spend over $1000 \ud83d\ude2e",
         "source": "PC Gamer",
         "date": "2026-08-21",
         "impact": "neutral",
@@ -766,7 +966,7 @@
         "affectedItems": []
       },
       {
-        "headline": "Nvidia denies report it will ship Groq-based LPUs to China by year-end — says there is 'no China-specific LPU product in our roadmap'",
+        "headline": "Nvidia denies report it will ship Groq-based LPUs to China by year-end \u2014 says there is 'no China-specific LPU product in our roadmap'",
         "source": "Tom's Hardware",
         "date": "2026-08-21",
         "impact": "neutral",
@@ -774,7 +974,7 @@
         "affectedItems": []
       },
       {
-        "headline": "H200 AI GPUs finally reach China under case-by-case import licenses, but it's already too late for Nvidia — homemade chips corner the China market as country seeks semiconductor independence",
+        "headline": "H200 AI GPUs finally reach China under case-by-case import licenses, but it's already too late for Nvidia \u2014 homemade chips corner the China market as country seeks semiconductor independence",
         "source": "Tom's Hardware",
         "date": "2026-08-21",
         "impact": "neutral",
@@ -1368,7 +1568,7 @@
         "affectedItems": []
       },
       {
-        "headline": "Enterprise SSDs cost 18.6 times more than HDDs as 30TB drives hit $22,600 — hard drive supply is sold out through 2027",
+        "headline": "Enterprise SSDs cost 18.6 times more than HDDs as 30TB drives hit $22,600 \u2014 hard drive supply is sold out through 2027",
         "source": "Tom's Hardware",
         "date": "2026-08-21",
         "impact": "bullish",
@@ -1376,7 +1576,7 @@
         "affectedItems": []
       },
       {
-        "headline": "Sandisk's new $2,200 NAS SSD lets you fill the drive every day for five years — 7.68TB M.2 flaunts eye-popping 14,000 TBW rating",
+        "headline": "Sandisk's new $2,200 NAS SSD lets you fill the drive every day for five years \u2014 7.68TB M.2 flaunts eye-popping 14,000 TBW rating",
         "source": "Tom's Hardware",
         "date": "2026-08-21",
         "impact": "neutral",
@@ -1384,7 +1584,7 @@
         "affectedItems": []
       },
       {
-        "headline": "SanDisk expansion cards for Xbox Series X|S now available on Amazon — alternative storage solution to Seagate, WD arrives on the market five years after the launch of the consoles",
+        "headline": "SanDisk expansion cards for Xbox Series X|S now available on Amazon \u2014 alternative storage solution to Seagate, WD arrives on the market five years after the launch of the consoles",
         "source": "Tom's Hardware",
         "date": "2026-08-21",
         "impact": "neutral",
@@ -1719,7 +1919,7 @@
         "affectedItems": []
       },
       {
-        "headline": "NASA modded space station's laptops so everyone could use the same charger — standardizing ISS chargers eliminated useless weight and reduced failure points",
+        "headline": "NASA modded space station's laptops so everyone could use the same charger \u2014 standardizing ISS chargers eliminated useless weight and reduced failure points",
         "source": "Tom's Hardware",
         "date": "2026-08-08",
         "impact": "neutral",
@@ -1754,7 +1954,7 @@
       "affectedItems": []
     },
     {
-      "headline": "Former TSMC Engineer Busted In Taiwan Running An Illicit Currency Exchange Network – Tesla Model S Plaid & Rolex Among Items Seized",
+      "headline": "Former TSMC Engineer Busted In Taiwan Running An Illicit Currency Exchange Network \u2013 Tesla Model S Plaid & Rolex Among Items Seized",
       "source": "Wccftech",
       "date": "2026-08-23",
       "impact": "neutral",
@@ -1786,7 +1986,7 @@
       "affectedItems": []
     },
     {
-      "headline": "HP’s MacBook Neo Competitor, The OmniBook 3, Features A Snapdragon X And Offers A 40-Hour Battery For a Competitive Price, Assuming You’re Not Fond Of macOS",
+      "headline": "HP\u2019s MacBook Neo Competitor, The OmniBook 3, Features A Snapdragon X And Offers A 40-Hour Battery For a Competitive Price, Assuming You\u2019re Not Fond Of macOS",
       "source": "Wccftech",
       "date": "2026-08-23",
       "impact": "neutral",
@@ -1794,7 +1994,7 @@
       "affectedItems": []
     },
     {
-      "headline": "AMD’s AM4 CPUs Like The Re-Launched Ryzen 7 5800X3D Deliver Negligible Gaming Improvements In Newer Motherboards, Making Older Hardware Relevant During DRAM Crisis",
+      "headline": "AMD\u2019s AM4 CPUs Like The Re-Launched Ryzen 7 5800X3D Deliver Negligible Gaming Improvements In Newer Motherboards, Making Older Hardware Relevant During DRAM Crisis",
       "source": "Wccftech",
       "date": "2026-08-23",
       "impact": "neutral",
@@ -1802,7 +2002,7 @@
       "affectedItems": []
     },
     {
-      "headline": "mVolt+ Pushes RTX 5090 To 700W Without Shunt Modding, Nearly 21% Above NVIDIA’s Rated 575W TDP",
+      "headline": "mVolt+ Pushes RTX 5090 To 700W Without Shunt Modding, Nearly 21% Above NVIDIA\u2019s Rated 575W TDP",
       "source": "Wccftech",
       "date": "2026-08-23",
       "impact": "neutral",
@@ -1826,7 +2026,7 @@
       "affectedItems": []
     },
     {
-      "headline": "22-Year-Old Pentium 4 Liquid Cooler Works Flawlessly On Ryzen 7 9800X3D, But Heavy Workloads Show Why You Can’t Trust It",
+      "headline": "22-Year-Old Pentium 4 Liquid Cooler Works Flawlessly On Ryzen 7 9800X3D, But Heavy Workloads Show Why You Can\u2019t Trust It",
       "source": "Wccftech",
       "date": "2026-08-23",
       "impact": "neutral",
