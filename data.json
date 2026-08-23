@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-23T15:29:14.152Z",
+  "lastUpdated": "2026-08-23T16:05:00.920Z",
   "ram": {
     "displayName": "Memory (RAM)",
     "items": [
@@ -1738,107 +1738,99 @@
   },
   "globalNews": [
     {
-      "headline": "NEWS",
-      "source": "VideoCardz",
+      "headline": "NVIDIA Built Its AVO Coding Agent To Optimize CUDA GPU Kernels, And It Just Achieved A 100% Score On A Public Test Without Receiving Any Prior Instruction",
+      "source": "Wccftech",
       "date": "2026-08-23",
       "impact": "neutral",
-      "url": "https://videocardz.com/newz/qualcomms-next-gen-snapdragon-8-elite-gen-6-pro-chip-reportedly-spotted-on-black-market-for-just-42",
+      "url": "https://wccftech.com/nvidia-built-its-avo-coding-agent-to-optimize-cuda-gpu-kernels-and-it-just-achieved-a-100-score-on-a-public-test-without-receiving-any-prior-instruction/",
       "affectedItems": []
     },
     {
-      "headline": "LEAK",
-      "source": "VideoCardz",
+      "headline": "NVIDIA Wants To Turn Your Home Wall Into A Mini Data Center By Packing 16 Blackwell GPUs And 4 server CPUs In A Liquid-Cooled, Wall-Mounted Box At $0 Upfront Cost",
+      "source": "Wccftech",
       "date": "2026-08-23",
       "impact": "neutral",
-      "url": "https://videocardz.com/newz/limited-edition-xbox-series-x25-reportedly-costs-e899-99-launches-november-27",
+      "url": "https://wccftech.com/nvidia-wants-to-turn-your-home-wall-into-a-mini-data-center-by-packing-16-blackwell-gpus-and-4-server-cpus-in-a-liquid-cooled-wall-mounted-box-at-0-upfront-cost/",
       "affectedItems": []
     },
     {
-      "headline": "NEWS",
-      "source": "VideoCardz",
+      "headline": "Former TSMC Engineer Busted In Taiwan Running An Illicit Currency Exchange Network – Tesla Model S Plaid & Rolex Among Items Seized",
+      "source": "Wccftech",
       "date": "2026-08-23",
       "impact": "neutral",
-      "url": "https://videocardz.com/newz/amd-still-hasnt-fixed-fsr-frame-generations-frame-pacing-problem",
+      "url": "https://wccftech.com/former-tsmc-engineer-busted-in-taiwan-running-an-illicit-currency-exchange-network-tesla-model-s-plaid-rolex-among-items-seized/",
       "affectedItems": []
     },
     {
-      "headline": "NEWS",
-      "source": "VideoCardz",
+      "headline": "AMD Publishes RDNA 4m Firmware Ahead Of Launch, Bringing Next-Gen APUs Closer To Linux Support",
+      "source": "Wccftech",
       "date": "2026-08-23",
       "impact": "neutral",
-      "url": "https://videocardz.com/newz/samsung-unveils-worlds-first-300hz-oled-laptop-panel-16-inch-2-5k-display",
+      "url": "https://wccftech.com/amd-publishes-rdna-4m-firmware-ahead-of-launch/",
       "affectedItems": []
     },
     {
-      "headline": "NEWS",
-      "source": "VideoCardz",
+      "headline": "Amazon Refunds For A Missing Ryzen 7 9600X Order, But Then Ships Another Empty CPU Box",
+      "source": "Wccftech",
       "date": "2026-08-23",
       "impact": "neutral",
-      "url": "https://videocardz.com/newz/acer-launches-nitro-30-pc-with-radeon-rx-9070-xt-and-pcie-4-0-x8-limited-ryzen-7-8700f-priced-at-3700",
+      "url": "https://wccftech.com/amazon-order-ryzen-9600x-empty-boxes-twice/",
       "affectedItems": []
     },
     {
-      "headline": "NEWS",
-      "source": "VideoCardz",
+      "headline": "User Snags RTX 5060 Ti For Just $242 At A Time When Most Retailers Sell It For $500",
+      "source": "Wccftech",
       "date": "2026-08-23",
       "impact": "neutral",
-      "url": "https://videocardz.com/newz/linux-has-its-own-nvidia-shadowplay-inspired-screen-recorder-and-it-works-on-all-major-gpus",
+      "url": "https://wccftech.com/user-snags-rtx-5060-ti-for-just-242-at-a-time-when-most-retailers-sell-it-for-500/",
       "affectedItems": []
     },
     {
-      "headline": "NEWS",
-      "source": "VideoCardz",
+      "headline": "HP’s MacBook Neo Competitor, The OmniBook 3, Features A Snapdragon X And Offers A 40-Hour Battery For a Competitive Price, Assuming You’re Not Fond Of macOS",
+      "source": "Wccftech",
       "date": "2026-08-23",
       "impact": "neutral",
-      "url": "https://videocardz.com/newz/take-two-goes-after-cyberleek-after-gta-6-leak-spree-subpoenas-microsoft-and-discord",
+      "url": "https://wccftech.com/hp-omnibook-3-snapdragon-x-macbook-neo-competitor-40-hour-battery/",
       "affectedItems": []
     },
     {
-      "headline": "NEWS",
-      "source": "VideoCardz",
+      "headline": "AMD’s AM4 CPUs Like The Re-Launched Ryzen 7 5800X3D Deliver Negligible Gaming Improvements In Newer Motherboards, Making Older Hardware Relevant During DRAM Crisis",
+      "source": "Wccftech",
       "date": "2026-08-23",
       "impact": "neutral",
-      "url": "https://videocardz.com/newz/intel-nova-lake-s-u-h-hx-graphics-marked-stable-in-mesa-enabled-by-default",
+      "url": "https://wccftech.com/amd-ryzen-7-5800x3d-am4-motherboard-performance-dram-crisis/",
       "affectedItems": []
     },
     {
-      "headline": "NEWS",
-      "source": "VideoCardz",
+      "headline": "mVolt+ Pushes RTX 5090 To 700W Without Shunt Modding, Nearly 21% Above NVIDIA’s Rated 575W TDP",
+      "source": "Wccftech",
       "date": "2026-08-23",
       "impact": "neutral",
-      "url": "https://videocardz.com/newz/nvidia-dlss-ray-reconstruction-4-5-found-in-modern-warfare-4-beta-files",
+      "url": "https://wccftech.com/mvolt-pushes-rtx-5090-to-700w-without-shunt-modding-nearly-21-above-nvidias-rated-575w-tdp/",
       "affectedItems": []
     },
     {
-      "headline": "NEWS",
-      "source": "VideoCardz",
+      "headline": "Windows 11 Now Suffering From BSODs And Instability Due To An Unlikely Culprit; RGB Peripherals, Microsoft Offers A Remedy To Users Experiencing Problems",
+      "source": "Wccftech",
       "date": "2026-08-23",
       "impact": "neutral",
-      "url": "https://videocardz.com/newz/valve-proton-11-0-2-released-fixes-helldivers-2-marvel-rivals-and-forza-horizon-on-steamos",
+      "url": "https://wccftech.com/windows-11-bsod-rgb-peripherals-fix/",
       "affectedItems": []
     },
     {
-      "headline": "NEWS",
-      "source": "VideoCardz",
+      "headline": "Two Intel Processors Secure A Spot In The Top 10 Best-Selling CPUs List On Amazon After Being Invisible For Over A Year",
+      "source": "Wccftech",
       "date": "2026-08-23",
       "impact": "neutral",
-      "url": "https://videocardz.com/newz/gigabyte-preparing-27-inch-aorus-tandem-oled-with-4k-240hz-and-1080p-480hz-modes",
+      "url": "https://wccftech.com/after-months-two-intel-processors-secure-a-spot-in-top-10-best-selling-cpus-list-on-amazon/",
       "affectedItems": []
     },
     {
-      "headline": "NEWS",
-      "source": "VideoCardz",
+      "headline": "22-Year-Old Pentium 4 Liquid Cooler Works Flawlessly On Ryzen 7 9800X3D, But Heavy Workloads Show Why You Can’t Trust It",
+      "source": "Wccftech",
       "date": "2026-08-23",
       "impact": "neutral",
-      "url": "https://videocardz.com/newz/geforce-rtx-5090-loses-around-half-its-cyberpunk-2077-performance-going-from-4k-to-6k",
-      "affectedItems": []
-    },
-    {
-      "headline": "NEWS",
-      "source": "VideoCardz",
-      "date": "2026-08-23",
-      "impact": "neutral",
-      "url": "https://videocardz.com/newz/amd-rdna-4m-firmware-lands-ahead-of-ryzen-500-medusa-point-launch",
+      "url": "https://wccftech.com/22-year-old-pentium-4-liquid-cooler-works-flawlessly-on-ryzen-7-9800x3d/",
       "affectedItems": []
     },
     {
@@ -1846,7 +1838,15 @@
       "source": "VideoCardz",
       "date": "2026-08-23",
       "impact": "neutral",
-      "url": "https://videocardz.com/newz/asus-googlebook-cx9406-with-core-ultra-5-325-and-16gb-ram-listed-at-ca1916",
+      "url": "https://videocardz.com/newz/playstation-players-plan-week-long-blackout-to-protest-sonys-move-away-from-physical-games",
+      "affectedItems": []
+    },
+    {
+      "headline": "NEWS",
+      "source": "VideoCardz",
+      "date": "2026-08-23",
+      "impact": "neutral",
+      "url": "https://videocardz.com/newz/hp-launches-budget-499-laptop-with-oled-and-snapdragon-x",
       "affectedItems": []
     }
   ]

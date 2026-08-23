@@ -80,6 +80,25 @@
     outline: none;
 }
 
+/* Accessibility: visible keyboard focus without ugly outlines on mouse click */
+:focus-visible {
+    outline: 2px solid var(--accent-blue);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+/* Respect users who prefer reduced motion (vestibular safety + battery) */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
 html {
     scroll-behavior: smooth;
     background-color: var(--bg-primary);
@@ -422,6 +441,7 @@ body::before {
     line-height: 1.1;
     letter-spacing: -1.5px;
     margin-bottom: 12px;
+    text-wrap: balance;
     background: linear-gradient(135deg, var(--text-primary) 30%, var(--text-secondary));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -921,6 +941,7 @@ body::before {
     font-weight: 700;
     color: var(--text-primary);
     font-family: monospace;
+    font-variant-numeric: tabular-nums; /* prevents digit jitter on live price ticks */
 }
 
 .item-row-body {

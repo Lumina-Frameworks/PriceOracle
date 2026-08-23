@@ -446,4 +446,12 @@ async function scrapeDailyNews() {
     saveData(db);
 }
 
-scrapeDailyNews();
+// Entry point: RSS pipeline first, then stealth (CloakBrowser) fallback merge.
+scrapeDailyNews().then(async () => {
+    try {
+        const { runStealthScrape } = await import("./stealth-scraper.mjs");
+        await runStealthScrape();
+    } catch (e) {
+        console.error("Stealth fallback skipped:", e.message);
+    }
+});

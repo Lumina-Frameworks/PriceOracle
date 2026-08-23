@@ -127,6 +127,7 @@ document.addEventListener("DOMContentLoaded", () => {
             hydrateDashboard();
             hydrateDetailedAnalysis();
             hydrateNewsFeed();
+            hydrateGlobalStats();
             
             // Run routing once data is hydrated
             handleRouting();
@@ -134,6 +135,26 @@ document.addEventListener("DOMContentLoaded", () => {
             console.warn("Hydration failed, using embedded fallback details.", e);
             loadFallbackData();
         }
+    }
+
+    // 5b. Global stats (real tracked-item count from data, replaces static placeholder)
+    function hydrateGlobalStats() {
+        const statsEl = document.getElementById("global-stats");
+        if (!statsEl || !marketData) return;
+        const categories = ["ram", "gpu", "cpu", "storage", "laptop"];
+        const totalItems = categories.reduce((sum, cat) => {
+            return sum + ((marketData[cat] && marketData[cat].items) ? marketData[cat].items.length : 0);
+        }, 0);
+        const avgConfidence = (() => {
+            let total = 0, count = 0;
+            categories.forEach(cat => {
+                (marketData[cat]?.items || []).forEach(item => {
+                    if (typeof item.confidence === "number") { total += item.confidence; count++; }
+                });
+            });
+            return count ? Math.round(total / count) : null;
+        })();
+        statsEl.textContent = `${totalItems} items tracked${avgConfidence ? ` | ${avgConfidence}% avg confidence` : ""}`;
     }
 
     // 6. Dashboard Hydrator (Main cards + Overall Category Index Cards)

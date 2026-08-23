@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://priceoracle.pages.dev/sitemap.xml
