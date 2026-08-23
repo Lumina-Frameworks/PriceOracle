@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-23T08:51:47.350Z",
+  "lastUpdated": "2026-08-23T15:29:14.152Z",
   "ram": {
     "displayName": "Memory (RAM)",
     "items": [
@@ -1738,122 +1738,115 @@
   },
   "globalNews": [
     {
-      "headline": "AMD Ryzen 7 7700X3D review",
-      "source": "PC Gamer",
-      "date": "2026-08-20",
+      "headline": "NEWS",
+      "source": "VideoCardz",
+      "date": "2026-08-23",
       "impact": "neutral",
-      "url": "https://www.pcgamer.com/hardware/processors/amd-ryzen-7-7700x3d-review/",
+      "url": "https://videocardz.com/newz/qualcomms-next-gen-snapdragon-8-elite-gen-6-pro-chip-reportedly-spotted-on-black-market-for-just-42",
       "affectedItems": []
     },
     {
-      "headline": "GTA6 leaker Cyberleek shows off gas station rampage, refueling, promises strip club gameplay if people juice his cryptocurrency enough",
-      "source": "PC Gamer",
-      "date": "2026-08-22",
+      "headline": "LEAK",
+      "source": "VideoCardz",
+      "date": "2026-08-23",
       "impact": "neutral",
-      "url": "https://www.pcgamer.com/games/grand-theft-auto/gta6-leaker-cyberleek-shows-off-gas-station-rampage-refueling-promises-strip-club-gameplay-if-people-juice-his-cryptocurrency-enough/",
+      "url": "https://videocardz.com/newz/limited-edition-xbox-series-x25-reportedly-costs-e899-99-launches-november-27",
       "affectedItems": []
     },
     {
-      "headline": "Intel's New CPU Cores Debut on \"Nova Lake-S\" Desktop Before Xeon Servers",
-      "source": "TechPowerUp",
-      "date": "2026-08-17",
+      "headline": "NEWS",
+      "source": "VideoCardz",
+      "date": "2026-08-23",
       "impact": "neutral",
-      "url": "https://www.techpowerup.com/351646/intels-new-cpu-cores-debut-on-nova-lake-s-desktop-before-xeon-servers",
+      "url": "https://videocardz.com/newz/amd-still-hasnt-fixed-fsr-frame-generations-frame-pacing-problem",
       "affectedItems": []
     },
     {
-      "headline": "(PR) GEEKOM Pushes the Boundaries of Mini PC Innovation with Four-Node A9 Mega AI Cluster",
-      "source": "TechPowerUp",
-      "date": "2026-08-17",
+      "headline": "NEWS",
+      "source": "VideoCardz",
+      "date": "2026-08-23",
       "impact": "neutral",
-      "url": "https://www.techpowerup.com/351648/geekom-pushes-the-boundaries-of-mini-pc-innovation-with-four-node-a9-mega-ai-cluster",
+      "url": "https://videocardz.com/newz/samsung-unveils-worlds-first-300hz-oled-laptop-panel-16-inch-2-5k-display",
       "affectedItems": []
     },
     {
-      "headline": "(PR) Akasa Introduces M.2 NVMe SSD to PCIe Adapter Card with Removable Tray",
-      "source": "TechPowerUp",
-      "date": "2026-08-17",
+      "headline": "NEWS",
+      "source": "VideoCardz",
+      "date": "2026-08-23",
       "impact": "neutral",
-      "url": "https://www.techpowerup.com/351659/akasa-introduces-m-2-nvme-ssd-to-pcie-adapter-card-with-removable-tray",
+      "url": "https://videocardz.com/newz/acer-launches-nitro-30-pc-with-radeon-rx-9070-xt-and-pcie-4-0-x8-limited-ryzen-7-8700f-priced-at-3700",
       "affectedItems": []
     },
     {
-      "headline": "(PR) Combined Revenue of Top Five NAND Flash Brands Rises 77% QoQ in 2Q26; Micron Moves Up to Third Place",
-      "source": "TechPowerUp",
-      "date": "2026-08-18",
-      "impact": "bullish",
-      "url": "https://www.techpowerup.com/351676/combined-revenue-of-top-five-nand-flash-brands-rises-77-qoq-in-2q26-micron-moves-up-to-third-place",
-      "affectedItems": []
-    },
-    {
-      "headline": "(PR) Corsair Launches the 2026 RMe Series Platinum PSUs with ThermalProtect 12V-2x6 Cables",
-      "source": "TechPowerUp",
-      "date": "2026-08-18",
+      "headline": "NEWS",
+      "source": "VideoCardz",
+      "date": "2026-08-23",
       "impact": "neutral",
-      "url": "https://www.techpowerup.com/351686/corsair-launches-the-2026-rme-series-platinum-psus-with-thermalprotect-12v-2x6-cables",
-      "affectedItems": [
-        "ssd-1tb-pcie5"
-      ]
-    },
-    {
-      "headline": "Memory Prices Break a Record With Nearly 500% Surge in the Last 12 Months",
-      "source": "TechPowerUp",
-      "date": "2026-08-18",
-      "impact": "bullish",
-      "url": "https://www.techpowerup.com/351689/memory-prices-break-a-record-with-nearly-500-surge-in-the-last-12-months",
-      "affectedItems": [
-        "ddr4-16gb",
-        "ddr4-32gb",
-        "ddr5-32gb",
-        "ddr5-64gb"
-      ]
-    },
-    {
-      "headline": "Zalman Launches New CNPS Series Dual-Tower CPU Air Coolers",
-      "source": "TechPowerUp",
-      "date": "2026-08-18",
-      "impact": "bearish",
-      "url": "https://www.techpowerup.com/351692/zalman-launches-new-cnps-series-dual-tower-cpu-air-coolers",
+      "url": "https://videocardz.com/newz/linux-has-its-own-nvidia-shadowplay-inspired-screen-recorder-and-it-works-on-all-major-gpus",
       "affectedItems": []
     },
     {
-      "headline": "Framework Laptop 12 Gets Intel Core Series 3 CPUs and Thunderbolt 4 Upgrade",
-      "source": "TechPowerUp",
-      "date": "2026-08-18",
+      "headline": "NEWS",
+      "source": "VideoCardz",
+      "date": "2026-08-23",
       "impact": "neutral",
-      "url": "https://www.techpowerup.com/351693/framework-laptop-12-gets-intel-core-series-3-cpus-and-thunderbolt-4-upgrade",
+      "url": "https://videocardz.com/newz/take-two-goes-after-cyberleek-after-gta-6-leak-spree-subpoenas-microsoft-and-discord",
       "affectedItems": []
     },
     {
-      "headline": "Frame Buffer Compression Promises Performance Boost for Intel GPUs on Linux",
-      "source": "TechPowerUp",
-      "date": "2026-08-18",
+      "headline": "NEWS",
+      "source": "VideoCardz",
+      "date": "2026-08-23",
       "impact": "neutral",
-      "url": "https://www.techpowerup.com/351694/frame-buffer-compression-promises-performance-boost-for-intel-gpus-on-linux",
+      "url": "https://videocardz.com/newz/intel-nova-lake-s-u-h-hx-graphics-marked-stable-in-mesa-enabled-by-default",
       "affectedItems": []
     },
     {
-      "headline": "Thermal Grizzly Launches De-Lidded, Warrantied AMD Ryzen 9 9950X3D2 CPU",
-      "source": "TechPowerUp",
-      "date": "2026-08-18",
+      "headline": "NEWS",
+      "source": "VideoCardz",
+      "date": "2026-08-23",
       "impact": "neutral",
-      "url": "https://www.techpowerup.com/351696/thermal-grizzly-launches-de-lidded-warrantied-amd-ryzen-9-9950x3d2-cpu",
+      "url": "https://videocardz.com/newz/nvidia-dlss-ray-reconstruction-4-5-found-in-modern-warfare-4-beta-files",
       "affectedItems": []
     },
     {
-      "headline": "(PR) Seasonic Readies First 80 Plus Ruby Certified Consumer PSU",
-      "source": "TechPowerUp",
-      "date": "2026-08-19",
-      "impact": "bullish",
-      "url": "https://www.techpowerup.com/351712/seasonic-readies-first-80-plus-ruby-certified-consumer-psu",
+      "headline": "NEWS",
+      "source": "VideoCardz",
+      "date": "2026-08-23",
+      "impact": "neutral",
+      "url": "https://videocardz.com/newz/valve-proton-11-0-2-released-fixes-helldivers-2-marvel-rivals-and-forza-horizon-on-steamos",
       "affectedItems": []
     },
     {
-      "headline": "(PR) Happy Hacking Keyboard Debuts Limited-Edition HHKB Professional HYBRID Type-S Keyboard",
-      "source": "TechPowerUp",
-      "date": "2026-08-19",
-      "impact": "bearish",
-      "url": "https://www.techpowerup.com/351720/happy-hacking-keyboard-debuts-limited-edition-hhkb-professional-hybrid-type-s-keyboard",
+      "headline": "NEWS",
+      "source": "VideoCardz",
+      "date": "2026-08-23",
+      "impact": "neutral",
+      "url": "https://videocardz.com/newz/gigabyte-preparing-27-inch-aorus-tandem-oled-with-4k-240hz-and-1080p-480hz-modes",
+      "affectedItems": []
+    },
+    {
+      "headline": "NEWS",
+      "source": "VideoCardz",
+      "date": "2026-08-23",
+      "impact": "neutral",
+      "url": "https://videocardz.com/newz/geforce-rtx-5090-loses-around-half-its-cyberpunk-2077-performance-going-from-4k-to-6k",
+      "affectedItems": []
+    },
+    {
+      "headline": "NEWS",
+      "source": "VideoCardz",
+      "date": "2026-08-23",
+      "impact": "neutral",
+      "url": "https://videocardz.com/newz/amd-rdna-4m-firmware-lands-ahead-of-ryzen-500-medusa-point-launch",
+      "affectedItems": []
+    },
+    {
+      "headline": "NEWS",
+      "source": "VideoCardz",
+      "date": "2026-08-23",
+      "impact": "neutral",
+      "url": "https://videocardz.com/newz/asus-googlebook-cx9406-with-core-ultra-5-325-and-16gb-ram-listed-at-ca1916",
       "affectedItems": []
     }
   ]
