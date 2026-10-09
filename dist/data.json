@@ -1,17 +1,16 @@
 {
-  "lastUpdated": "2026-10-08T07:02:43.342Z",
+  "lastUpdated": "2026-10-09T05:59:12.346Z",
   "ram": {
     "displayName": "Memory (RAM)",
     "items": [
       {
         "id": "ddr4-16gb",
         "name": "DDR4 16GB (2x8GB) 3200MHz",
-        "price": 48.47,
-        "change": -2.6,
-        "confidence": 81,
+        "price": 47.63,
+        "change": -3,
+        "confidence": 79,
         "trend": "down",
         "history": [
-          44.96,
           45,
           44.99,
           45.03,
@@ -40,18 +39,18 @@
           47.86,
           47.95,
           48.59,
-          48.47
+          48.47,
+          47.63
         ]
       },
       {
         "id": "ddr4-32gb",
         "name": "DDR4 32GB (2x16GB) 3600MHz",
-        "price": 87.28,
-        "change": -1.4,
-        "confidence": 75,
+        "price": 86.07,
+        "change": -1.6,
+        "confidence": 80,
         "trend": "down",
         "history": [
-          83.11,
           83.14,
           83.13,
           83,
@@ -80,18 +79,18 @@
           85.86,
           85.72,
           87.15,
-          87.28
+          87.28,
+          86.07
         ]
       },
       {
         "id": "ddr5-32gb",
         "name": "DDR5 32GB (2x16GB) 6000MHz",
-        "price": 92.71,
-        "change": 1.3,
-        "confidence": 72,
-        "trend": "up",
+        "price": 91.44,
+        "change": -0.9,
+        "confidence": 75,
+        "trend": "down",
         "history": [
-          91.62,
           90.3,
           89.15,
           88.55,
@@ -120,18 +119,18 @@
           93.91,
           94.38,
           94.54,
-          92.71
+          92.71,
+          91.44
         ]
       },
       {
         "id": "ddr5-64gb",
         "name": "DDR5 64GB (2x32GB) 6000MHz",
-        "price": 187.64,
-        "change": 7.1,
-        "confidence": 70,
+        "price": 186.12,
+        "change": 4.6,
+        "confidence": 73,
         "trend": "up",
         "history": [
-          176.32,
           173.05,
           170.66,
           167.14,
@@ -160,90 +159,84 @@
           184.97,
           188.63,
           189.07,
-          187.64
+          187.64,
+          186.12
         ]
       }
     ],
     "outlook": "RAM prices have adjusted lower towards realistic retail market levels as supplier supply bottlenecks ease and retail promotions take effect.",
     "news": [
       {
-        "headline": "Bobby's back",
-        "source": "PC Gamer",
-        "date": "2026-10-07",
-        "impact": "neutral",
-        "url": "https://www.pcgamer.com/gaming-industry/bobbys-back/",
-        "affectedItems": []
-      },
-      {
         "headline": "Muramasa: Revenant Blades has 108 swords, and its definitive update for PC wants to make sure you use them all",
         "source": "PC Gamer",
         "date": "2026-10-08",
         "impact": "neutral",
-        "url": "https://www.pcgamer.com/games/action/muramasa/",
+        "url": "https://www.pcgamer.com/games/action/muramasa-revenant-blades-preview/",
         "affectedItems": []
       },
       {
-        "headline": "Sapphire Radeon RX 7000 Series Cards Get vBIOS Security Update",
+        "headline": "NVIDIA Raises Shield TV Pro Price to $299, Discontinues Standard Shield TV",
         "source": "TechPowerUp",
-        "date": "2026-10-02",
-        "impact": "neutral",
-        "url": "https://www.techpowerup.com/353326/sapphire-radeon-rx-7000-series-cards-get-vbios-security-update",
-        "affectedItems": [
-          "rx-7800-xt"
-        ]
-      },
-      {
-        "headline": "Steam Hardware Survey: 32 GB Overtakes 16 GB as the Most Common System RAM Configuration",
-        "source": "TechPowerUp",
-        "date": "2026-10-02",
+        "date": "2026-10-03",
         "impact": "bullish",
-        "url": "https://www.techpowerup.com/353334/steam-hardware-survey-32-gb-overtakes-16-gb-as-the-most-common-system-ram-configuration",
-        "affectedItems": [
-          "ddr4-16gb",
-          "ddr4-32gb",
-          "ddr5-32gb",
-          "ddr5-64gb",
-          "rtx-5070-ti-16gb",
-          "rtx-5070-12gb"
-        ]
-      },
-      {
-        "headline": "(PR) MSI Extends EdgeXpert Lineup With 64 GB Model",
-        "source": "TechPowerUp",
-        "date": "2026-10-02",
-        "impact": "neutral",
-        "url": "https://www.techpowerup.com/353341/msi-extends-edgexpert-lineup-with-64-gb-model",
-        "affectedItems": [
-          "dgx-spark"
-        ]
-      },
-      {
-        "headline": "(PR) Gigabyte AI TOP ATOM 64GB Unified Memory Version Expands Possibilities for Desktop AI Development",
-        "source": "TechPowerUp",
-        "date": "2026-10-02",
-        "impact": "neutral",
-        "url": "https://www.techpowerup.com/353342/gigabyte-ai-top-atom-64gb-unified-memory-version-expands-possibilities-for-desktop-ai-development",
-        "affectedItems": [
-          "dgx-spark"
-        ]
-      },
-      {
-        "headline": "(PR) NVIDIA Launches DGX Spark 64 GB Desktop AI Systems",
-        "source": "TechPowerUp",
-        "date": "2026-10-02",
-        "impact": "neutral",
-        "url": "https://www.techpowerup.com/353347/nvidia-launches-dgx-spark-64-gb-desktop-ai-systems",
-        "affectedItems": [
-          "dgx-spark"
-        ]
-      },
-      {
-        "headline": "Kingpin Teases Upcoming ASUS Extreme OC Collaboration",
-        "source": "TechPowerUp",
-        "date": "2026-10-02",
-        "impact": "neutral",
-        "url": "https://www.techpowerup.com/353349/kingpin-teases-upcoming-asus-extreme-oc-collaboration",
+        "url": "https://www.techpowerup.com/353354/nvidia-raises-shield-tv-pro-price-to-usd-299-discontinues-standard-shield-tv",
         "affectedItems": []
+      },
+      {
+        "headline": "Marvel's Wolverine Hits 20 FPS on PS5 Emulator KytyPS5, Just Days After First Boot",
+        "source": "TechPowerUp",
+        "date": "2026-10-03",
+        "impact": "bullish",
+        "url": "https://www.techpowerup.com/353364/marvels-wolverine-hits-20-fps-on-ps5-emulator-kytyps5-just-days-after-first-boot",
+        "affectedItems": [
+          "rtx-4080-super",
+          "ryzen-9800x3d"
+        ]
+      },
+      {
+        "headline": "Steam on Track for $20 Billion Year After Record $1.7 Billion September",
+        "source": "TechPowerUp",
+        "date": "2026-10-03",
+        "impact": "neutral",
+        "url": "https://www.techpowerup.com/353367/steam-on-track-for-usd-20-billion-year-after-record-usd-1-7-billion-september",
+        "affectedItems": []
+      },
+      {
+        "headline": "Halo 2 Reportedly Runs at 30 FPS on a Jailbroken PS5 Thanks to New Xbox Emulator",
+        "source": "TechPowerUp",
+        "date": "2026-10-04",
+        "impact": "bearish",
+        "url": "https://www.techpowerup.com/353381/halo-2-reportedly-runs-at-30-fps-on-a-jailbroken-ps5-thanks-to-new-xbox-emulator",
+        "affectedItems": []
+      },
+      {
+        "headline": "Ace Combat 8: Wings Of Theve Smashes Series Steam Record With Over 52,000 Concurrent Players",
+        "source": "TechPowerUp",
+        "date": "2026-10-04",
+        "impact": "bearish",
+        "url": "https://www.techpowerup.com/353384/ace-combat-8-wings-of-theve-smashes-series-steam-record-with-over-52-000-concurrent-players",
+        "affectedItems": []
+      },
+      {
+        "headline": "(PR) INNO3D Announces 6U RTX PRO 6000BSE GPU Server",
+        "source": "TechPowerUp",
+        "date": "2026-10-05",
+        "impact": "neutral",
+        "url": "https://www.techpowerup.com/353391/inno3d-announces-6u-rtx-pro-6000bse-gpu-server",
+        "affectedItems": [
+          "ddr5-32gb",
+          "ddr5-64gb"
+        ]
+      },
+      {
+        "headline": "(PR) ASUS Announces New 64GB Configuration of the Ascent GX10",
+        "source": "TechPowerUp",
+        "date": "2026-10-05",
+        "impact": "neutral",
+        "url": "https://www.techpowerup.com/353392/asus-announces-new-64gb-configuration-of-the-ascent-gx10",
+        "affectedItems": [
+          "dgx-spark"
+        ]
       }
     ]
   },
@@ -253,12 +246,11 @@
       {
         "id": "dgx-spark",
         "name": "NVIDIA DGX Spark 128GB",
-        "price": 4534.3,
-        "change": 0,
-        "confidence": 85,
+        "price": 4524.59,
+        "change": -0.1,
+        "confidence": 73,
         "trend": "down",
         "history": [
-          4482.91,
           4489.32,
           4497.11,
           4492.71,
@@ -287,18 +279,18 @@
           4523.98,
           4531.78,
           4528.81,
-          4534.3
+          4534.3,
+          4524.59
         ]
       },
       {
         "id": "rtx-5090",
         "name": "NVIDIA GeForce RTX 5090 32GB",
-        "price": 3487.22,
-        "change": 2.9,
-        "confidence": 66,
+        "price": 3553.67,
+        "change": 5,
+        "confidence": 85,
         "trend": "up",
         "history": [
-          2665.22,
           2705.8,
           2693.55,
           2734.55,
@@ -327,18 +319,18 @@
           3376.35,
           3443.17,
           3493.78,
-          3487.22
+          3487.22,
+          3553.67
         ]
       },
       {
         "id": "rtx-5080",
         "name": "NVIDIA GeForce RTX 5080 16GB",
-        "price": 1428.81,
-        "change": -0.6,
-        "confidence": 67,
-        "trend": "down",
+        "price": 1425.91,
+        "change": 1.1,
+        "confidence": 61,
+        "trend": "up",
         "history": [
-          1330.3,
           1339.31,
           1342.62,
           1345.77,
@@ -367,18 +359,18 @@
           1424.73,
           1428.22,
           1431.37,
-          1428.81
+          1428.81,
+          1425.91
         ]
       },
       {
         "id": "rtx-3090-24gb",
         "name": "NVIDIA GeForce RTX 3090 24GB",
-        "price": 1107.48,
+        "price": 1108.55,
         "change": 0.4,
-        "confidence": 63,
+        "confidence": 70,
         "trend": "up",
         "history": [
-          1091.95,
           1093.98,
           1096.7,
           1098.83,
@@ -407,18 +399,18 @@
           1103.68,
           1106.39,
           1108.35,
-          1107.48
+          1107.48,
+          1108.55
         ]
       },
       {
         "id": "rtx-4080-super",
         "name": "NVIDIA GeForce RTX 4080 Super 16GB",
-        "price": 1053.4,
-        "change": 5.6,
-        "confidence": 86,
+        "price": 1075.11,
+        "change": 7.6,
+        "confidence": 85,
         "trend": "up",
         "history": [
-          996.13,
           998.09,
           996.57,
           995.11,
@@ -447,18 +439,18 @@
           998.65,
           1014.74,
           1033.06,
-          1053.4
+          1053.4,
+          1075.11
         ]
       },
       {
         "id": "rtx-5070-ti-16gb",
         "name": "NVIDIA GeForce RTX 5070 Ti 16GB",
-        "price": 802.4,
-        "change": 1.8,
-        "confidence": 82,
+        "price": 802.02,
+        "change": 4,
+        "confidence": 59,
         "trend": "up",
         "history": [
-          796.22,
           800.49,
           800.87,
           800.13,
@@ -487,18 +479,18 @@
           788.71,
           792.23,
           790.4,
-          802.4
+          802.4,
+          802.02
         ]
       },
       {
         "id": "rx-9070-xt",
         "name": "AMD Radeon RX 9070 XT 16GB",
-        "price": 525.62,
-        "change": -0.2,
-        "confidence": 62,
-        "trend": "down",
+        "price": 535.84,
+        "change": 1.6,
+        "confidence": 77,
+        "trend": "up",
         "history": [
-          614.45,
           606.13,
           601.31,
           595.12,
@@ -527,18 +519,18 @@
           525.32,
           524.11,
           525.12,
-          525.62
+          525.62,
+          535.84
         ]
       },
       {
         "id": "rtx-3080-10gb",
         "name": "NVIDIA GeForce RTX 3080 10GB",
-        "price": 668.68,
-        "change": 0.1,
+        "price": 667.77,
+        "change": 0,
         "confidence": 62,
         "trend": "up",
         "history": [
-          608.72,
           607.42,
           605.96,
           605.67,
@@ -567,18 +559,18 @@
           667.85,
           668.65,
           667.79,
-          668.68
+          668.68,
+          667.77
         ]
       },
       {
         "id": "rtx-5070-12gb",
         "name": "NVIDIA GeForce RTX 5070 12GB",
-        "price": 590.07,
-        "change": 2.6,
-        "confidence": 79,
+        "price": 589.87,
+        "change": 3.8,
+        "confidence": 62,
         "trend": "up",
         "history": [
-          574.03,
           577.81,
           578.87,
           578.95,
@@ -607,18 +599,18 @@
           574.59,
           580.02,
           579.1,
-          590.07
+          590.07,
+          589.87
         ]
       },
       {
         "id": "rtx-4070",
         "name": "NVIDIA GeForce RTX 4070 12GB",
-        "price": 522.05,
+        "price": 522.66,
         "change": -0.1,
         "confidence": 64,
         "trend": "down",
         "history": [
-          556.18,
           555.82,
           555.31,
           555.45,
@@ -647,18 +639,18 @@
           521.49,
           522.34,
           523.3,
-          522.05
+          522.05,
+          522.66
         ]
       },
       {
         "id": "rtx-5060-ti-16gb",
         "name": "NVIDIA GeForce RTX 5060 Ti 16GB",
-        "price": 440.64,
-        "change": -0.1,
+        "price": 439.84,
+        "change": 1.7,
         "confidence": 60,
-        "trend": "down",
+        "trend": "up",
         "history": [
-          499.41,
           500.29,
           495.34,
           491.83,
@@ -687,18 +679,18 @@
           445.26,
           449.49,
           441.23,
-          440.64
+          440.64,
+          439.84
         ]
       },
       {
         "id": "rx-7800-xt",
         "name": "AMD Radeon RX 7800 XT 16GB",
-        "price": 501.83,
-        "change": 0.9,
-        "confidence": 83,
+        "price": 500.86,
+        "change": 0.5,
+        "confidence": 60,
         "trend": "up",
         "history": [
-          492.44,
           493.46,
           494.21,
           495.31,
@@ -727,18 +719,18 @@
           500.3,
           500.56,
           501.38,
-          501.83
+          501.83,
+          500.86
         ]
       },
       {
         "id": "rtx-5060-ti-8gb",
         "name": "NVIDIA GeForce RTX 5060 Ti 8GB",
-        "price": 403.58,
-        "change": 3.8,
-        "confidence": 62,
+        "price": 404.11,
+        "change": 4.5,
+        "confidence": 66,
         "trend": "up",
         "history": [
-          443.16,
           442.78,
           439.93,
           431.78,
@@ -767,18 +759,18 @@
           399.76,
           408.12,
           402.98,
-          403.58
+          403.58,
+          404.11
         ]
       },
       {
         "id": "rtx-3070-8gb",
         "name": "NVIDIA GeForce RTX 3070 8GB",
-        "price": 382.25,
-        "change": -0.1,
-        "confidence": 63,
-        "trend": "down",
+        "price": 383.04,
+        "change": 0.1,
+        "confidence": 67,
+        "trend": "up",
         "history": [
-          385.05,
           384.14,
           384.12,
           383.7,
@@ -807,18 +799,18 @@
           381.48,
           382.36,
           381.57,
-          382.25
+          382.25,
+          383.04
         ]
       },
       {
         "id": "rtx-5060-8gb",
         "name": "NVIDIA GeForce RTX 5060 8GB",
-        "price": 293.69,
-        "change": 0.4,
-        "confidence": 63,
+        "price": 294.34,
+        "change": 2.1,
+        "confidence": 66,
         "trend": "up",
         "history": [
-          334.81,
           335.6,
           333.64,
           328.51,
@@ -847,18 +839,18 @@
           294.5,
           298.89,
           293.02,
-          293.69
+          293.69,
+          294.34
         ]
       },
       {
         "id": "rtx-4060",
         "name": "NVIDIA GeForce RTX 4060 8GB",
-        "price": 291.16,
-        "change": -0.4,
-        "confidence": 63,
+        "price": 290.98,
+        "change": -0.2,
+        "confidence": 70,
         "trend": "down",
         "history": [
-          292.95,
           292.3,
           291.97,
           291.94,
@@ -887,18 +879,18 @@
           291.35,
           291.06,
           290.8,
-          291.16
+          291.16,
+          290.98
         ]
       },
       {
         "id": "rtx-3060-12gb",
         "name": "NVIDIA GeForce RTX 3060 12GB",
-        "price": 244.77,
-        "change": -2.6,
-        "confidence": 64,
+        "price": 245.31,
+        "change": -1.3,
+        "confidence": 68,
         "trend": "down",
         "history": [
-          260.14,
           260.59,
           257.93,
           255.68,
@@ -927,74 +919,79 @@
           244.01,
           244.56,
           244.77,
-          244.77
+          244.77,
+          245.31
         ]
       }
     ],
     "outlook": "Flagship Blackwell cards remain expensive on thin retail supply and AI/workstation pull. Mid-range Ada Lovelace pricing is sticky, while AMD continues tactical discounts on outgoing RDNA3 inventory ahead of broader RDNA4 availability.",
     "news": [
       {
-        "headline": "Now we know the prices of the new RTX Spark laptops and they're as expensive as I'm sure you feared",
-        "source": "PC Gamer",
-        "date": "2026-10-08",
+        "headline": "Modder Solders Dual 8-Pin Board to RTX 5090's 16-Pin Header, Wires Stay Below 40°C",
+        "source": "TechPowerUp",
+        "date": "2026-10-03",
         "impact": "bullish",
-        "url": "https://www.pcgamer.com/hardware/gaming-laptops/now-we-know-the-prices-of-the-new-rtx-spark-laptops-and-theyre-as-expensive-as-im-sure-you-feared/",
-        "affectedItems": []
+        "url": "https://www.techpowerup.com/353370/modder-solders-dual-8-pin-board-to-rtx-5090s-16-pin-header-wires-stay-below-40-c",
+        "affectedItems": [
+          "rtx-5090"
+        ]
       },
       {
-        "headline": "Intel Releases Arc GPU Graphics Drivers 101.9034 Beta",
+        "headline": "TITAN Xp Finally Runs on Windows XP Thanks to a Modded NVIDIA Driver",
         "source": "TechPowerUp",
-        "date": "2026-10-02",
-        "impact": "neutral",
-        "url": "https://www.techpowerup.com/353323/intel-releases-arc-gpu-graphics-drivers-101-9034-beta",
-        "affectedItems": []
-      },
-      {
-        "headline": "(PR) NVIDIA GeForce NOW Gets 25 New Games in October",
-        "source": "TechPowerUp",
-        "date": "2026-10-02",
+        "date": "2026-10-05",
         "impact": "bearish",
-        "url": "https://www.techpowerup.com/353325/nvidia-geforce-now-gets-25-new-games-in-october",
+        "url": "https://www.techpowerup.com/353387/titan-xp-finally-runs-on-windows-xp-thanks-to-a-modded-nvidia-driver",
         "affectedItems": []
       },
       {
-        "headline": "Microsoft's Advanced Shader Delivery Arrives to NVIDIA GeForce RTX GPUs Later This Month",
+        "headline": "German Utility Sells a \"Gaming\" Electricity Plan for Gamers and Power Users",
         "source": "TechPowerUp",
-        "date": "2026-10-02",
-        "impact": "neutral",
-        "url": "https://www.techpowerup.com/353329/microsofts-advanced-shader-delivery-arrives-to-nvidia-geforce-rtx-gpus-later-this-month",
-        "affectedItems": []
+        "date": "2026-10-06",
+        "impact": "bullish",
+        "url": "https://www.techpowerup.com/353413/german-utility-sells-a-gaming-electricity-plan-for-gamers-and-power-users",
+        "affectedItems": [
+          "rtx-5090"
+        ]
       },
       {
-        "headline": "Warhammer Survivors Bullet Heaven Gets Early November Launch Date and Release Pricing",
+        "headline": "(PR) Pimax Unveils Crystal Pro Wireless PC VR Headset with Native Foveated Streaming",
         "source": "TechPowerUp",
         "date": "2026-10-06",
         "impact": "neutral",
-        "url": "https://www.techpowerup.com/353430/warhammer-survivors-bullet-heaven-gets-early-november-launch-date-and-release-pricing",
+        "url": "https://www.techpowerup.com/353432/pimax-unveils-crystal-pro-wireless-pc-vr-headset-with-native-foveated-streaming",
         "affectedItems": []
       },
       {
-        "headline": "Zalman Intros S6 Black ATX Mid-Tower Case Series",
-        "source": "TechPowerUp",
-        "date": "2026-10-06",
-        "impact": "bearish",
-        "url": "https://www.techpowerup.com/353437/zalman-intros-s6-black-atx-mid-tower-case-series",
-        "affectedItems": []
-      },
-      {
-        "headline": "GTA 6 Cloud Streaming Reportedly Exclusive to Xbox",
+        "headline": "NVIDIA Releases GeForce 617.42 WHQL Game Ready Drivers",
         "source": "TechPowerUp",
         "date": "2026-10-06",
         "impact": "neutral",
-        "url": "https://www.techpowerup.com/353446/gta-6-cloud-streaming-reportedly-exclusive-to-xbox",
+        "url": "https://www.techpowerup.com/353425/nvidia-releases-geforce-617-42-whql-game-ready-drivers",
         "affectedItems": []
       },
       {
-        "headline": "(PR) Formula V Line Air Power G10 Chassis Launches in the US",
+        "headline": "(PR) Dell Technologies Drives the Agentic AI Era with New Windows PCs and Workstations",
+        "source": "TechPowerUp",
+        "date": "2026-10-07",
+        "impact": "bullish",
+        "url": "https://www.techpowerup.com/353472/dell-technologies-drives-the-agentic-ai-era-with-new-windows-pcs-and-workstations",
+        "affectedItems": []
+      },
+      {
+        "headline": "AMD Confirms FSR 4 Is Coming to APUs by the End of 2026",
         "source": "TechPowerUp",
         "date": "2026-10-07",
         "impact": "neutral",
-        "url": "https://www.techpowerup.com/353466/formula-v-line-air-power-g10-chassis-launches-in-the-us",
+        "url": "https://www.techpowerup.com/353477/amd-confirms-fsr-4-is-coming-to-apus-by-the-end-of-2026",
+        "affectedItems": []
+      },
+      {
+        "headline": "(PR) Senao Networks Releases x86 Enterprise Server Series",
+        "source": "TechPowerUp",
+        "date": "2026-10-08",
+        "impact": "neutral",
+        "url": "https://www.techpowerup.com/353509/senao-networks-releases-x86-enterprise-server-series",
         "affectedItems": []
       }
     ]
@@ -1005,12 +1002,11 @@
       {
         "id": "i5-14600k",
         "name": "Intel Core i5-14600K 14-Core",
-        "price": 271.99,
-        "change": -0.6,
-        "confidence": 70,
+        "price": 272.12,
+        "change": -0.3,
+        "confidence": 67,
         "trend": "down",
         "history": [
-          278.15,
           278.14,
           277.26,
           277.21,
@@ -1039,18 +1035,18 @@
           272.86,
           273.09,
           272.71,
-          271.99
+          271.99,
+          272.12
         ]
       },
       {
         "id": "i7-14700k",
         "name": "Intel Core i7-14700K 20-Core",
-        "price": 363.46,
-        "change": -0.6,
-        "confidence": 63,
+        "price": 362.72,
+        "change": -0.8,
+        "confidence": 73,
         "trend": "down",
         "history": [
-          374.55,
           374.25,
           374.41,
           373.13,
@@ -1079,18 +1075,18 @@
           364.49,
           363.69,
           363.21,
-          363.46
+          363.46,
+          362.72
         ]
       },
       {
         "id": "i9-14900k",
         "name": "Intel Core i9-14900K 24-Core",
-        "price": 445.25,
-        "change": -0.2,
+        "price": 444.49,
+        "change": -0.3,
         "confidence": 67,
         "trend": "down",
         "history": [
-          456.74,
           457.07,
           456.72,
           455.22,
@@ -1119,18 +1115,18 @@
           445.73,
           445.05,
           445.14,
-          445.25
+          445.25,
+          444.49
         ]
       },
       {
         "id": "ryzen-7600x",
         "name": "AMD Ryzen 5 7600X 6-Core",
-        "price": 218.47,
+        "price": 218.8,
         "change": 0.1,
         "confidence": 70,
         "trend": "up",
         "history": [
-          219.13,
           218.61,
           219.08,
           218.73,
@@ -1159,18 +1155,18 @@
           217.76,
           218.22,
           218.33,
-          218.47
+          218.47,
+          218.8
         ]
       },
       {
         "id": "ryzen-7800x3d",
         "name": "AMD Ryzen 7 7800X3D 8-Core",
-        "price": 418.09,
-        "change": 1.1,
-        "confidence": 79,
+        "price": 417.69,
+        "change": 0.8,
+        "confidence": 63,
         "trend": "up",
         "history": [
-          395.38,
           396.06,
           396.34,
           396.4,
@@ -1199,18 +1195,18 @@
           414.19,
           415.28,
           416.78,
-          418.09
+          418.09,
+          417.69
         ]
       },
       {
         "id": "ryzen-9800x3d",
         "name": "AMD Ryzen 7 9800X3D 8-Core",
-        "price": 458.49,
-        "change": 2.6,
-        "confidence": 85,
+        "price": 467.22,
+        "change": 4.5,
+        "confidence": 83,
         "trend": "up",
         "history": [
-          425.86,
           426.39,
           427.03,
           426.87,
@@ -1239,74 +1235,75 @@
           449.97,
           451.03,
           450.85,
-          458.49
+          458.49,
+          467.22
         ]
       }
     ],
     "outlook": "X3D chips from AMD continue to lead gaming demand and hold stronger pricing power. Intel 14th-gen desktop processors are still in clearance mode as channel inventory rotates toward newer platforms, creating short-term buying opportunities.",
     "news": [
       {
-        "headline": "(PR) MSI Bundles Ace Combat 8: Wings of Theve With QD-OLED Gaming Monitors",
-        "source": "TechPowerUp",
-        "date": "2026-10-02",
-        "impact": "neutral",
-        "url": "https://www.techpowerup.com/353328/msi-bundles-ace-combat-8-wings-of-theve-with-qd-oled-gaming-monitors",
-        "affectedItems": []
-      },
-      {
-        "headline": "Unreleased AMD Ryzen 9 5900X3D Engineering Sample Appears With 128 MB L3 Cache",
-        "source": "TechPowerUp",
-        "date": "2026-10-02",
-        "impact": "neutral",
-        "url": "https://www.techpowerup.com/353348/unreleased-amd-ryzen-9-5900x3d-engineering-sample-appears-with-128-mb-l3-cache",
-        "affectedItems": []
-      },
-      {
-        "headline": "TSMC Explores Collaboration with Elon Musk's Terafab Project",
+        "headline": "Used Ryzen 7 5800X3D Gets Buyer Locked Out of Valorant Due to Previous Owner's Cheating",
         "source": "TechPowerUp",
         "date": "2026-10-03",
+        "impact": "neutral",
+        "url": "https://www.techpowerup.com/353353/used-ryzen-7-5800x3d-gets-buyer-locked-out-of-valorant-due-to-previous-owners-cheating",
+        "affectedItems": []
+      },
+      {
+        "headline": "Sony Updates PlayStation 5 Slim with Better Cooling Design",
+        "source": "TechPowerUp",
+        "date": "2026-10-03",
+        "impact": "neutral",
+        "url": "https://www.techpowerup.com/353355/sony-updates-playstation-5-slim-with-better-cooling-design",
+        "affectedItems": []
+      },
+      {
+        "headline": "Intel Core Ultra 4000 Naming Reportedly Extends to \"Nova Lake-HX\" Mobile Processors",
+        "source": "TechPowerUp",
+        "date": "2026-10-04",
         "impact": "bearish",
-        "url": "https://www.techpowerup.com/353352/tsmc-explores-collaboration-with-elon-musks-terafab-project",
+        "url": "https://www.techpowerup.com/353380/intel-core-ultra-4000-naming-reportedly-extends-to-nova-lake-hx-mobile-processors",
         "affectedItems": []
       },
       {
-        "headline": "Intel to Continue Working on Terafab, Confirms CEO Lip-Bu Tan",
+        "headline": "Intel Reportedly Limits \"Nova Lake DS\" Samples, Rollout Starts in December",
         "source": "TechPowerUp",
-        "date": "2026-10-07",
+        "date": "2026-10-05",
         "impact": "neutral",
-        "url": "https://www.techpowerup.com/353453/intel-to-continue-working-on-terafab-confirms-ceo-lip-bu-tan",
+        "url": "https://www.techpowerup.com/353394/intel-reportedly-limits-nova-lake-ds-samples-rollout-starts-in-december",
         "affectedItems": []
       },
       {
-        "headline": "Gears of War: E-Day Launches to Modest Reviews and 31,500 Peak Steam Players",
+        "headline": "(PR) Akasa Announces Euler MX2 Fanless Mini-ITX Case",
         "source": "TechPowerUp",
-        "date": "2026-10-07",
+        "date": "2026-10-05",
         "impact": "neutral",
-        "url": "https://www.techpowerup.com/353482/gears-of-war-e-day-launches-to-modest-reviews-and-31-500-peak-steam-players",
+        "url": "https://www.techpowerup.com/353404/akasa-announces-euler-mx2-fanless-mini-itx-case",
         "affectedItems": []
       },
       {
-        "headline": "Intel's Core Ultra 5 250K Plus is down to its lowest price ever at $145",
-        "source": "Tom's Hardware",
+        "headline": "(PR) ASUS Republic of Gamers Ships ROG Rapture GT-BN98 Router",
+        "source": "TechPowerUp",
         "date": "2026-10-06",
-        "impact": "bearish",
-        "url": "https://www.tomshardware.com/pc-components/cpus/intel-core-ultra-5-250k-plus-falls-to-its-lowest-price-ever-at-usd145-grab-an-18-core-midrange-cpu-with-5-3-ghz-boost-at-an-entry-level-price",
-        "affectedItems": []
-      },
-      {
-        "headline": "Musk rejects rumors of TSMC takeover of Terafab — Intel reaffirms 14A node deal as Musk floats cleanroom 'sublease'",
-        "source": "Tom's Hardware",
-        "date": "2026-10-07",
-        "impact": "bearish",
-        "url": "https://www.tomshardware.com/tech-industry/semiconductors/musk-rejects-rumors-of-tsmc-takeover-of-terafab-intel-reaffirms-14a-node-deal-as-musk-floats-cleanroom-sublease",
-        "affectedItems": []
-      },
-      {
-        "headline": "AMD \"Gainsborough\" APU Codename Appears in Driver, Could Power Valve's Steam Deck 2",
-        "source": "TechPowerUp",
-        "date": "2026-10-02",
         "impact": "neutral",
-        "url": "https://www.techpowerup.com/353319/amd-gainsborough-apu-codename-appears-in-driver-could-power-valves-steam-deck-2",
+        "url": "https://www.techpowerup.com/353419/asus-republic-of-gamers-ships-rog-rapture-gt-bn98-router",
+        "affectedItems": []
+      },
+      {
+        "headline": "(PR) Amazon Launches Alexa Tablets—Powerful Tablets with Alexa+ Built In",
+        "source": "TechPowerUp",
+        "date": "2026-10-08",
+        "impact": "bullish",
+        "url": "https://www.techpowerup.com/353508/amazon-launches-alexa-tablets-powerful-tablets-with-alexa-built-in",
+        "affectedItems": []
+      },
+      {
+        "headline": "GIGABYTE Powers Up Amazon Prime Day 2 with Major Savings on Motherboards and Gaming Monitors",
+        "source": "TechPowerUp",
+        "date": "2026-10-08",
+        "impact": "bearish",
+        "url": "https://www.techpowerup.com/353362/gigabyte-powers-up-amazon-prime-day-2-with-major-savings-on-motherboards-and-gaming-monitors",
         "affectedItems": []
       }
     ]
@@ -1317,12 +1314,11 @@
       {
         "id": "ssd-1tb-nvme",
         "name": "1TB NVMe SSD (PCIe 4.0)",
-        "price": 52.11,
-        "change": -2.7,
-        "confidence": 58,
+        "price": 52.2,
+        "change": -0.8,
+        "confidence": 62,
         "trend": "down",
         "history": [
-          55.87,
           54.86,
           55.06,
           55.1,
@@ -1351,18 +1347,18 @@
           52.58,
           52.73,
           52,
-          52.11
+          52.11,
+          52.2
         ]
       },
       {
         "id": "ssd-2tb-nvme",
         "name": "2TB NVMe SSD (PCIe 4.0)",
-        "price": 135.7,
+        "price": 135.83,
         "change": 1,
-        "confidence": 87,
+        "confidence": 75,
         "trend": "up",
         "history": [
-          123.55,
           123.61,
           124.17,
           124.15,
@@ -1391,18 +1387,18 @@
           134.77,
           135.03,
           135.54,
-          135.7
+          135.7,
+          135.83
         ]
       },
       {
         "id": "ssd-4tb-nvme",
         "name": "4TB NVMe SSD (PCIe 4.0)",
-        "price": 300,
-        "change": -0.8,
-        "confidence": 74,
+        "price": 301.01,
+        "change": -0.6,
+        "confidence": 72,
         "trend": "down",
         "history": [
-          290.37,
           291.03,
           291.46,
           291.84,
@@ -1431,18 +1427,18 @@
           303.63,
           304.2,
           304.46,
-          300
+          300,
+          301.01
         ]
       },
       {
         "id": "ssd-1tb-pcie5",
         "name": "1TB NVMe SSD (PCIe 5.0)",
-        "price": 136.91,
-        "change": -8.9,
-        "confidence": 55,
+        "price": 137.18,
+        "change": -6.8,
+        "confidence": 58,
         "trend": "down",
         "history": [
-          145.35,
           145.93,
           146.2,
           146.8,
@@ -1471,18 +1467,18 @@
           141.11,
           138.29,
           136.68,
-          136.91
+          136.91,
+          137.18
         ]
       },
       {
         "id": "hdd-4tb",
         "name": "4TB HDD 7200RPM",
-        "price": 99.61,
+        "price": 99.9,
         "change": 1.6,
         "confidence": 73,
         "trend": "up",
         "history": [
-          93.56,
           93.66,
           94.02,
           94.25,
@@ -1511,18 +1507,18 @@
           98.85,
           98.81,
           99.24,
-          99.61
+          99.61,
+          99.9
         ]
       },
       {
         "id": "hdd-8tb",
         "name": "8TB HDD 7200RPM",
-        "price": 178.98,
-        "change": 1.4,
+        "price": 179.45,
+        "change": 1.2,
         "confidence": 77,
         "trend": "up",
         "history": [
-          168.51,
           169.2,
           169.35,
           169.77,
@@ -1551,12 +1547,21 @@
           177.89,
           177.95,
           178.29,
-          178.98
+          178.98,
+          179.45
         ]
       }
     ],
     "outlook": "NAND pricing is turning bullish as AI servers and data centers absorb enterprise SSD capacity. Consumer NVMe kits are rising off recent lows, while HDDs firm up on cloud restocking. PCIe 5.0 drives remain premium but less volatile than earlier in the year.",
     "news": [
+      {
+        "headline": "Grab Biwin Black Opal NV7400 M.2 NVMe SSD in Our Exclusive Prime Day Deal: Up to 28% Off!",
+        "source": "TechPowerUp",
+        "date": "2026-10-08",
+        "impact": "bearish",
+        "url": "https://www.techpowerup.com/353311/grab-biwin-black-opal-nv7400-m-2-nvme-ssd-in-our-exclusive-prime-day-deal-up-to-28-off",
+        "affectedItems": []
+      },
       {
         "headline": "(PR) QNAP Expands Its 100GbE Lineup with the QSW-M7230P-2X4F24T L3 Lite Managed PoE++ Switch",
         "source": "TechPowerUp",
@@ -1618,14 +1623,6 @@
         "affectedItems": [
           "ssd-1tb-pcie5"
         ]
-      },
-      {
-        "headline": "AMD B650 Chipset Arrives on a $58 PCIe Expansion Card From JGINYUE",
-        "source": "TechPowerUp",
-        "date": "2026-10-06",
-        "impact": "bearish",
-        "url": "https://www.techpowerup.com/353443/amd-b650-chipset-arrives-on-a-usd-58-pcie-expansion-card-from-jginyue",
-        "affectedItems": []
       }
     ]
   },
@@ -1635,12 +1632,11 @@
       {
         "id": "zephyrus-g14",
         "name": "ASUS ROG Zephyrus G14 (2026)",
-        "price": 1388.4,
-        "change": -0.5,
-        "confidence": 70,
+        "price": 1388.5,
+        "change": -0.4,
+        "confidence": 67,
         "trend": "down",
         "history": [
-          1417.39,
           1414.69,
           1416.67,
           1415.74,
@@ -1669,18 +1665,18 @@
           1393.47,
           1390.61,
           1391.7,
-          1388.4
+          1388.4,
+          1388.5
         ]
       },
       {
         "id": "macbook-air-m3",
         "name": "Apple MacBook Air 13\" M3 8GB/256GB",
-        "price": 999.53,
-        "change": -1.5,
-        "confidence": 66,
+        "price": 999.1,
+        "change": -1.8,
+        "confidence": 70,
         "trend": "down",
         "history": [
-          1052.44,
           1032.99,
           1021.38,
           1006.45,
@@ -1709,18 +1705,18 @@
           1019.37,
           1000.31,
           997.86,
-          999.53
+          999.53,
+          999.1
         ]
       },
       {
         "id": "macbook-pro-m4",
         "name": "Apple MacBook Pro 14\" M4 16GB/512GB",
-        "price": 1597.23,
-        "change": -0.5,
-        "confidence": 64,
+        "price": 1601.13,
+        "change": -0.1,
+        "confidence": 73,
         "trend": "down",
         "history": [
-          1654.54,
           1638.4,
           1615.37,
           1586.22,
@@ -1749,18 +1745,18 @@
           1604.04,
           1590.81,
           1593.44,
-          1597.23
+          1597.23,
+          1601.13
         ]
       },
       {
         "id": "legion-5-pro",
         "name": "Lenovo Legion 5 Pro 16\" AMD",
-        "price": 1229.63,
+        "price": 1229.21,
         "change": 0.3,
-        "confidence": 70,
+        "confidence": 67,
         "trend": "up",
         "history": [
-          1224.54,
           1223.04,
           1220.4,
           1223.12,
@@ -1789,18 +1785,18 @@
           1226.66,
           1229.17,
           1229.03,
-          1229.63
+          1229.63,
+          1229.21
         ]
       },
       {
         "id": "razer-blade-16",
         "name": "Razer Blade 16 RTX 4070",
-        "price": 2311.98,
-        "change": -0.2,
+        "price": 2310.21,
+        "change": -0.1,
         "confidence": 67,
         "trend": "down",
         "history": [
-          2481.3,
           2479.31,
           2476.14,
           2473.8,
@@ -1829,18 +1825,18 @@
           2304.98,
           2307.8,
           2312.83,
-          2311.98
+          2311.98,
+          2310.21
         ]
       },
       {
         "id": "thinkpad-x1",
         "name": "Lenovo ThinkPad X1 Carbon Gen 12",
-        "price": 1446.4,
-        "change": 0.8,
+        "price": 1448.4,
+        "change": 0.9,
         "confidence": 77,
         "trend": "up",
         "history": [
-          1459.06,
           1458.88,
           1457.5,
           1459.91,
@@ -1869,12 +1865,32 @@
           1440.5,
           1441.6,
           1444.9,
-          1446.4
+          1446.4,
+          1448.4
         ]
       }
     ],
     "outlook": "Apple silicon notebooks show split behavior: Air models soften during refresh cycles while Pro configs stay firm. Gaming laptops with last-gen GPUs are promotional, while premium creator and enterprise ultrabooks remain comparatively stable.",
     "news": [
+      {
+        "headline": "Microsoft seems very excited about its new magnetic USB Type-C charger for the Surface Laptop Ultra, but it don't impress me much",
+        "source": "PC Gamer",
+        "date": "2026-10-08",
+        "impact": "neutral",
+        "url": "https://www.pcgamer.com/hardware/gaming-laptops/microsoft-seems-very-excited-about-its-new-magnetic-usb-type-c-charger-for-the-surface-laptop-ultra-but-it-dont-impress-me-much/",
+        "affectedItems": []
+      },
+      {
+        "headline": "Apple's Touchscreen MacBook Pro and New OLED iPad Mini Launching in Late October",
+        "source": "TechPowerUp",
+        "date": "2026-10-08",
+        "impact": "neutral",
+        "url": "https://www.techpowerup.com/353532/apples-touchscreen-macbook-pro-and-new-oled-ipad-mini-launching-in-late-october",
+        "affectedItems": [
+          "macbook-air-m3",
+          "macbook-pro-m4"
+        ]
+      },
       {
         "headline": "Black Friday laptop deals: What should small and medium-sized businesses be looking for?",
         "source": "Tom's Hardware",
@@ -1930,102 +1946,14 @@
         "affectedItems": [
           "legion-5-pro"
         ]
-      },
-      {
-        "headline": "MSI Katana 15 HX B14W gaming laptop review",
-        "source": "PC Gamer",
-        "date": "2026-09-30",
-        "impact": "neutral",
-        "url": "https://www.pcgamer.com/hardware/gaming-laptops/msi-katana-15-hx-b14w-review/",
-        "affectedItems": []
-      },
-      {
-        "headline": "Asus TUF Gaming A16 gaming laptop review",
-        "source": "PC Gamer",
-        "date": "2026-09-30",
-        "impact": "neutral",
-        "url": "https://www.pcgamer.com/hardware/gaming-laptops/asus-tuf-gaming-a16-review/",
-        "affectedItems": []
       }
     ]
   },
   "globalNews": [
     {
-      "headline": "Huawei Touts LogicFolding’s 50% Clock Buffer Cut, But A Semiconductor Expert Warns The Heat Problem Remains, Which Is Why Qualcomm And Apple Are Not Interested In The Tech",
-      "source": "Wccftech",
-      "date": "2026-10-08",
-      "impact": "bearish",
-      "url": "https://wccftech.com/huawei-touts-logicfoldings-50-clock-buffer-cut-but-a-semiconductor-expert-warns-the-heat-problem-remains-which-is-why-qualcomm-and-apple-are-not-interested-in-the-tech/",
-      "affectedItems": []
-    },
-    {
-      "headline": "An Old GPU Mining Rig With 9 GPUs Sporting 54GB VRAM Is An LLM User’s Dream; Buyer Purchased Hardware At A Throwaway Figure By Negotiating The Price Down To $35",
-      "source": "Wccftech",
-      "date": "2026-10-08",
-      "impact": "neutral",
-      "url": "https://wccftech.com/old-gpu-mining-rig-9-gpus-54gb-vram-llm-35/",
-      "affectedItems": []
-    },
-    {
-      "headline": "Microsoft’s RTX Spark-Powered Surface Laptop Ultra Price For The Base Configuration Featuring An 18-Core CPU & 24GB Unified RAM Won’t Be For The Faint-Hearted",
-      "source": "Wccftech",
-      "date": "2026-10-08",
-      "impact": "neutral",
-      "url": "https://wccftech.com/microsoft-surface-laptop-ultra-rtx-spark-base-price/",
-      "affectedItems": []
-    },
-    {
-      "headline": "Samsung’s 12-Hi HBM4E Reportedly Passes NVIDIA Qualification, Paving Way For Next-Gen AI GPU Supply",
-      "source": "Wccftech",
-      "date": "2026-10-08",
-      "impact": "neutral",
-      "url": "https://wccftech.com/samsungs-12-hi-hbm4e-reportedly-passes-nvidia-qualification-paving-way-for-next-gen-ai-gpu-supply/",
-      "affectedItems": []
-    },
-    {
-      "headline": "Micro Center Slashes Nearly $140 Off AMD’s Ryzen 5 7600X3D, Making It The Cheapest AM5 X3D Chip At $179",
-      "source": "Wccftech",
-      "date": "2026-10-08",
-      "impact": "bearish",
-      "url": "https://wccftech.com/ryzen-5-7600x3d-drops-to-179/",
-      "affectedItems": []
-    },
-    {
-      "headline": "Minisforum Brings AMD B850 Chipset To Its AIC, Offering Support For 4x M.2 Ports, OCuLink And 20 Gbps Type-C Port",
-      "source": "Wccftech",
-      "date": "2026-10-08",
-      "impact": "neutral",
-      "url": "https://wccftech.com/minisforum-brings-amd-b850-chipset-to-its-aic/",
-      "affectedItems": []
-    },
-    {
-      "headline": "NVIDIA RTX 50 Series Saw A Staggering 66% Price Hike In The Last 12 Months, With RTX 5090 Price Rising By 132%",
-      "source": "Wccftech",
-      "date": "2026-10-08",
-      "impact": "bullish",
-      "url": "https://wccftech.com/rtx-50-and-rx-9000-gpu-price-hike-last-12-months-germany/",
-      "affectedItems": []
-    },
-    {
-      "headline": "Elon Musk Is Aligned With China, Warns Taiwanese Op-Ed, Advising TSMC To Reject Terafab Chip Making Project Partnership",
-      "source": "Wccftech",
-      "date": "2026-10-08",
-      "impact": "neutral",
-      "url": "https://wccftech.com/elon-musk-is-aligned-with-china-warns-taiwanese-op-ed-advising-tsmc-to-reject-terafab-chip-making-project-partnership/",
-      "affectedItems": []
-    },
-    {
-      "headline": "Switching From An RTX 4090 To iGPU Via Display Cable Allegedly Helped A User Gain 2.5GB VRAM, Allowing Him To Double The Context Window In Qwen3.8-27B To 132K",
-      "source": "Wccftech",
-      "date": "2026-10-08",
-      "impact": "neutral",
-      "url": "https://wccftech.com/rtx-4090-igpu-display-cable-vram-qwen3-8-27b-132k-context-window/",
-      "affectedItems": []
-    },
-    {
       "headline": "Microsoft Announces RTX Spark-Powered Surface Laptop Ultra, Starting At $2,599 And Shipping On October 16",
       "source": "Wccftech",
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "impact": "neutral",
       "url": "https://wccftech.com/microsoft-teases-rtx-spark-powered-surface-laptop-ultra-starting-at-2599/",
       "affectedItems": []
@@ -2033,7 +1961,7 @@
     {
       "headline": "NVIDIA’s AI-Powerhouse “DGX Station” Breaks Out Of Linux, Cramming 748 GB Of Memory And 20 PFLOPs Into A Windows Workstation",
       "source": "Wccftech",
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "impact": "neutral",
       "url": "https://wccftech.com/nvidia-dgx-station-for-windows-ai-powerhouse-q4-2026-launch/",
       "affectedItems": []
@@ -2041,25 +1969,97 @@
     {
       "headline": "NVIDIA’s RTX Spark PCs Combine The Best of Gaming & AI on Windows, Bringing Grace & Blackwell To Powerful, Slim & Sleek Designs, Available For Pre-Order",
       "source": "Wccftech",
-      "date": "2026-10-08",
+      "date": "2026-10-09",
       "impact": "neutral",
       "url": "https://wccftech.com/nvidia-rtx-spark-windows-pc-launch-pre-orders/",
       "affectedItems": []
     },
     {
-      "headline": "NEWS",
-      "source": "VideoCardz",
-      "date": "2026-10-08",
-      "impact": "neutral",
-      "url": "https://videocardz.com/newz/alienware-32-inch-4k-rgb-tandem-oled-monitor-now-available-for-699",
+      "headline": "RTX Spark Laptops Pave The Way To Running 284B AI Models Locally That Outperform GPT-5 In Coding And Reasoning Benchmarks, According To Microsoft Executive",
+      "source": "Wccftech",
+      "date": "2026-10-09",
+      "impact": "bearish",
+      "url": "https://wccftech.com/rtx-spark-laptops-284b-ai-models-local-gpt-5/",
       "affectedItems": []
     },
     {
-      "headline": "LEAK",
-      "source": "VideoCardz",
-      "date": "2026-10-08",
+      "headline": "VZMORE AX9 Max “AMD Ryzen AI 9 HX 470” Mini PC Review: Gorgon Point Gets Vapor Chamber Treatment",
+      "source": "Wccftech",
+      "date": "2026-10-09",
       "impact": "neutral",
-      "url": "https://videocardz.com/newz/intel-core-2000hx-reportedly-brings-raptor-lake-back-to-hx-laptops",
+      "url": "https://wccftech.com/review/vzmore-ax9-max-amd-ryzen-ai-9-hx-470-mini-pc-review-gorgon-point-gets-vapor-chamber-treatment/",
+      "affectedItems": []
+    },
+    {
+      "headline": "MSI Prestige N16 Flip AI+ Brings NVIDIA RTX Spark To Deliver Up To 1 Petaflop Of AI Performance Coupled With 120 Hz OLED",
+      "source": "Wccftech",
+      "date": "2026-10-09",
+      "impact": "neutral",
+      "url": "https://wccftech.com/msi-prestige-n16-flip-ai-brings-nvidia-rtx-spark/",
+      "affectedItems": []
+    },
+    {
+      "headline": "Acer Nitro V Just Became The Cheapest RTX 5070 Laptop On Amazon By Dropping To Just $1,199",
+      "source": "Wccftech",
+      "date": "2026-10-09",
+      "impact": "bearish",
+      "url": "https://wccftech.com/acer-nitro-dropped-to-just-1199/",
+      "affectedItems": []
+    },
+    {
+      "headline": "AMD Confirms FSR 4 Will Ship To APUs, Gaming Laptops And Handhelds By The End Of 2026",
+      "source": "Wccftech",
+      "date": "2026-10-09",
+      "impact": "neutral",
+      "url": "https://wccftech.com/amd-confirms-fsr-4-will-ship-to-apus-gaming-laptops-and-handhelds-by-the-end-of-2026/",
+      "affectedItems": []
+    },
+    {
+      "headline": "PC Shipments Fell 20.1% In Q3 2026 As Pull-In Hangover And Supply Constraints Pressure Demand",
+      "source": "Wccftech",
+      "date": "2026-10-09",
+      "impact": "neutral",
+      "url": "https://wccftech.com/pc-shipments-dropped-by-a-whopping-20-1-in-q3-2026/",
+      "affectedItems": []
+    },
+    {
+      "headline": "LiquidJet Infuses Diamonds Within Its Coldplates for Enterprise AI Chips, Boosting Tokens/Watt Revenue By 35% & Reducing Temperatures By 10C",
+      "source": "Wccftech",
+      "date": "2026-10-09",
+      "impact": "bullish",
+      "url": "https://wccftech.com/liquidjet-diamond-coldplate-for-enterprise-ai-chips-boosting-tokens-watt/",
+      "affectedItems": []
+    },
+    {
+      "headline": "Trump Awards Jensen Huang The National Medal Of Science, And Credits Him With Putting America At The Front Of The Super Intelligence Race, As NVIDIA Outcompetes With $1 Billion To The Genesis Fund",
+      "source": "Wccftech",
+      "date": "2026-10-09",
+      "impact": "neutral",
+      "url": "https://wccftech.com/trump-awards-jensen-huang-the-national-medal-of-science-and-credits-him-with-putting-america-at-the-front-of-the-super-intelligence-race-as-nvidia-outcompetes-with-1-billion-to-the-genesis-fund/",
+      "affectedItems": []
+    },
+    {
+      "headline": "Intel Again Tipped For Major Foundry Business Win As NVIDIA Might Use Foveros Chip Technology In H2 2028, Says Analyst",
+      "source": "Wccftech",
+      "date": "2026-10-09",
+      "impact": "neutral",
+      "url": "https://wccftech.com/intel-again-tipped-for-major-foundry-business-win-as-nvidia-might-use-foveros-chip-technology-in-h2-2028-says-analyst/",
+      "affectedItems": []
+    },
+    {
+      "headline": "NEWS",
+      "source": "VideoCardz",
+      "date": "2026-10-09",
+      "impact": "neutral",
+      "url": "https://videocardz.com/newz/modder-brings-nvidia-rtx-remix-and-dlss-5-to-bloodborne-without-an-official-pc-port",
+      "affectedItems": []
+    },
+    {
+      "headline": "NEWS",
+      "source": "VideoCardz",
+      "date": "2026-10-09",
+      "impact": "neutral",
+      "url": "https://videocardz.com/newz/windows-11-is-getting-a-new-search-that-can-also-control-pc-settings",
       "affectedItems": []
     }
   ]
