@@ -459,4 +459,5 @@ scrapeDailyNews().then(async () => {
     } catch (e) {
         console.error("Stealth fallback skipped:", e.message);
     }
+    process.exit(0);
 });
